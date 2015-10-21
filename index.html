@@ -2,11 +2,55 @@
 <html>
 <head>
 	<meta charset="utf-8" lang="en" />
-	<title> Margaret Dorsey </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />  <!-- for responsive design on devices that try to autoscale -->
+	<title> The Portfolio of Margaret Dorsey </title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 <body>
-	<p> Hello, world! A portfolio website will go here when it's made. </p>
+	<header> 
+		<a id="logo" href="index.html"> <img src="media/#" alt="my logo" /> </a>
+		<a id="japanese" href="japanese/index.html">日本語 </a>
+	</header>
+	<nav> 
+		<!-- main navigation (always visible) -->
+		<ul>
+			<li><a href="#logo" id="current"> Front Page </a></li>
+			<li>
+				<a href="math/index.html">Mathematics</a>
+				<!-- sub navigation for math (invisible until hover)-->
+				<ul class="dropdown">
+					<li><a href="math/education.html"> Education </a> </li>
+					<li><a href="math/research.html"> Research </a> </li>
+				</ul>
+			</li>
+			<li>
+				<a href="computing/index.html">Computing </a>
+				<!-- sub navigation for computing (invisible until hover) -->
+				<ul class="dropdown">
+					<li><a href="computing/education.html"> Education </a> </li>
+					<li><a href="computing/completedprojects.html"> Completed Projects </a> </li>
+					<li><a href="computing/currentprojects.html"> Current Projects </a> </li>
+				</ul>
+			</li>
+			<li>
+				<a href="gamedesign/index.html">Game Design</a>
+					<!-- sub navigation for game design (invisible until hover) -->
+					<ul class="dropdown">
+						<li><a href="gamedesign/design.html"> Design</a> </li>
+						<li><a href="computing/artworkandassets.html"> Artwork and Assets </a> </li>
+						<li><a href="computing/games.html"> Games </a> </li>
+					</ul>
+			</li>
+			<li><a href="blog/index.html">Blog</a></li>
+			<li><a href="#">Resume</a></li>
+		</ul>
+		
+		
+		
+		
+		
+		
+	</nav>
 </body>
 </html>
 
