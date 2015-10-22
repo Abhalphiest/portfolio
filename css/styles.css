@@ -152,7 +152,6 @@ nav a:hover
 }
 .dropdown{
 	display:none;
-	position:absolute;
 	z-index:999;
 	width:100%;
 }
@@ -163,9 +162,10 @@ nav a:hover
 }
 
 nav ul li:hover ul.dropdown{ 
-	display:block;		
+	display:block;
+	left:0px;
 }
-nav ul li ul.dropdown li{display:block;}
+nav ul li ul.dropdown li{display:block; margin-left:0px;}
 
 /*main css*/
 main{
