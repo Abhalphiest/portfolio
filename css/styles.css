@@ -96,13 +96,14 @@
 
 /*body*/
 body{
-	width:80%;
-	margin:auto;
+	
+	
 }
 
 /*header css*/
 header{
-	display:block;
+	margin:auto;
+	width:80%;
 	position: fixed;
 }
 #logo span{
@@ -118,54 +119,53 @@ header{
 }
 /*navigation css*/
 
-nav{position:static;}
+nav{margin:auto;}
 
 nav ul{
-	margin:auto;
 	white-space: nowrap;
-	min-width: 15%;
+	height:30px;
 }
 
-nav li{
-	display: inline-block;
+nav ul li{
+	float:left;
 	list-style-type: none;
 	
-	font-family:nobilityCasual;
 	
 }
 
-nav  a{ 
+nav ul li a{ 
 	padding: 3px 10px; 
+	display:block;
 	text-decoration:none;
+	font-family:nobilityCasual;
+	color: #FFF;
 }
 
 nav a:link, nav a:visited
 {
-	color: #fff;
 	background-color: #B20100;	
 }
 
 nav a:hover
 {
-	color: #fff;
 	background-color: #1F1A21;
 }
-.dropdown{
+ul.dropdown{
 	display:none;
-	position:absolute;
-	z-index:999;
-	width:100%;
+	list-style-type:none;
 }
-.dropdown li{
-	min-width:100%;
-	margin: 0px;
+ul.dropdown li{
+	float:none;
+
 	
 }
-
+nav ul li:hover{
+	position:relative;
+}
 nav ul li:hover ul.dropdown{ 
 	display:block;		
 }
-nav ul li ul.dropdown li{display:block;}
+nav ul li ul.dropdown li {display:block;}
 
 /*main css*/
 main{
