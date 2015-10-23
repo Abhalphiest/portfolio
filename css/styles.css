@@ -153,6 +153,8 @@ nav a:hover
 ul.dropdown{
 	display:none;
 	list-style-type:none;
+	z-index:999;
+	width:100%;
 }
 ul.dropdown li{
 	float:none;
@@ -163,9 +165,12 @@ nav ul li:hover{
 	position:relative;
 }
 nav ul li:hover ul.dropdown{ 
-	display:block;		
+	display:block;
+	left:0px;
 }
+
 nav ul li ul.dropdown li {display:block;}
+
 
 /*main css*/
 main{
