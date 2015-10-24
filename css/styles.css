@@ -124,12 +124,13 @@ nav{margin:auto;}
 nav ul{
 	white-space: nowrap;
 	height:30px;
+	
 }
 
 nav ul li{
 	float:left;
 	list-style-type: none;
-	
+	list-style-position:inside;
 	
 }
 
@@ -155,11 +156,12 @@ ul.dropdown{
 	list-style-type:none;
 	z-index:999;
 	width:100%;
+	list-style-position:inside;
 }
 ul.dropdown li{
 	float:none;
+	padding:0px;
 
-	
 }
 nav ul li:hover{
 	position:relative;
