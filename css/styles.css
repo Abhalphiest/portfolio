@@ -115,15 +115,16 @@ header{
 	
 	font-family:acrosstheroad;
 	font-size:3em;
-	padding-left:.5em;
+	padding-right:.5em;
 }
 #logo{
 	background-image:url("../media/logo.svg");
 	background-repeat:no-repeat;
-	background-position:right;
+	background-position:left top;
 	background-size: contain;
 	display:inline-block;
-	padding-right: 4.8em;
+	padding-left: 6em;
+	padding-top:1em;
 }
 
 #japanese, #japanese:visited, #japanese:link{
