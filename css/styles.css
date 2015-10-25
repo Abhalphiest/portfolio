@@ -110,20 +110,22 @@ header{
 	position: fixed;
 	background-color:white;
 	margin: 15px;
+	
 }
 #logo span{
 	
 	font-family:acrosstheroad;
-	font-size:3em;
+	font-size:2.5em;
 	padding-right:.5em;
+	
 }
 #logo{
 	background-image:url("../media/logo.svg");
 	background-repeat:no-repeat;
-	background-position:left top;
+	background-position:left;
 	background-size: contain;
 	display:inline-block;
-	padding-left: 6em;
+	padding-left: 5em;
 	padding-top:1em;
 }
 
@@ -137,7 +139,7 @@ header{
 }
 /*navigation css*/
 
-nav{display:inline-block; position:relative; top:100px; margin:auto;}
+nav{display:inline-block; position:relative; top:100px; margin:auto; }
 
 nav ul{
 	white-space: nowrap;
