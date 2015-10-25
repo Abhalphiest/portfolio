@@ -95,13 +95,8 @@
 }
 
 @font-face {
-    font-family:'hakusyu';
-    src: url('../media/fonts/hkgokukaikk-webfont.eot');
-    src: url('../media/fonts/hkgokukaikk-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../media/fonts/hkgokukaikk-webfont.woff2') format('woff2'),
-         url('../media/fonts/hkgokukaikk-webfont.woff') format('woff'),
-         url('../media/fonts/hkgokukaikk-webfont.ttf') format('truetype'),
-         url('../media/fonts/hkgokukaikk-webfont.svg#hakusyukaisyoextrabold_kkRg') format('svg');
+    font-family:'epmarugo';
+    src: url('../japanese/media/fonts/epmarugo.ttf');
     font-weight: normal;
     font-style: normal;
 
@@ -132,7 +127,7 @@ header{
 }
 
 #japanese, #japanese:visited, #japanese:link{
-	font-family:hakusyu;
+	font-family:epmarugo;
 	position:absolute;
 	right: 4em;
 	font-size:1.5em;
