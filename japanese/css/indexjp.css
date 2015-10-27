@@ -1,9 +1,5 @@
 /*style sheet for the front page*/
 
-
-
-
-
 /*main css*/
 div#graphic img{
 	
@@ -16,9 +12,6 @@ div#graphic img{
 footer{
 	top: 20%;
 	width:90%;
-	font-family:'caviarDreams';
-	
-	
 }
 
 a{text-decoration:none;}
@@ -26,9 +19,12 @@ a{text-decoration:none;}
 footer p{
 	width:50%;
 	margin-left:10%;
+	font-family:'epmarugo';
+	
+	
 }
 footer h1, h2{
-	font-family:'nobilityCasual';
+	font-family:'epgyobold';
 	color: #1F1A21; 
 	margin-left: 5%;
 	
