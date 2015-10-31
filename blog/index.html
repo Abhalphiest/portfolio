@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />  <!-- for responsive design on devices that try to autoscale -->
 	<title> The Portfolio of Margaret Dorsey - Blog</title>
 	<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+	<link rel="stylesheet" type="text/css" href="../css/blog.css" />
 	
 </head>
 <body>
@@ -43,7 +44,7 @@
 					</ul>
 			</li>
 			<li><a href="#" id="current">Blog</a></li>
-			<li><a href="contact.html"> Contact </a> </li>
+			<li><a href="../contact.html"> Contact </a> </li>
 			<li><a href="../Resume.pdf">Resume</a></li>
 		</ul>		
 	</nav>
@@ -58,18 +59,22 @@
 <!-- single blog post -->
 <article>
 	<img /> 
-	<h1>Games and Renaissance Men</h1> <!-- title -->
-	<h3> is there room for well-roundedness in the modern games industry? </h3> <!-- sub title -->
-	<time> </time> <!-- date -->
+	<div class = "title">
+		<h1>Games and Renaissance Men</h1> <!-- title -->
+		<h3> is there room for well-roundedness in the modern games industry? </h3> <!-- sub title -->
+		<time> </time> <!-- date -->
+	<div>
 	<p> </p> <!-- content -->
 </article>
 
 <!-- single blog post -->
 <article>
 	<img /> 
-	<h1>The Importance of Being Brave</h1> <!-- title -->
-	<h3> how I learned to stop worrying and love the fear </h3> <!-- sub title -->
-	<time> </time> <!-- date -->
+	<div class = "title">
+		<h1>The Importance of Being Brave</h1> <!-- title -->
+		<h3> how I learned to stop worrying and love the fear </h3> <!-- sub title -->
+		<time> </time> <!-- date -->
+	</div>
 	<p> </p> <!-- content -->
 </article>
 
@@ -77,48 +82,37 @@
 <!-- single blog post -->
 <article>
 	<img /> 
-	<h1>Drinking From the Water Hose</h1> <!-- title -->
-	<h3> a beginner's guide to constructive self-loathing </h3> <!-- sub title -->
-	<time> </time> <!-- date -->
+	<div class = "title">
+		<h1>Drinking From the Water Hose</h1> <!-- title -->
+		<h3> a beginner's guide to constructive self-loathing </h3> <!-- sub title -->
+		<time> </time> <!-- date -->
+	</div>
 	<p> </p> <!-- content -->
 </article>
 
 <!-- single blog post -->
 <article>
 <img /> 
-	<h1> Markov Chains, Simplices, Single Value Decomposition, and the Value of Rigor</h1> <!-- title -->
-	<h3>or rather, non-mathematicians doing some pretty cool math</h3> <!-- sub title -->
-	<time datetime="2015-10-25"> October 25, 2015 </time> <!-- date -->
+	<div class = "title">
+		<h1> Markov Chains, Simplices, Single Value Decomposition, and the Value of Rigor</h1> <!-- title -->
+		<h3>or rather, non-mathematicians doing some pretty cool math</h3> <!-- sub title -->
+		<time datetime="2015-10-25"> October 25, 2015 </time> <!-- date -->
+	</div>
 	<!-- content -->
-	<p>
-		Here at RIT, the Game Design and Development major has exactly 3 classes required in Mathematics - the most elementary Discrete Mathematics that RIT offers, and a pair of survey courses specifically made
-		for the Game Design major that touch on some of the elementary computational methods in Linear Algebra and Calculus - matrix multiplication, derivatives, that sort of thing. Essentially, exactly the minimum
-		necessary to do any sort of graphics and physics programming. Because of the rather weak mathematical offering, the only physics requirement is a course called College Physics - an algebra based physics course that covers
-		basic two dimensional Newtonian physics.  
-	</p> 
-	<p>
-		For a long time, I was genuinely disgusted by the laxness of the program requirements. Why should it be that a Game Design and Development major taking the 'vanilla' courseload be unable to even apply for a Computer Science
-		minor, because the Computer Science department (not to even mention the Math department) recognizes <em> none </em> of our math and physics requirements as sufficient for even a minor? Who exactly decided that the incredibly capable
-		students in our department could not be expected to cope with university level courses in math and science? I still disagree with many aspects of those choices, but lately I've had a few new thoughts on the matter.
-	</p>
-	<p>
-		In my second course in linear algebra, I learned about Markov chains, which are basically a collection of 'transition matrices' indicating the probabilities of certain transitions between states. It's incredibly valuable for many applications -
-		pretty much anything where the probability of the next state is only determined by the current state, Markov chains are probably the best way to handle it. And if me saying transitions between states and matrices in the same sentence sent you
-		running for your finite state machine, you've become aware of the value for the average game designer. Everything from natural language generation to weather to AI is made better and more robust when implemented with Markov chains, and needless
-		to say I felt appropriately smug when I got to learn them inside and out.
-	</p>
-	<p>
-		But sometime last week, almost a full year after my introduction to them, I heard someone - a game design student - talking about them animatedly to a friend. Had they also taken advanced linear algebra? No, they most assuredly had not.
-		Do they know, theoretically, why they work, how they work? Well, I'm just not sure to be honest, but I'm going to say probably not. But as it turns out, that barely matters. They found out they needed to know it for what they wanted to implement it,
-		they looked it up on Wikipedia, found a code tutorial, and got to work. Hm.
-	</p>
-	<p> I could tell similar stories about simplices - also known as the topological construct that allows OpenGL to exist, single value decomposition of matrices, also known as the reason why we can compress images, music, and a ton of other things stored
-	as matrix-like data in memory, and a bunch of other things that I learned formally and my peers seek out ad hoc. But something about last week finally pushed me to look at this whole thing a new way - <em> how much math do we actually need to require? </em>
-	Don't get me wrong - I still think that it is grossly unfair to our students to not give them even the prerequisites for courses that they might have a completely justified interest in - the number of friends I've had to let know that they might
-	not be able to take certain math classes without taking two or 3 classes that by rights they should have had as requirements is absolutely heartbreaking. But at the end of the day, I'm starting to think that maybe, just maybe, part of the heart of this
-	major, this industry, is that we're all awesome, resourceful, and industrious. I love my rigor, I love my math classes... but a driven person will find the knowledge they need, by whatever means necessary. And I'm starting to think that
-	between the admitted time vampire that is rigorous pure mathematics, and the rather unorthodox approach of a quick google and some experimentation, that there isn't really a clear winner. All roads lead to Rome, after all. 
-	</p>
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+		Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet
+		quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+		Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+		Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+		Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. 
+		Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. 
+		Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, 
+		sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis.
+		Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue,
+		eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, 
+		accumsan porttitor, facilisis luctus, metus</p>
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 </article>
 
 </section>
