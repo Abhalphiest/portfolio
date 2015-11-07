@@ -14,7 +14,7 @@ footer{
 	top: 20%;
 	width:90%;
 	font-family:'caviarDreams';
-	margin-left:15%;
+	margin-left:10%;
 	
 	
 }
@@ -25,13 +25,11 @@ footer p{
 	width:50%;
 	margin-left:2%;
 }
-footer h1, h2{
+footer h1, h2,h3{
 	font-family:'nobilityCasual';
 	color: #1F1A21; 
 	
 }
 footer a{
-	
 	padding: 5px;
-
 }

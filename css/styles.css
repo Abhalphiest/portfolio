@@ -256,7 +256,7 @@ nav ul li:hover ul.dropdown{
 nav ul li ul.dropdown li {display: block;  }
 
 /*general css*/
-h1,h2
+h1,h2,h3
 {
 	font-family:'nobilityCasual';
 	color: #1F1A21; 
@@ -266,19 +266,34 @@ h1,h2
 p{
 	width:90%;
 	font-family:'caviarDreams';
-	margin-left:5%;
 	color:black;
+	padding: 20px; 0px;
 }
 article{
 	width:70%;
-	margin:auto;
 	padding-top:300px; /*start off below the header*/
+	margin-left:10%;
 }
 
-a{text-decoration:none;}
+a{text-decoration:none; color:  #B20100; }
+
+table{
+	font-family: caviarDreams;
+}
+table td{
+	padding: 10px;
+}
+
+#sidebar{
+	
+}
 
 
+/*extra stuff*/
 
+#contactgraphic{
+	float:right;
+}
 
 
 
