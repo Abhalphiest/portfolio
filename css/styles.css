@@ -253,6 +253,27 @@ nav ul li:hover ul.dropdown{
 
 nav ul li ul.dropdown li {display: block;  }
 
+/*general css*/
+h1,h2
+{
+	font-family:'nobilityCasual';
+	color: #1F1A21; 
+}
+
+p{
+	width:90%;
+	font-family:'caviarDreams';
+	margin-left:15%;
+	color:black;
+}
+article{
+	width:70%;
+	margin:auto;
+	padding-top:300px; /*start off below the header*/
+}
+
+a{text-decoration:none;}
+
 
 
 
