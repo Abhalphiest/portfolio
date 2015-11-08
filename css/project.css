@@ -1,1 +1,24 @@
 /*css for project display pages of any type */
+
+.project{
+	border-color: #1F1A21;
+	border-style:solid;
+	border-width: 2px; 
+	border-radius:3px;
+	margin-left:10px;
+	width:80%;
+}
+
+.project h2{
+	color: white;
+	background-color:  #1F1A21;
+}
+
+.github{
+	margin:20px;
+	padding:10px 40px;
+	background-color: #B20100;
+	border-radius:25px;
+	color:white;
+	display:inline-block;
+}

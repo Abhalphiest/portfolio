@@ -1,19 +1,14 @@
 /*css for education, skills, qualifications, etc */
 
-article#main{
-	width:70%;
-	margin:auto;
-	padding-top:300px; /*start off below the header*/
-}
-
 article#main section{
 	font-family:"caviarDreams";
+	margin-top: 50px;
 	
 }
 
 article#main section h2{
 	font-family:"nobilityCasual";
-	font-size: 1.8em;
+	font-size: 1.3em;
 	font-style:bold;
 	padding:10px;
 	
@@ -22,7 +17,7 @@ article#main section h2{
 
 article#main section h4{
 	font-family:"nobilityCasual";
-	font-size: 1.2em;
+	font-size: 1em;
 	font-style:bold;
 	padding:10px;
 	padding-left:20px;
@@ -36,6 +31,7 @@ article#main section ul{
 article#main section ul li{
 	list-style-position:inside;
 	padding:5px;
+	font-size: .9em;
 	
 	
 }
