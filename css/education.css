@@ -32,6 +32,22 @@ article#main section ul li{
 	list-style-position:inside;
 	padding:5px;
 	font-size: .9em;
+		
+}
+
+@media screen and (max-width: 1024px)
+{
 	
+}
+@media screen and (max-width: 768px)
+{	
+
+}
+@media screen and (max-width:640px)
+{
+	
+}
+@media screen and (max-width: 480px)
+{
 	
 }

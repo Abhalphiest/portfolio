@@ -157,6 +157,7 @@ header{
 	position: fixed;
 	background-color:white;
 	padding: 15px;
+	height:165px;
 	
 }
 #logo span{
@@ -336,7 +337,22 @@ article#contact a{
 	float:left;
 }
 
+@media screen and (max-width: 1024px)
+{
+	
+}
+@media screen and (max-width: 768px)
+{	
 
+}
+@media screen and (max-width:640px)
+{
+	
+}
+@media screen and (max-width: 480px)
+{
+	
+}
 
 
 

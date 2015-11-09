@@ -33,3 +33,21 @@ footer h1, h2,h3{
 footer a{
 	padding: 5px;
 }
+
+
+@media screen and (max-width: 1024px)
+{
+	
+}
+@media screen and (max-width: 768px)
+{	
+
+}
+@media screen and (max-width:640px)
+{
+	
+}
+@media screen and (max-width: 480px)
+{
+	
+}

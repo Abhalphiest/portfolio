@@ -7,7 +7,6 @@
 
 /*css for the posts */
 section#posts{
-	padding-top:300px; /* to avoid the navigation*/
 }
 
 section#posts article{
@@ -28,12 +27,11 @@ section#posts article h3{
 	font-family:nobilityCasual;
 	font-size: .8em;
 	color: #333333; /*slightly lighter than black*/
-	margin-left: 2%;
 	padding-bottom: 20px;
 	white-space: nowrap;
 	display:inline;
-	text-transform: uppercase;
-	
+	text-transform: lowercase;
+	font-style:bold;
 }
 
 section#posts article time{
@@ -60,4 +58,21 @@ section#posts article p{
 }
 section#posts article em{
 	font-weight:bold;
+}
+
+@media screen and (max-width: 1024px)
+{
+	
+}
+@media screen and (max-width: 768px)
+{	
+
+}
+@media screen and (max-width:640px)
+{
+	
+}
+@media screen and (max-width: 480px)
+{
+	
 }
