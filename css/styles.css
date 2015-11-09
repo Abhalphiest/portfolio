@@ -184,6 +184,7 @@ header{
 	font-size:1.5em;
 	color:#444444;
 	text-decoration:none;
+	display:none; /*hidden for now, currently out of scope */
 	
 }
 /*navigation css*/

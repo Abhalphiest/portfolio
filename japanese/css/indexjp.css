@@ -12,6 +12,8 @@ div#graphic img{
 footer{
 	top: 20%;
 	width:90%;
+	font-family:epmarugo;
+	margin-left:10%;
 }
 
 a{text-decoration:none;}
@@ -19,13 +21,37 @@ a{text-decoration:none;}
 footer p{
 	width:50%;
 	margin-left:10%;
-	font-family:'epmarugo';
+	font-family:epmarugo;
 	
 	
 }
-footer h1, h2{
-	font-family:'epgyobold';
+footer p{
+	width:50%;
+	margin-left:2%;
+}
+footer h1, h2,h3{
+	font-family:epgyobold;
 	color: #1F1A21; 
-	margin-left: 5%;
+	
+}
+footer a{
+	padding: 5px;
+}
+
+
+@media screen and (max-width: 1024px)
+{
+	
+}
+@media screen and (max-width: 768px)
+{	
+
+}
+@media screen and (max-width:640px)
+{
+	
+}
+@media screen and (max-width: 480px)
+{
 	
 }
