@@ -2,17 +2,31 @@
 
 /* css for sidebar*/
 #sidebar{
-	margin-top: 300px;
+	position: fixed;
+	top:235px;
+	width: 10%;
+	left: 12%;
+}
+#sidebar li{
+	padding: 10px 0px;
+}
+#sidebar a{
+	font-family: nobilityCasual;
+	font-size: .8em;
+	
 }
 
 /*css for the posts */
 section#posts{
-	width: 75%;
+	width: 70%;
 	margin-left: 15%;
+	padding-top: 300px;
 }
 
 section#posts article{
 	
+	padding-top: 0px;
+	margin-bottom: 150px;
 	
 }
 section#posts article div.title{
@@ -41,7 +55,6 @@ section#posts article h2{
 	font-family:caviarDreams;
 	font-weight:bold;
 	text-transform:uppercase;
-	color: #444444;
 }
 
 section#posts article time{
@@ -63,11 +76,14 @@ section#posts article p{
 	text-indent: 2%;
 	font-family: caviarDreams;
 	padding:10px 0px; 
-	line-height:110%;
+	line-height:105%;
 	letter-spacing:1px;
+	font-weight:bold;
+	font-size: .8em;
+	color: #333333;
 }
 section#posts article em{
-	font-weight:bolder;
+	font-style:italic;
 }
 
 section#posts article p{
@@ -77,6 +93,41 @@ section#posts article p{
 	padding:10px 0px; 
 	line-height:110%;
 	letter-spacing:1px;
+}
+
+section#posts article ul{
+	width: 85%;
+	text-indent: 2%;
+	font-family: caviarDreams;
+	padding:10px 0px; 
+	line-height:105%;
+	letter-spacing:1px;
+	font-weight:bold;
+	font-size: .8em;
+	color: #333333;
+	list-style-type: circle;
+}
+
+section#posts article ol{
+	width: 70%;
+	text-indent: 2%;
+	font-family: caviarDreams;
+	padding:10px 35px; 
+	line-height:105%;
+	letter-spacing:1px;
+	font-weight:bold;
+	font-size: .8em;
+	color: #333333;
+	list-style-type: upper-roman;
+	list-style-position: outside;
+	margin-left: 5%;
+	
+}
+
+section#posts article li{
+	padding:20px; 
+	
+	
 }
 @media screen and (max-width: 1024px)
 {
