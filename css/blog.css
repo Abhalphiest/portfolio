@@ -55,6 +55,7 @@ section#posts article h2{
 	font-family:caviarDreams;
 	font-weight:bold;
 	text-transform:uppercase;
+	padding: 1%;
 }
 
 section#posts article time{
@@ -75,7 +76,7 @@ section#posts article p{
 	width: 85%;
 	text-indent: 2%;
 	font-family: caviarDreams;
-	padding:10px 0px; 
+	padding:10px 20px; 
 	line-height:105%;
 	letter-spacing:1px;
 	font-weight:bold;
@@ -86,14 +87,6 @@ section#posts article em{
 	font-style:italic;
 }
 
-section#posts article p{
-	width: 85%;
-	text-indent: 2%;
-	font-family: caviarDreams;
-	padding:10px 0px; 
-	line-height:110%;
-	letter-spacing:1px;
-}
 
 section#posts article ul{
 	width: 85%;
