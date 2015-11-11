@@ -2,41 +2,65 @@
 
 /* css for sidebar*/
 #sidebar{
+	position: fixed;
+	top:235px;
+	width: 10%;
+	left: 12%;
+}
+#sidebar li{
+	padding: 10px 0px;
+}
+#sidebar a{
+	font-family: nobilityCasual;
+	font-size: .8em;
 	
 }
 
 /*css for the posts */
 section#posts{
+	width: 70%;
+	margin-left: 15%;
+	padding-top: 300px;
 }
 
 section#posts article{
-	width: 60%;
-	margin-left:15%;
+	
+	padding-top: 0px;
+	margin-bottom: 150px;
+	
 }
 section#posts article div.title{
 	display:inline-block;
+	padding-bottom: 20px;
 }
 
 section#posts article h1{
 	font-family:nobilityCasual;
 	font-size: 1.5em;
-	padding-bottom: 5px;
+	padding-bottom: 0px;
 	
 }
 section#posts article h3{
-	font-family:nobilityCasual;
+	font-family:caviarDreams;
 	font-size: .8em;
 	color: #333333; /*slightly lighter than black*/
 	padding-bottom: 20px;
 	white-space: nowrap;
 	display:inline;
-	text-transform: lowercase;
-	font-style:bold;
+	text-transform: uppercase;
+	font-weight:bold;
+}
+
+section#posts article h2{
+	font-family:caviarDreams;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding: 1%;
 }
 
 section#posts article time{
 	display:block;
-	margin-left:2%;
+	margin-left:1%;
 	padding: 4px 0px;
 	font-family: caviarDreams;
 	font-weight:bold;
@@ -52,14 +76,52 @@ section#posts article p{
 	width: 85%;
 	text-indent: 2%;
 	font-family: caviarDreams;
-	padding:10px 0px; 
-	line-height:110%;
+	padding:10px 20px; 
+	line-height:105%;
 	letter-spacing:1px;
+	font-weight:bold;
+	font-size: .8em;
+	color: #333333;
 }
 section#posts article em{
-	font-weight:bold;
+	font-style:italic;
 }
 
+
+section#posts article ul{
+	width: 85%;
+	text-indent: 2%;
+	font-family: caviarDreams;
+	padding:10px 0px; 
+	line-height:105%;
+	letter-spacing:1px;
+	font-weight:bold;
+	font-size: .8em;
+	color: #333333;
+	list-style-type: circle;
+}
+
+section#posts article ol{
+	width: 70%;
+	text-indent: 2%;
+	font-family: caviarDreams;
+	padding:10px 35px; 
+	line-height:105%;
+	letter-spacing:1px;
+	font-weight:bold;
+	font-size: .8em;
+	color: #333333;
+	list-style-type: upper-roman;
+	list-style-position: outside;
+	margin-left: 5%;
+	
+}
+
+section#posts article li{
+	padding:20px; 
+	
+	
+}
 @media screen and (max-width: 1024px)
 {
 	

@@ -33,7 +33,25 @@ footer h1, h2,h3{
 footer a{
 	padding: 5px;
 }
+/*for index pages for individual sections */
 
+#subindex{
+	margin-left:11%;
+	width: 50%;
+}
+
+
+#subindex a{
+	display:block;
+	background-color: black;
+	color:white;
+	font-family: nobilityCasual;
+	margin-bottom: 25px;
+	background: url("../media/index/indexbg.svg") no-repeat center left;
+	background-size: contain;
+	background-clip:padding-box;
+	padding: 20px;
+}
 
 @media screen and (max-width: 1024px)
 {
