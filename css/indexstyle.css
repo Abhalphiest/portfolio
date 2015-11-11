@@ -47,8 +47,10 @@ footer a{
 	color:white;
 	font-family: nobilityCasual;
 	margin-bottom: 25px;
-	
-	padding: 45px;
+	background: url("../media/index/indexbg.svg") no-repeat center left;
+	background-size: contain;
+	background-clip:padding-box;
+	padding: 20px;
 }
 
 @media screen and (max-width: 1024px)

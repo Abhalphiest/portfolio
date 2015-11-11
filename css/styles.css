@@ -173,7 +173,7 @@ header{
 	background-position:left;
 	background-size: contain;
 	display:inline-block;
-	padding-left: 5em;
+	padding-left: 3.75em;
 	padding-top:1em;
 }
 
@@ -320,6 +320,18 @@ table td.label{
 	padding-top: 30px;
 	margin-left:-25px;
 }
+
+#gametitle{
+	color:black;
+	background: url(../media/game.svg) no-repeat;
+	width: 100%;
+	font-size: 2em;
+	padding-left: 150px;
+	height: 100px;
+	padding-top: 50px;
+	margin-left:10px;
+}
+
 article#contact{
 	background: url(../media/contact.svg) no-repeat;
 	background-position: right bottom;

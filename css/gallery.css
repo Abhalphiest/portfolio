@@ -1,5 +1,19 @@
 /* css for any page that contains a gallery */
 
+/* css for sidebar*/
+#sidebar{
+	position: fixed;
+	top:235px;
+	width: 10%;
+	left: 2%;
+}
+#sidebar li{
+	padding: 10px 0px;
+}
+#sidebar a{
+	font-family: nobilityCasual;
+	font-size: .8em;	
+}
 
 @media screen and (max-width: 1024px)
 {
