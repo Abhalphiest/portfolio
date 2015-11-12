@@ -14,7 +14,54 @@
 	font-family: nobilityCasual;
 	font-size: .8em;	
 }
+#gallery{
+	margin-left:11%;
+}
+.gallerytitle{
+	font-family:nobilityCasual;
+	font-size: 1.5em;
+	margin-left:5px;
+	margin-bottom:0px;
+}
+.description{
+	width:60%;
+	font-weight:bold;
+	font-family:caviarDreams;
+}
+.imgbox{
+	width: 60%;
+	border-width: 5px;
+	border-style: solid;
+	margin:8px;
+	display:inline-block;
+	
+}
+.imgbox img{
+	width: 100%;
+	margin:0px;
+}
+#gallery section{
+	display: inline-block;
+}
+.notes{
+	color:white;
+	background-color:black;
+	font-size:1.2em;
+	margin:0px;
+	width: 100%;
+}
 
+.gallerylink{
+	font-family: caviarDreams;	
+	margin: 20px 0px;
+	padding:10px 40px;
+	background-color: #B20100;
+	border-radius:10px;
+	color:white;
+	display:block;
+	width: 150px;
+
+}
 @media screen and (max-width: 1024px)
 {
 	
