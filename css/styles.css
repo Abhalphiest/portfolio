@@ -291,10 +291,6 @@ table td.label{
 	font-family: nobilityCasual;
 }
 
-#sidebar{
-	
-}
-
 /*extra stuff*/
 
 
@@ -335,6 +331,7 @@ table td.label{
 article#contact{
 	background: url(../media/contact.svg) no-repeat;
 	background-position: right bottom;
+	width: 50%;
 }
 
 article#contact h1{
