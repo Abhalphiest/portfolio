@@ -305,9 +305,10 @@ article#contact p a{
 	nav ul li{
 	font-size:.8em;
 	width:120px;
+	}
 }
-@media screen and (max-width: 1066px)
-{	
+@media screen and (max-width:1066px)
+{
 	nav{
 		margin-left:5%;
 		width:90%;
@@ -317,10 +318,9 @@ article#contact p a{
 		margin-left:5%;
 	}
 	nav ul li{
-	font-size:.7em;
-	width:100px;
+		font-size:.7em;
+		width:100px;
 	}
-	
 	article#contact{
 		width:65%;
 	}
@@ -335,7 +335,7 @@ article#contact p a{
 		width:75%;
 	}
 }
-@media screen and (max-width: 716px)
+@media screen and (max-width:716px)
 {
 	article{
 		padding-top:500px;
@@ -374,7 +374,7 @@ article#contact p a{
 	}
 }
 
-@media screen and (max-width: 335px)
+@media screen and (max-width:335px)
 {
 	#logo{
 		background:none;
