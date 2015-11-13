@@ -25,8 +25,7 @@
 }
 .description{
 	width:60%;
-	font-weight:bold;
-	font-family:caviarDreams;
+	font-family:roundedElegance;
 }
 .imgbox{
 	width: 60%;
@@ -46,13 +45,13 @@
 .notes{
 	color:white;
 	background-color:black;
-	font-size:1.2em;
+	font-size:1em;
 	margin:0px;
 	width: 100%;
 }
 
 .gallerylink{
-	font-family: caviarDreams;	
+	font-family: roundedElegance;	
 	margin: 20px 0px;
 	padding:10px 40px;
 	background-color: #B20100;

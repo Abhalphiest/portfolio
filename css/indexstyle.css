@@ -13,7 +13,7 @@ div#graphic img{
 footer{
 	top: 20%;
 	width:90%;
-	font-family:'caviarDreams';
+	font-family:'roundedElegance';
 	margin-left:10%;
 	
 	
@@ -53,19 +53,14 @@ footer a{
 	padding: 20px;
 }
 
-@media screen and (max-width: 1024px)
-{
-	
-}
-@media screen and (max-width: 768px)
-{	
 
-}
-@media screen and (max-width:640px)
+@media screen and (max-width:699px)
 {
-	
-}
-@media screen and (max-width: 480px)
-{
-	
+	div#graphic img{
+		display:none;
+	}
+	footer{
+		margin-top:400px;
+	}
+
 }

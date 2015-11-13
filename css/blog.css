@@ -41,7 +41,7 @@ section#posts article h1{
 	
 }
 section#posts article h3{
-	font-family:caviarDreams;
+	font-family:roundedElegance;
 	font-size: .8em;
 	color: #333333; /*slightly lighter than black*/
 	padding-bottom: 20px;
@@ -52,7 +52,7 @@ section#posts article h3{
 }
 
 section#posts article h2{
-	font-family:caviarDreams;
+	font-family:roundedElegance;
 	font-weight:bold;
 	text-transform:uppercase;
 	padding: 1%;
@@ -62,7 +62,7 @@ section#posts article time{
 	display:block;
 	margin-left:1%;
 	padding: 4px 0px;
-	font-family: caviarDreams;
+	font-family: roundedElegance;
 	font-weight:bold;
 	font-size: .75em;
 	letter-spacing:-1px;
@@ -75,12 +75,10 @@ section#posts article img{
 section#posts article p{
 	width: 85%;
 	text-indent: 2%;
-	font-family: caviarDreams;
+	font-family: roundedElegance;
 	padding:10px 20px; 
 	line-height:105%;
 	letter-spacing:1px;
-	font-weight:bold;
-	font-size: .8em;
 	color: #333333;
 }
 section#posts article em{
@@ -91,12 +89,10 @@ section#posts article em{
 section#posts article ul{
 	width: 85%;
 	text-indent: 2%;
-	font-family: caviarDreams;
+	font-family: roundedElegance;
 	padding:10px 0px; 
 	line-height:105%;
 	letter-spacing:1px;
-	font-weight:bold;
-	font-size: .8em;
 	color: #333333;
 	list-style-type: circle;
 }
@@ -104,12 +100,10 @@ section#posts article ul{
 section#posts article ol{
 	width: 70%;
 	text-indent: 2%;
-	font-family: caviarDreams;
+	font-family: roundedElegance;
 	padding:10px 35px; 
 	line-height:105%;
 	letter-spacing:1px;
-	font-weight:bold;
-	font-size: .8em;
 	color: #333333;
 	list-style-type: upper-roman;
 	list-style-position: outside;
@@ -122,19 +116,26 @@ section#posts article li{
 	
 	
 }
-@media screen and (max-width: 1024px)
-{
-	
-}
-@media screen and (max-width: 768px)
-{	
 
+
+@media screen and (max-width: 1066px)
+{	
+	#sidebar{left:7%;}
 }
-@media screen and (max-width:640px)
+@media screen and (max-width:794px)
 {
 	
 }
-@media screen and (max-width: 480px)
+@media screen and (max-width: 716px)
 {
+	#sidebar{display:none;}
+	section#posts{
+		padding-top:500px;
+	}
+}
+
+@media screen and (max-width: 335px)
+{
+	
 	
 }
