@@ -64,3 +64,21 @@ footer a{
 	}
 
 }
+
+@media screen and (max-width:536px)
+{
+	#subindex a{
+		padding:50px;
+	}
+	#subindex{
+		width: 100%;
+	}
+	
+}
+@media screen and (max-width:310px)
+{
+	#subindex a{
+		background:black;
+		padding:20px;
+	}
+}
