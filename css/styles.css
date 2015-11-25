@@ -106,7 +106,7 @@ header{
 	position: fixed;
 	background-color:white;
 	padding: 15px;
-	height:165px;
+	height:130px;
 	
 }
 #logo span{
@@ -141,7 +141,7 @@ header{
 nav{
 	display:inline-block; 
 	position:relative; 
-	top:100px; 
+	top:60px; 
 	margin-left:10%;
 	width:80%;
 	margin-right:10%;
@@ -149,7 +149,6 @@ nav{
 
 nav ul{
 	white-space: nowrap;
-	list-style-position:inside;
 }
 
 nav ul li{
@@ -157,7 +156,8 @@ nav ul li{
 	list-style-type: none;
 	list-style-position:inside;
 	font-size:1em;
-	width:150px;
+	width:175px;
+	
 }
 
 nav ul li a{ 
@@ -166,6 +166,7 @@ nav ul li a{
 	text-decoration:none;
 	font-family:roundedElegance;
 	color: #FFF;
+	padding-left: 3px;
 }
 #current a{
 	background-color:white;
@@ -194,6 +195,7 @@ ul.dropdown{
 ul.dropdown li{
 	float:none;
 	font-size:.7em;
+	
 }
 nav ul li:hover{
 	
@@ -300,7 +302,9 @@ article#contact p a{
 	float:none;
 }
 
-@media screen and (max-width: 1328px)
+
+/*responsive design*/
+@media screen and (max-width: 1550px)
 {
 	nav ul li{
 	font-size:.8em;
@@ -338,7 +342,7 @@ article#contact p a{
 @media screen and (max-width:716px)
 {
 	article{
-		padding-top:500px;
+		padding-top:300px;
 	}
 	header{
 		position:static;
@@ -349,25 +353,31 @@ article#contact p a{
 	nav ul li ul.dropdown li {display: none;  }
 	nav ul li{
 	font-size:1em;
-	width:100%;
+	width:60%;
+	margin-left:3%;
+	margin-top:0px;
 	text-align: center;
-	padding-bottom: 20px;
 	height:40px;
+	padding-top: 3px;
+	padding-bottom: 3px;
 	}
 	
 	#gametitle{
 		background:none;
-		padding-left:8%;
+		margin-left:10%;
+		padding-left:0px;
 	}
 	
 	#computingtitle{
 		background:none;
-		padding-left:8%;
+		margin-left:10%;
+		padding-left:0px;
 	}
 	
 	#mathtitle{
 		background:none;
-		padding-left:8%;
+		margin-left:10%;
+		padding-left:0px;
 	}
 	article#contact{
 		background:none;

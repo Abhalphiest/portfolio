@@ -130,7 +130,8 @@ section#posts article li{
 {
 	#sidebar{display:none;}
 	section#posts{
-		padding-top:500px;
+		padding-top:350px;
+		margin-left:6%;
 	}
 }
 

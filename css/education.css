@@ -44,9 +44,18 @@ article#main section ul li{
 {
 	
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 716px)
 {	
-
+	article#main
+	{
+		margin-left:3%;
+	}
+	article#main section h2{
+		margin-left:9%;
+	}
+	article#main section ul, article#main section h4{
+		margin-left:10%;
+	}
 }
 @media screen and (max-width:640px)
 {
