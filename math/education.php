@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="../css/styles.css" />
 	<link rel="stylesheet" type="text/css" href="../css/education.css" />
 	
+	<script> window.onload = function(){document.getElementsByName("mathnav")[0].setAttribute("id","current")}  </script>
+	
 </head>
 <body>
 <?php include '../include/header.html'; ?>
