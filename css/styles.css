@@ -210,14 +210,19 @@ nav ul li ul.dropdown li {display: block;  }
 
 
 /*footer*/
-
+body{
+	padding-bottom:3em;
+}
 footer{
 	position: absolute;
-	bottom:10px;
-	width: 70%;
-	margin:auto;
+	bottom:0 px;
+	left:0px;
+	right:0px;
+	padding:1em;
+	text-align:center;
 	font-family:'roundedElegance';
 	color: #444444;
+	
 }
 
 /*general css*/
