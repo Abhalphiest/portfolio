@@ -218,10 +218,11 @@ footer{
 	bottom:0 px;
 	left:0px;
 	right:0px;
-	padding:1em;
+	padding:.2em;
 	text-align:center;
 	font-family:'roundedElegance';
 	color: #444444;
+	font-size:.5em;
 	
 }
 
