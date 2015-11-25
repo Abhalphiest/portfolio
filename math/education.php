@@ -3,9 +3,10 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />  <!-- for responsive design on devices that try to autoscale -->
-	<title> The Portfolio of Margaret Dorsey - Current Computing Projects</title>
+	<title> The Portfolio of Margaret Dorsey - Math Education</title>
 	<link rel="stylesheet" type="text/css" href="../css/styles.css" />
 	<link rel="stylesheet" type="text/css" href="../css/education.css" />
+	
 	
 	<script> window.onload = function(){document.getElementsByName("mathnav")[0].setAttribute("id","current")}  </script>
 	
@@ -90,6 +91,6 @@
 	</section>
 </article>
 
-<?php include '../include/footer.html'; ?>
+<?php include '../include/footer.php'; ?>
 </body>
 </html>

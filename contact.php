@@ -3,8 +3,9 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />  <!-- for responsive design on devices that try to autoscale -->
-	<title> The Portfolio of Margaret Dorsey </title>
+	<title> The Portfolio of Margaret Dorsey - Contact </title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<script> window.onload = function(){document.getElementsByName("contactnav")[0].setAttribute("id","current")}  </script>
 </head>
 <body>
 <?php include '../include/header.html'; ?>
@@ -28,7 +29,7 @@
 	<a href="https://www.linkedin.com/in/margaretdorsey"> <img src="media/index/linkedin.png" alt="linkedin" title="My LinkedIn Profile" width="50" height="50"/> </a>
 	
 </article>
-<?php include '../include/footer.html'; ?>
+<?php include '../include/footer.php'; ?>
 </body>
 </html>
 

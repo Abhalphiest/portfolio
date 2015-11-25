@@ -6,7 +6,7 @@
 	<title> The Portfolio of Margaret Dorsey - Blog</title>
 	<link rel="stylesheet" type="text/css" href="../css/styles.css" />
 	<link rel="stylesheet" type="text/css" href="../css/blog.css" />
-	
+	<script> window.onload = function(){document.getElementsByName("blognav")[0].setAttribute("id","current")}  </script>
 </head>
 <body>
 
@@ -164,6 +164,6 @@
 
 </aside>
 
-<?php include '../include/footer.html'; ?>
+<?php include '../include/footer.php'; ?>
 </body>
 </html>	

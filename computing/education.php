@@ -6,7 +6,7 @@
 	<title> The Portfolio of Margaret Dorsey - Computing Education</title>
 	<link rel="stylesheet" type="text/css" href="../css/styles.css" />
 	<link rel="stylesheet" type="text/css" href="../css/education.css" />
-	
+	<script> window.onload = function(){document.getElementsByName("computingnav")[0].setAttribute("id","current")}  </script>
 </head>
 <body>
 
@@ -79,6 +79,6 @@
 			</ul>
 	</section>
 </article>
-<?php include '../include/footer.html'; ?>
+<?php include '../include/footer.php'; ?>
 </body>
 </html>

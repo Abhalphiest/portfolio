@@ -6,7 +6,7 @@
 	<title> The Portfolio of Margaret Dorsey - Current Computing Projects</title>
 	<link rel="stylesheet" type="text/css" href="../css/styles.css" />
 	<link rel="stylesheet" type="text/css" href="../css/project.css" />
-	
+	<script> window.onload = function(){document.getElementsByName("computingnav")[0].setAttribute("id","current")}  </script>
 </head>
 <body>
 
@@ -21,6 +21,6 @@
 	<a href="https://github.com/Abhalphiest/engine" class="github">Project Repository on GitHub</a>
 </section>
 </article>
-<?php include '../include/footer.html'; ?>
+<?php include '../include/footer.php'; ?>
 </body>
 </html>
