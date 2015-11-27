@@ -7,46 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 <body>
-<header> 
-	<div id="logo"> <span>Margaret E. Dorsey</span></div>
-	<a id="japanese" href="japanese/index.html" lang="ja" hreflang="ja">日本語 </a>
-	
-	<nav> 
-		<!-- main navigation (always visible) -->
-		<ul>
-			<li><a href="index.html"> Front Page </a></li>
-			<li>
-				<a href="math/index.html">Mathematics</a>
-				<!-- sub navigation for math (invisible until hover)-->
-				<ul class="dropdown">
-					<li><a href="math/education.html"> Education </a> </li>
-					<li><a href="math/research.html"> Research </a> </li>
-				</ul>
-			</li>
-			<li>
-				<a href="computing/index.html">Computing </a>
-				<!-- sub navigation for computing (invisible until hover) -->
-				<ul class="dropdown">
-					<li><a href="computing/education.html"> Education </a> </li>
-					<li><a href="computing/completedprojects.html"> Completed Projects </a> </li>
-					<li><a href="computing/currentprojects.html"> Current Projects </a> </li>
-				</ul>
-			</li>
-			<li>
-				<a href="gamedesign/index.html">Game Design</a>
-					<!-- sub navigation for game design (invisible until hover) -->
-					<ul class="dropdown">
-						<li><a href="gamedesign/design.html"> Design</a> </li>
-						<li><a href="gamedesign/artworkandassets.html"> Artwork and Assets </a> </li>
-						<li><a href="gamedesign/games.html"> Games </a> </li>
-					</ul>
-			</li>
-			<li><a href="blog/index.html">Blog</a></li>
-			<li><a href="contact.html"> Contact </a> </li>
-			<li><a href="Resume.pdf">Resume</a></li>
-		</ul>		
-	</nav>
-</header>
+<?php include 'include/header.html'; ?>
 
 <article>
 <h1> Notes</h1>
@@ -67,7 +28,7 @@ point of the project, but it would be a better portfolio site if it included mor
 <p> Also, I would have liked to spend more time tweaking some of the vector graphics, they aren't all quite perfect and they could be more cohesive. Some of my
 CSS is really unclean, and I plan to spend some time consolidating and tidying it up when I get the chance. It just is unlikely to happen before the end of this project. </p>
 </article>
-
+<?php include 'include/footer.php'; ?>
 
 </body>
 </html>

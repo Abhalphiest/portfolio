@@ -208,6 +208,24 @@ nav ul li:hover ul.dropdown{
 
 nav ul li ul.dropdown li {display: block;  }
 
+
+/*footer*/
+body{
+	padding-bottom:3em;
+}
+footer{
+	position: absolute;
+	bottom:0 px;
+	left:0px;
+	right:0px;
+	padding:.2em;
+	text-align:center;
+	font-family:'roundedElegance';
+	color: #444444;
+	font-size:.7em;
+	
+}
+
 /*general css*/
 h1,h2,h3
 {
