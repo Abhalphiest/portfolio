@@ -24,7 +24,7 @@ I am also following the Computer Science curriculum above and beyond my minor re
 and get to know me.
 </p>
 
-<a href="notes.html"> Link to the notes page </a>
+<a href="notes.php"> Link to the notes page </a>
 </main>
 <?php include 'include/footer.php'; ?>
 
