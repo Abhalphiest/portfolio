@@ -11,22 +11,22 @@
 
 <article>
 <h1> Notes</h1>
-<p> All images were made by me, all CSS, scripts, etc are mine.
+<p> All images were made by me, all CSS, scripts (except for JQuery), php (except for FormMail) etc are mine.
 Fonts are Across the Road, Caviar Dreams and Rounded Elegance.
 <p>
+<h2> Fixes </h2>
+<p> I reduced the height of the header, to cut down on wasted whitespace. I fixed the blog linking problems during the course of making it a 
+single page application. I went through and cleaned up the CSS. </p>
+<h2> Requirements </h2>
+<table>
+<tr><td>Dynamic Page </td> <td>The blog is now an endlessly scrolling page.</td></tr>
+<tr><td>jQuery </td> <td>All image galleries are now jQuery image galleries, to cut down on the amount of page space spent on every project</td></tr>
+<tr><td>FormMail </td> <td>There's a mail form on the contact page.</td></tr>
+<tr><td>Server Side Includes</td> <td> I used php instead of direct SSIs, but the header and footer are included on the server side, and so is the date in the footer, among other things.</td></tr>
+<tr><td>.htaccess </td> <td> <a href="https://people.rit.edu/~med7068/gibsonAuth/auth.html"> Link to the Protected Directory</a>  <a href="boo.php"> Garbage Link to see the 404 </a></td></tr>
+</table>
 <h2> Above and Beyond </h2>
-<p> I went above and beyond by making my own vector graphics for my page styling, and making more than the minimum number of pages. </p>
-<h2> Challenges </h2>
-<p> I really just ran out of time for polish and plugging in more content on this project. A lot of the CSS was fiddly and took a lot more 
-time than I anticipated, and the way that the header works, I never quite figured out how to get the links in the blog sidebar to work the way
-I wanted them to. I'll probably revamp the entire blog structure for project 3 when we have some Javascript to play with. </p>
-<h2> What I could have done better </h2>
-<p> I could have included more than one piece of content for every page - I have more than one thing to put in to everything, and the pages are structured
-to be expandable, but it takes a long time to prepare things to be put into a site. I think I put enough in to show the general structure of the website, which is the 
-point of the project, but it would be a better portfolio site if it included more than just a small portion of my portfolio.</p>
-<p> I actually have an entire Japanese site that I just hid the links to, I would have liked to be able to finish that in time, but it wasn't to be. </p>
-<p> Also, I would have liked to spend more time tweaking some of the vector graphics, they aren't all quite perfect and they could be more cohesive. Some of my
-CSS is really unclean, and I plan to spend some time consolidating and tidying it up when I get the chance. It just is unlikely to happen before the end of this project. </p>
+<p> </p>
 </article>
 <?php include 'include/footer.php'; ?>
 
