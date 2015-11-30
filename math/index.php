@@ -13,10 +13,10 @@
 
 <article id="subindex">
 
-<a href="education.html"> Education </a>
+<a href="education.php"> Education </a>
 
 
-<a href="research.html"> Research </a>
+<a href="research.php"> Research </a>
 
 </article>
 <?php include '../include/footer.php'; ?>

@@ -37,37 +37,38 @@
 	
 <table cellspacing="5%">
 	<tr>
-		<td valign="top">
-		<p> Name: </p>
+		<td class="label">
+		Your Name:
 		</td>
 		<td><input type="text" name="FullName" /> </td>
 	</tr>
 	<tr>
-		<td valign="top">
-		<p> Email: </p>
+		<td class="label">
+		Your Email:
 		</td>
 		<td><input type="text" name="EmailAddr" /> </td>
 	</tr>
 	<tr>
-        <td valign="top">
-        <p>Subject</p>
+        <td class="label">
+        Subject:
         </td>
-        <td  valign="bottom"><input type="text" name="Subject" /> </td>
+        <td  ><input type="text" name="Subject" /> </td>
         </td>
     </tr>
 	<tr>
-        <td valign="top">
-        <p>Message</p>
+        <td class="label">
+        Message:
         </td>
         <td ><textarea name="mesg" rows="10" cols="50"></textarea>
         </td>
     </tr>
 	<tr>
+		<td></td>
         <td><input type="submit" value="Submit" /></td>
-        </td>
+        
     </tr>
 	</table>
-	
+</form>
 </article>
 <?php include 'include/footer.php'; ?>
 </body>

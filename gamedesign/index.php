@@ -14,11 +14,11 @@
 
 <article id="subindex">
 
-<a href="design.html"> Design </a>
+<a href="design.php"> Design </a>
 
-<a href="artworkandassets.html"> Art and Assets </a>
+<a href="artworkandassets.php"> Art and Assets </a>
 
-<a href="games.html"> Games </a>
+<a href="games.php"> Games </a>
 
 </article>
 

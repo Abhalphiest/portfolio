@@ -14,11 +14,11 @@
 
 <article id="subindex">
 
-<a href="education.html"> Education </a>
+<a href="education.php"> Education </a>
 
-<a href="currentprojects.html"> Current Projects </a>
+<a href="currentprojects.php"> Current Projects </a>
 
-<a href="completedprojects.html"> Completed Projects </a>
+<a href="completedprojects.php"> Completed Projects </a>
 
 </article>
 <?php include '../include/footer.php'; ?>

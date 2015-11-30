@@ -251,13 +251,15 @@ a{text-decoration:none; color:  #B20100; }
 
 table{
 	font-family: roundedElegance;
-	font-size: 1.3em;
+	font-size: 1em;
+	display:block;
 }
 table td{
 	padding: 10px;
 }
 table td.label{
 	font-family: nobilityCasual;
+	vertical-align:top;
 }
 
 /*extra stuff*/
@@ -298,9 +300,7 @@ table td.label{
 }
 
 article#contact{
-	background: url(../media/contact.svg) no-repeat;
-	background-position: right bottom;
-	width: 50%;
+	width:50%;
 }
 
 article#contact h1{
@@ -320,7 +320,44 @@ article#contact p a{
 	float:none;
 }
 
+/*for the formmail*/
+form{
+	
+	display:block;
+	clear:left;
+	
+}
+form table
+{
+	display:inline-block;
+	background: url(../media/contact.svg) no-repeat;
+	background-position: right top;
+	padding: 30px 0px;
+}
+form table td{
+	padding-bottom:1.5em;
+}
 
+form table input[type=text]{
+	border-color:black;
+	border-radius:5px;
+	border-width:1px;
+}
+form table textarea{
+	border-color:black;
+	border-radius:5px;
+}
+
+form table input[type=submit]
+{
+	background-color: #B20100;
+	border-width:0px;
+	font-family: nobilityCasual;
+	color:white;
+	padding: 10px;
+	font-size:1.1em;
+	float:right;
+}
 /*responsive design*/
 @media screen and (max-width: 1550px)
 {
