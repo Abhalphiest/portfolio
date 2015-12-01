@@ -35,37 +35,44 @@
 	<input type = "hidden" name="derive fields" value="email=EmailAddr, realname=FullName, subject=Subject" />
 	<input type = "hidden" name="mail_options" value="Exclude=email;realname" />
 	
-<table cellspacing="5%">
+<table>
 	<tr>
 		<td class="label">
-		Your Name:
+			Your Name:
 		</td>
-		<td><input type="text" name="FullName" /> </td>
+		<td>
+			<input type="text" name="FullName" /> 
+		</td>
 	</tr>
 	<tr>
 		<td class="label">
-		Your Email:
+			Your Email:
 		</td>
-		<td><input type="text" name="EmailAddr" /> </td>
+		<td>
+			<input type="text" name="EmailAddr" /> 
+		</td>
 	</tr>
 	<tr>
         <td class="label">
-        Subject:
+			Subject:
         </td>
-        <td  ><input type="text" name="Subject" /> </td>
+        <td>
+			<input type="text" name="Subject" />
         </td>
     </tr>
 	<tr>
         <td class="label">
-        Message:
+			Message:
         </td>
-        <td ><textarea name="mesg" rows="10" cols="50"></textarea>
+        <td>
+			<textarea name="mesg" rows="10" cols="50"></textarea>
         </td>
     </tr>
 	<tr>
 		<td></td>
-        <td><input type="submit" value="Submit" /></td>
-        
+        <td>
+			<input type="submit" value="Submit" />
+		</td>
     </tr>
 	</table>
 </form>
