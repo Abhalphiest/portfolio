@@ -30,6 +30,7 @@ $(document).ready(function(){
 		}
 				
 		lightbox.addEventListener("contextmenu",function(e){
+		e.preventDefault();
 		$(lightbox).fadeOut(200,function(){
 			lightbox.remove();
 			});
