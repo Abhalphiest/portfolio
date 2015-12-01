@@ -1,6 +1,8 @@
-
 "use strict";
+var index = 0;
+var imgArray;
 $(document).ready(function(){
+	imgArray = $("img *")
 	$("img").on("click", function(e){ console.log('clicked')
 		var lightbox = document.createElement("div");
 		lightbox.style.position="fixed";
@@ -26,10 +28,19 @@ $(document).ready(function(){
 		$(lightbox).fadeIn(200);
 		}
 				
-		lightbox.addEventListener("click",function(e){
+		lightbox.addEventListener("contextmenu",function(e){
 		$(lightbox).fadeOut(200,function(){
 			lightbox.remove();
 			});
+		});
+		lightbox.addEventListener("click", function(e){
+		var i = imgArray.index(myImg);
+		
+		if(i+1 < imgArray.length)
+			myImg = imgArray[i+1];
+		else 
+			myImg = imgArray[0];
+			
 		});
 			
 	})
