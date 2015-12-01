@@ -2,8 +2,9 @@
 var index = 0;
 var imgArray;
 $(document).ready(function(){
-	imgArray = $("img *")
-	$("img").on("click", function(e){ console.log('clicked')
+	imgArray = $("img")
+	$("img").on("click", function(e){ 
+		index = imgArray.index(e.target);
 		var lightbox = document.createElement("div");
 		lightbox.style.position="fixed";
 		lightbox.style.height="100%";
@@ -34,13 +35,17 @@ $(document).ready(function(){
 			});
 		});
 		lightbox.addEventListener("click", function(e){
-		var i = imgArray.index(myImg);
-		
-		if(i+1 < imgArray.length)
-			myImg = imgArray[i+1];
+		console.log("clicked lightbox");
+		index++;
+		if(index < imgArray.size())
+			myImg.src = imgArray[index].src;
 		else 
-			myImg = imgArray[0];
+		{
+			index = 0;
+			myImg.src = imgArray[index].src;
+		}
 			
+		console.log(index);
 		});
 			
 	})
