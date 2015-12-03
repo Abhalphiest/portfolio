@@ -28,7 +28,7 @@
 	<a href="https://github.com/Abhalphiest"> <img src="media/index/github.png" title="My GitHub Account" alt="github" width="50" height="50" /> </a>
 	<a href="https://www.linkedin.com/in/margaretdorsey"> <img src="media/index/linkedin.png" alt="linkedin" title="My LinkedIn Profile" width="50" height="50"/> </a>
 	
-	<form method="post" action="/formmail.php" name="ICEform">
+	<form method="post" action="http://portfolio.margaretdorsey.com/formmail.php" name="portfolioForm">
 	<input type ="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
 	<input type ="hidden" name="recipients" value ="med7068@rit.edu" />
 	<input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />

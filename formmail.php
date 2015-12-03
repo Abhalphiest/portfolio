@@ -450,7 +450,7 @@ $TARGET_EMAIL = array($EMAIL_NAME . "@rit\.edu$");
 $DEF_ALERT = "";
 
 /* Help: http://www.tectite.com/fmdoc/site_domain.php */
-$SITE_DOMAIN = ""; /* your website domain name */
+$SITE_DOMAIN = "http://portfolio.margaretdorsey.com"; /* your website domain name */
 
 /* Help: http://www.tectite.com/fmdoc/set_real_document_root.php */
 $SET_REAL_DOCUMENT_ROOT = ""; /* overrides the value set by SetRealDocumentRoot function */
