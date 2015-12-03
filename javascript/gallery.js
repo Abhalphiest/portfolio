@@ -3,7 +3,8 @@ var index = 0;
 var imgArray;
 $(document).ready(function(){
 	$("img").on("click", function(e){
-		imgArray = $("e.target.parent() img");
+		imgArray = $("#"+e.target.parentElement.parentElement.id+" img");
+		console.log(e.target.parentElement.parentElement.id);
 		index = imgArray.index(e.target);
 		var lightbox = document.createElement("div");
 		lightbox.style.position="fixed";
