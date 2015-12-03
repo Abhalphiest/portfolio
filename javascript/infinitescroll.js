@@ -1,21 +1,25 @@
 "use strict;"
+var posts =["renaissance.html", "brave.html","waterhose.html","markov.html"];
+var page=0;
 
-var page=1;
+window.onload = function(ev) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && page < posts.length) {
+        $(function () {
+                $.get(posts[page], function (data) {
+                    $("#posts").append(data);
+                });
+            }); 
+        page++
+    }
+};
 window.onscroll = function(ev) {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        ifrm = document.createElement("IFRAME"); 
-        ifrm.setAttribute("src", page+".html"); 
-        ifrm.style.width = 100+"%"; 
-        ifrm.style.height = 800+"px"; 
-        document.body.appendChild(ifrm); 
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && page < posts.length) {
+        $(function () {
+                $.get(posts[page], function (data) {
+                    $("#posts").append(data);
+                });
+            }); 
         page++
     }
 };
 
-<script type="text/javascript">
-            $(function () {
-                $.get("banner.html", function (data) {
-                    $("#appendToThis").append(data);
-                });
-            });
-        </script>

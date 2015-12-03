@@ -2,8 +2,8 @@
 var index = 0;
 var imgArray;
 $(document).ready(function(){
-	imgArray = $("img")
-	$("img").on("click", function(e){ 
+	$("img").on("click", function(e){
+		imgArray = $("e.target.parent() img");
 		index = imgArray.index(e.target);
 		var lightbox = document.createElement("div");
 		lightbox.style.position="fixed";

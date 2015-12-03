@@ -1,3 +1,8 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <!-- include jQuery -->
+<script>$(".topnav").hover(function(e){
+    $("e .dropdown").slideDown();
+},function(e){$("e.target .dropdown").slideUp();}); </script>
+
 <header> 
 	<div id="logo"> <span>Margaret E. Dorsey</span></div>
 	<a id="japanese" href="../japanese/index.html" lang="ja" hreflang="ja">日本語 </a>
@@ -5,9 +10,9 @@
 	<nav> 
 		<!-- main navigation (always visible) -->
 		<ul>
-			<li><a href="/index.php" name="indexnav" > Front Page </a></li>
+			<li><a href="/index.php" name="indexnav"> Front Page </a></li>
 			<li>
-				<a href="/math/index.php" name="mathnav">Mathematics</a>
+				<a href="/math/index.php" name="mathnav" class ="topnav">Mathematics</a>
 				<!-- sub navigation for math (invisible until hover)-->
 				<ul class="dropdown">
 					<li><a href="/math/education.php"> Education </a> </li>
@@ -15,7 +20,7 @@
 				</ul>
 			</li>
 			<li>
-				<a href="/computing/index.php" name="computingnav" >Computing </a>
+				<a href="/computing/index.php" name="computingnav" class="topnav">Computing </a>
 				<!-- sub navigation for computing (invisible until hover) -->
 				<ul class="dropdown">
 					<li><a href="/computing/education.php"> Education </a> </li>
@@ -24,7 +29,7 @@
 				</ul>
 			</li>
 			<li>
-				<a href="/gamedesign/index.html" name="gamenav">Game Design</a>
+				<a href="/gamedesign/index.html" name="gamenav" class="topnav">Game Design</a>
 					<!-- sub navigation for game design (invisible until hover) -->
 					<ul class="dropdown">
 						<li><a href="/gamedesign/design.php"> Design</a> </li>
