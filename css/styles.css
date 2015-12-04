@@ -198,11 +198,14 @@ ul.dropdown li{
 	font-size:.7em;
 	
 }
+ul.dropdown li a{
+	padding-left:0px;
+	margin-left:0px;
+}
 nav ul li:hover{
 	
 }
 nav ul li:hover ul.dropdown{ 
-	
 	position:absolute;
 	left:0px;
 	overflow:hidden;
