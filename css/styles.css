@@ -191,6 +191,9 @@ ul.dropdown{
 	z-index:999;
 	list-style-position:inside;
 	padding-left:0px;
+	position:absolute;
+	left:0px;
+	overflow:hidden;
 
 }
 ul.dropdown li{
@@ -201,14 +204,6 @@ ul.dropdown li{
 ul.dropdown li a{
 	padding-left:0px;
 	margin-left:0px;
-}
-nav ul li:hover{
-	
-}
-nav ul li:hover ul.dropdown{ 
-	position:absolute;
-	left:0px;
-	overflow:hidden;
 }
 
 
