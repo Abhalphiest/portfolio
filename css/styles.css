@@ -202,12 +202,13 @@ nav ul li:hover{
 	
 }
 nav ul li:hover ul.dropdown{ 
-	display:inline-block;
+	
 	position:absolute;
+	left:0px;
 	overflow:hidden;
 }
 
-nav ul li ul.dropdown li {display: block;  }
+
 
 
 /*footer*/
