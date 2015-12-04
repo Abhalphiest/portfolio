@@ -12,7 +12,7 @@ $(document).ready(function(){
 		lightbox.style.width = "100%";
 		lightbox.style.left = 0;
 		lightbox.style.top = 0;
-		lightbox.style.backgroundColor="rgba(0,0,0,0.7)";
+		lightbox.style.backgroundImage="url('../media/papertexture.png')";
 		lightbox.style.display = "none";
 				
 		var myImg = document.createElement("img");
@@ -25,6 +25,7 @@ $(document).ready(function(){
 		var diffHeight = $(window).height()/2 - myImg.height/2;
 		myImg.style.left = diffWidth + "px";
 		myImg.style.top = diffHeight + "px";
+		myImg.style.border = "thick solid #FFFFFF";
 		lightbox.appendChild(myImg);
 		document.body.appendChild(lightbox);
 		$(lightbox).fadeIn(200);
@@ -37,7 +38,6 @@ $(document).ready(function(){
 			});
 		});
 		lightbox.addEventListener("click", function(e){
-		console.log("clicked lightbox");
 		index++;
 		if(index < imgArray.size())
 			myImg.src = imgArray[index].src;
