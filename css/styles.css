@@ -199,12 +199,11 @@ ul.dropdown{
 }
 ul.dropdown li{
 	float:none;
-	font-size:.7em;
+	font-size:.8em;
 	
 }
 ul.dropdown li a{
-	padding-left:0px;
-	margin-left:0px;
+	
 }
 
 
