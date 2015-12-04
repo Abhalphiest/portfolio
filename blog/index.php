@@ -18,7 +18,7 @@
 <ul>
 	<li> <a href="#markov">Markov Chains and The Value of Rigor </a></li>
 	<li> <a href="#waterhose"> Drinking from the Water Hose </a></li>
-	<li>	<a href="#brave"> The Importance of Being Brave </a></li>
+	<li>  <a href="#brave"> The Importance of Being Brave </a></li>
 	<li> <a href="#posts">Games and Renaissance Men</a> </li>
 </ul>
 </section>
