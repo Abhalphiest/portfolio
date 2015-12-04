@@ -1,8 +1,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <!-- include jQuery -->
 <script>$(document).ready(function(){$(".topnav").hover(function(e){
 	console.log("hover");
-    $("e.target .dropdown").slideDown();
-},function(e){$("e.target .dropdown").slideUp();})}); </script>
+    $("#"+e.target.id+" .dropdown").slideDown();
+},function(e){$("#"+e.target.id+" .dropdown").slideUp();})}); </script>
 
 <header> 
 	<div id="logo"> <span>Margaret E. Dorsey</span></div>
@@ -12,7 +12,7 @@
 		<!-- main navigation (always visible) -->
 		<ul>
 			<li><a href="/index.php" name="indexnav"> Front Page </a></li>
-			<li class ="topnav">
+			<li class ="topnav" id="1">
 				<a href="/math/index.php" name="mathnav" >Mathematics</a>
 				<!-- sub navigation for math (invisible until hover)-->
 				<ul class="dropdown">
@@ -20,7 +20,7 @@
 					<li><a href="/math/research.php"> Research </a> </li>
 				</ul>
 			</li>
-			<li class="topnav">
+			<li class="topnav" id="2">
 				<a href="/computing/index.php" name="computingnav" >Computing </a>
 				<!-- sub navigation for computing (invisible until hover) -->
 				<ul class="dropdown">
@@ -28,7 +28,7 @@
 					<li><a href="/computing/completedprojects.php"> Completed Projects </a> </li>
 					<li><a href="/computing/currentprojects.php"> Current Projects </a> </li>
 				</ul>
-			</li class="topnav">
+			</li class="topnav" id="3">
 			<li>
 				<a href="/gamedesign/index.html" name="gamenav">Game Design</a>
 					<!-- sub navigation for game design (invisible until hover) -->
