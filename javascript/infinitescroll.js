@@ -4,12 +4,10 @@ var page=0;
 
 window.onload = function(ev) {
    while ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && page < posts.length) {
-        $(function () {
 				console.log("onload called");
                 $.get(posts[page], function (data) {
                     $("#posts").append(data);
-                });
-            }); 
+					}); 
         page++
     }
 	$(window).scroll(function(ev) {
