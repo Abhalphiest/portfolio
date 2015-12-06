@@ -3,7 +3,7 @@ var posts =["renaissance.html", "brave.html","waterhose.html","markov.html"];
 var page=0;
 
 window.onload = function(ev) {
-   while ((window.innerHeight + window.scrollY +800) >= document.body.offsetHeight && page < posts.length) {
+   while ((window.innerHeight + window.scrollY +100) >= document.body.offsetHeight && page < posts.length) {
         $(function () {
 				console.log("onload called");
                 $.get(posts[page], function (data) {
@@ -14,7 +14,7 @@ window.onload = function(ev) {
     }
 };
 window.onscroll = function(ev) {
-    if ((window.innerHeight + window.scrollY+ 200) >= document.body.offsetHeight && page < posts.length) {
+    if ((window.innerHeight + window.scrollY+ 100) >= document.body.offsetHeight && page < posts.length) {
         $(function () {
 				console.log("onscroll called");
                 $.get(posts[page], function (data) {
