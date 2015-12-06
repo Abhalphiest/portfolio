@@ -2,7 +2,7 @@
 var posts =["renaissance.html", "brave.html","waterhose.html","markov.html"];
 var page=0;
 
-$(document).ready(function(ev) {
+$(window).ready(function(ev) {
    while ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && page < posts.length) {
         $(function () {
 				console.log("onload called");
