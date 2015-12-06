@@ -3,13 +3,18 @@ var posts =["renaissance.html", "brave.html","waterhose.html","markov.html"];
 var page=0;
 
 window.onload = function(ev) {
-   while ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && page < posts.length) {
-				console.log("onload called");
-                $.get(posts[page], function (data) {
-                    $("#posts").append(data);
-					}); 
-        page++
-    }
+   
+   //first two pages come free..
+	console.log("onload called");
+    $.get(posts[page], function (data) {
+    $("#posts").append(data);
+	}); 
+    page++;
+    $.get(posts[page], function (data) {
+    $("#posts").append(data);
+	}); 
+    page++;
+    
 	$(window).scroll(function(ev) {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && page < posts.length) {
         $(function () {
@@ -20,7 +25,7 @@ window.onload = function(ev) {
 					$(data).fadeIn();
                 });
             }); 
-        page++
+        page++;
     }
 	});
 };
