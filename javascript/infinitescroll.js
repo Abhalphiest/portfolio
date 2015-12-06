@@ -2,7 +2,7 @@
 var posts =["renaissance.html", "brave.html","waterhose.html","markov.html"];
 var page=0;
 
-$(document.ready)(function(ev) {
+$(document).ready(function(ev) {
    while ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && page < posts.length) {
         $(function () {
 				console.log("onload called");
@@ -17,7 +17,9 @@ $(document.ready)(function(ev) {
         $(function () {
 				console.log("onscroll called");
                 $.get(posts[page], function (data) {
+					data.hide();
                     $("#posts").append(data);
+					data.fadeIn();
                 });
             }); 
         page++
