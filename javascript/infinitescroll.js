@@ -17,9 +17,9 @@ $(document).ready(function(ev) {
         $(function () {
 				console.log("onscroll called");
                 $.get(posts[page], function (data) {
-					data.hide();
+					$(data).hide();
                     $("#posts").append(data);
-					data.fadeIn();
+					$(data).fadeIn();
                 });
             }); 
         page++
