@@ -25,6 +25,6 @@ window.onload = function(ev) {
         page++
     }
 	});
-});
+};
 
 
