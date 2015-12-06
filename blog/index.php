@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<?php include virtual '../include/header.html'; ?>
+<?php include '../include/header.html'; ?>
 
 <section id="sidebar"> <!-- for the blog specific navigation -->
 <ul>
