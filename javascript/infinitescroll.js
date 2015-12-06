@@ -2,7 +2,7 @@
 var posts =["renaissance.html", "brave.html","waterhose.html","markov.html"];
 var page=0;
 
-window.onload = function(ev) {
+$(document.ready)(function(ev) {
    while ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && page < posts.length) {
         $(function () {
 				console.log("onload called");
@@ -12,8 +12,7 @@ window.onload = function(ev) {
             }); 
         page++
     }
-};
-window.onscroll = function(ev) {
+	$(window).scroll(function(ev) {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && page < posts.length) {
         $(function () {
 				console.log("onscroll called");
@@ -23,5 +22,7 @@ window.onscroll = function(ev) {
             }); 
         page++
     }
-};
+	});
+});
+
 
