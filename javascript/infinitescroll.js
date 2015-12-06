@@ -4,6 +4,7 @@ var page=0;
 
 window.onload = function(ev) {
    
+	jQuery.ajaxSetup({async:false});
    //first two pages come free..
 	console.log("onload called");
     $.get(posts[page], function (data) {
