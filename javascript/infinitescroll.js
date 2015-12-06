@@ -5,6 +5,7 @@ var page=0;
 window.onload = function(ev) {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && page < posts.length) {
         $(function () {
+				console.log("onload called");
                 $.get(posts[page], function (data) {
                     $("#posts").append(data);
                 });
@@ -15,6 +16,7 @@ window.onload = function(ev) {
 window.onscroll = function(ev) {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && page < posts.length) {
         $(function () {
+				console.log("onscroll called");
                 $.get(posts[page], function (data) {
                     $("#posts").append(data);
                 });
