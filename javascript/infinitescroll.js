@@ -17,7 +17,7 @@ window.onload = function(ev) {
     page++;
     
 	$(window).scroll(function(ev) {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && page < posts.length) {
+    if ((window.innerHeight + window.scrollY+100) >= document.body.offsetHeight && page < posts.length) {
         $(function () {
 				console.log("onscroll called");
                 $.get(posts[page], function (data) {
