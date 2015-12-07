@@ -37,10 +37,9 @@ window.onload = function(ev) {
 	
 	function addclicklistener(i, thing)
 	{
-		var post = posts[i];
 		$(thing).click(function(){
 			console.log(i+" called");
-			$.get(post, function(data) {
+			$.get(""+posts[i], function(data) {
 				$("#posts").fadeOut();
 				$("#posts").replaceWith(data);
 				$("#posts").fadeIn();
