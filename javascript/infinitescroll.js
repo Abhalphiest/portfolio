@@ -16,10 +16,11 @@ window.onload = function(ev) {
 	}); 
     page++;
     
-	var arr = $("sidebar li").toArray().reverse();
+	var arr = $("sidebar li a").toArray().reverse();
 	for(var i = 0; i < arr.length; i++)
 	{
 		$(arr[i]).click(function(){
+			console.log(i+" called");
 			$.get(posts[i], function(data) {
 				$("#posts").fadeOut();
 				$("#posts").replaceWith(data);
