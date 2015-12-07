@@ -16,9 +16,10 @@ window.onload = function(ev) {
 	}); 
     page++;
     
-	var arr = $("sidebar li a").toArray().reverse();
+	var arr = $("#sidebar li a").toArray().reverse();
 	for(var i = 0; i < arr.length; i++)
 	{
+		
 		addclicklistener(i,arr[i]);
 	}
 	$(window).scroll(function(ev) {
