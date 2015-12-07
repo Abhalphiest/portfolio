@@ -96,9 +96,9 @@ $mail->SMTPDebug = 2;
 //Ask for HTML-friendly debug output
 $mail->Debugoutput = 'html';
 //Set the hostname of the mail server
-$mail->Host = 'smtp.gmail.com';
+$mail->Host = 'smtp-server.rit.edu';
 // use
-// $mail->Host = gethostbyname('smtp.gmail.com');
+// $mail->Host = gethostbyname('hostname');
 // if your network does not support SMTP over IPv6
 //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
 $mail->Port = 587;
@@ -107,9 +107,9 @@ $mail->SMTPSecure = 'tls';
 //Whether to use SMTP authentication
 $mail->SMTPAuth = true;
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "margaretdorsey94@gmail.com";
+$mail->Username = "med7068";
 //Password to use for SMTP authentication
-$mail->Password = "vzetod9n";
+$mail->Password = "mypasswordisVzetod9n";
 //Set who the message is to be sent from
 $mail->setFrom($_POST['email'], $_POST['name']);
 //Set an alternative reply-to address
