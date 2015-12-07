@@ -24,7 +24,7 @@ window.onload = function(ev) {
 				$("#posts").fadeOut();
 				$("#posts").replaceWith(data);
 				$("#posts").fadeIn();
-			}
+			});
 		});
 	}
 	$(window).scroll(function(ev) {
