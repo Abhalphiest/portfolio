@@ -17,11 +17,10 @@ window.onload = function(ev) {
     page++;
     
 	var arr = $("#sidebar li a").toArray().reverse();
-	for(var i = 0; i < arr.length; i++)
-	{
-		
-		addclicklistener(i,arr[i]);
-	}
+	$.each(arr, function(i,v){
+		addclicklistener(i,v);
+	});
+	
 	$(window).scroll(function(ev) {
     if ((window.innerHeight + window.scrollY+100) >= document.body.offsetHeight && page < posts.length) {
         $(function () {
