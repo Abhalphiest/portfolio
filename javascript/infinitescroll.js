@@ -19,14 +19,7 @@ window.onload = function(ev) {
 	var arr = $("sidebar li a").toArray().reverse();
 	for(var i = 0; i < arr.length; i++)
 	{
-		$(arr[i]).click(function(){
-			console.log(i+" called");
-			$.get(posts[i], function(data) {
-				$("#posts").fadeOut();
-				$("#posts").replaceWith(data);
-				$("#posts").fadeIn();
-			});
-		});
+		addclicklistener(i,arr[i]);
 	}
 	$(window).scroll(function(ev) {
     if ((window.innerHeight + window.scrollY+100) >= document.body.offsetHeight && page < posts.length) {
@@ -41,6 +34,19 @@ window.onload = function(ev) {
         page++;
     }
 	});
+	
+	function addclicklistener(i, thing)
+	{
+		var post = posts[i];
+		$(thing).click(function(){
+			console.log(i+" called");
+			$.get(post, function(data) {
+				$("#posts").fadeOut();
+				$("#posts").replaceWith(data);
+				$("#posts").fadeIn();
+			});
+		});
+	}
 };
 
 
