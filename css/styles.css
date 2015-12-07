@@ -361,19 +361,30 @@ form table input[type=submit]
 #formoutput
 {
 	width:60%;
-	font-family:'roundedElegance';
+	font-family:roundedElegance;
 	color:black;
 	padding: 20px 0px;
 	margin-left:10px;
 }
 #formoutput pre
 {
-	white-space: pre-wrap;       /* CSS 3 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	white-space: pre-wrap;      
+    word-wrap: break-word;       
 }
+#error
+{
+	background: url('../media/404.svg') no-repeat right bottom;
+	padding: 80px;
+	width: 40%;
+	height:300px;
+}
+#error p span{
+	font-family:nobilityCasual;
+}
+#error p a:hover{
+	text-decoration:underline;
+}
+
 /*responsive design*/
 @media screen and (max-width: 1550px)
 {
