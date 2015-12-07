@@ -374,6 +374,7 @@ form table input[type=submit]
 #error
 {
 	background: url('../media/404.svg') no-repeat right bottom;
+	padding-bottom:100px;
 	width: 40%;
 	height:300px;
 }
