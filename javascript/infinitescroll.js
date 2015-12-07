@@ -16,6 +16,17 @@ window.onload = function(ev) {
 	}); 
     page++;
     
+	var arr = $(sidebar li).reverse();
+	for(var i = 0; i < arr.length; i++)
+	{
+		$(arr[i]).click(function(){
+			$.get(posts[i], function(data) {
+				$("#posts").fadeOut();
+				$("#posts").replaceWith(data);
+				$("#posts").fadeIn();
+			}
+		});
+	}
 	$(window).scroll(function(ev) {
     if ((window.innerHeight + window.scrollY+100) >= document.body.offsetHeight && page < posts.length) {
         $(function () {

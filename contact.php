@@ -31,7 +31,7 @@
 	
 	<form method="post" action="" name="portfolioForm">
 	<input type ="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
-	<input type ="hidden" name="recipients" value ="med7068@rit.edu" />
+	<input type ="hidden" name="recipients" value ="margaretdorsey94@gmail.com" />
 	<input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
 	<input type = "hidden" name="derive fields" value="email=EmailAddr, realname=FullName, subject=Subject" />
 	<input type = "hidden" name="mail_options" value="Exclude=email;realname" />
@@ -96,9 +96,9 @@ $mail->SMTPDebug = 2;
 //Ask for HTML-friendly debug output
 $mail->Debugoutput = 'html';
 //Set the hostname of the mail server
-$mail->Host = 'smtp-server.rit.edu';
+$mail->Host = 'smtp.gmail.com';
 // use
-// $mail->Host = gethostbyname('hostname');
+// $mail->Host = gethostbyname('smtp.gmail.com');
 // if your network does not support SMTP over IPv6
 //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
 $mail->Port = 587;
@@ -107,9 +107,9 @@ $mail->SMTPSecure = 'tls';
 //Whether to use SMTP authentication
 $mail->SMTPAuth = true;
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "med7068";
+$mail->Username = "margaretdorsey94@gmail.com";
 //Password to use for SMTP authentication
-$mail->Password = "mypasswordisVzetod9n";
+$mail->Password = "vzetod9n";
 //Set who the message is to be sent from
 $mail->setFrom($_POST['email'], $_POST['name']);
 //Set an alternative reply-to address
