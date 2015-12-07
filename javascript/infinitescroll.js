@@ -16,7 +16,7 @@ window.onload = function(ev) {
 	}); 
     page++;
     
-	var arr = $(sidebar li).reverse();
+	var arr = $(sidebar li).toArray().reverse();
 	for(var i = 0; i < arr.length; i++)
 	{
 		$(arr[i]).click(function(){

@@ -29,7 +29,7 @@
 	<a href="https://github.com/Abhalphiest"> <img src="media/index/github.png" title="My GitHub Account" alt="github" width="50" height="50" /> </a>
 	<a href="https://www.linkedin.com/in/margaretdorsey"> <img src="media/index/linkedin.png" alt="linkedin" title="My LinkedIn Profile" width="50" height="50"/> </a>
 	
-	<form method="post" action="" name="portfolioForm">
+	<form method="post" action="#" name="portfolioForm">
 	<input type ="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
 	<input type ="hidden" name="recipients" value ="margaretdorsey94@gmail.com" />
 	<input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
@@ -80,7 +80,7 @@
 
 <div id="formoutput">
 <pre>
-<?php require 'PHPMailer-master/PHPMailerAutoload.php'; 
+<?php require_once ('PHPMailer-master/PHPMailerAutoload.php'); 
 date_default_timezone_set('Etc/UTC'); //neccessary for SMTP
 if(isset($_POST['submit']))
 {
