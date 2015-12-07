@@ -358,6 +358,14 @@ form table input[type=submit]
 	font-size:1.1em;
 	float:right;
 }
+#formoutput
+{
+	width:60%;
+	font-family:'roundedElegance';
+	color:black;
+	padding: 20px 0px;
+	margin-left:10px;
+}
 /*responsive design*/
 @media screen and (max-width: 1550px)
 {
