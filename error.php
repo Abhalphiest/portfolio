@@ -13,6 +13,7 @@
 	</script>
 </head>
 <body>
+<?php include 'include/header.html'; ?>
 <article id="error">
 <p> <span>I don't think this is the page you were looking for..</span> <a id="whence" href="#"> Would you like to go back from whence you came? </a>
 <a href="index.php"> Or maybe go back to the front page? </a>
