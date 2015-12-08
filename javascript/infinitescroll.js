@@ -26,9 +26,11 @@ window.onload = function(ev) {
         $(function () {
 				console.log("onscroll called");
                 $.get(posts[page], function (data) {
-					$(data).hide();
-                    $("#posts").append(data);
-					$(data).fadeIn();
+					var newPost = document.createElement("article");
+					$(newPost).append(data);
+					$(newPost).hide();
+					$("#posts").append(newPost);
+					$(newPost).fadeIn();
                 });
             }); 
         page++;
@@ -40,9 +42,11 @@ window.onload = function(ev) {
 		$(thing).click(function(){
 			console.log(i+" called");
 			$.get(""+posts[i], function(data) {
-				$("#posts").fadeOut();
-				$("#posts").replaceWith(data);
-				$("#posts").fadeIn();
+				$("#posts article").fadeOut();
+				var selectPost = document.createElement("article");
+				$(selectPost).hide();
+				$("#posts").replaceWith(selectPost);
+				$(selectPost).fadeIn();
 			});
 		});
 	}

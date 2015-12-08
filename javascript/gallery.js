@@ -72,6 +72,14 @@ $(document).ready(function(){
 		myImg.onload = function()
 		{
 		myImg.style.position = "relative";
+		if(myImg.width > $(window).innerWidth)
+		{
+			myImg.style.width = ()$(window).innerWidth - 120)+"px";
+		}
+		if(myImg.height > $(window).innerHeight)
+		{
+			myImg.style.height = ()$(window).innerHeight - 120)+"px";
+		}
 		var diffWidth = $(window).width()/2 - myImg.width/2;
 		var diffHeight = $(window).height()/2 - myImg.height/2;
 		myImg.style.left = diffWidth + "px";
