@@ -41,11 +41,10 @@ window.onload = function(ev) {
 			console.log(i+" called");
 			$.get(""+posts[i], function(data) {
 				console.log(data);
-				$("#posts").fadeOut();
 				$(data).hide();
 				$("#posts").empty();
 				$("#posts").append(data);
-				$("article").fadeIn();
+				$(data).fadeIn();
 			});
 		});
 	}
