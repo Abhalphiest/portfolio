@@ -35,15 +35,21 @@ $(document).ready(function(){
 		nextButton.addEventListener("click", function(e){
 			index++;
 			if(index < imgArray.size())
+			{
+				
 				myImg.src = imgArray[index].src;
+				
+			}
 			else 
 			{
 				index = 0;
+				
 				myImg.src = imgArray[index].src;
+				
 			}
 			
 			console.log(index);
-			});
+		});
 		
 		
 		frame.appendChild(nextButton);
@@ -60,11 +66,17 @@ $(document).ready(function(){
 		backButton.addEventListener("click", function(e){
 			index--;
 			if(index >= 0)
+			{	
+				
 				myImg.src = imgArray[index].src;
+				
+			}
 			else 
 			{
+				
 				index = imgArray.length -1;
 				myImg.src = imgArray[index].src;
+				
 			}	
 			console.log(index);
 			});
@@ -75,9 +87,28 @@ $(document).ready(function(){
 		myImg.src = e.target.src;
 		myImg.style.border = "thick double #FFFFFF";
 		frame.appendChild(myImg);
+		myImg.style.position = "relative";
 		myImg.onload = function()
 		{
-			myImg.style.position = "relative";
+			console.log("onload called");
+			var w = myImg.naturalWidth;
+			var h = myImg.naturalHeight;
+			
+			console.log(w);
+			console.log(h);
+			console.log(window.innerWidth );
+			console.log(window.innerHeight);
+			while(w+120 >window.innerWidth || h+120>window.innerHeight)
+			{
+				console.log("loop fires");
+				w = w*.9;
+				h = h*.9;
+				
+			}
+			console.log(w);
+			console.log(h);
+			myImg.width = w;
+			myImg.height = h;
 			var framediffWidth = $(window).width()/2 - (myImg.width/2+60);
 			var framediffHeight = $(window).height()/2 - (myImg.height/2+60);
 			frame.style.left = framediffWidth + "px";
