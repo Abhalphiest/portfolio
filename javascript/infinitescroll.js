@@ -1,7 +1,7 @@
 "use strict;"
 var posts =["renaissance.html", "brave.html","waterhose.html","markov.html"];
 var page=0;
-
+var append = true;
 window.onload = function(ev) {
    
 	jQuery.ajaxSetup({async:false});
@@ -22,7 +22,7 @@ window.onload = function(ev) {
 	});
 	
 	$(window).scroll(function(ev) {
-    if ((window.innerHeight + window.scrollY+100) >= document.body.offsetHeight && page < posts.length) {
+    if ((window.innerHeight + window.scrollY+100) >= document.body.offsetHeight && page < posts.length && append) {
         $(function () {
 				console.log("onscroll called");
                 $.get(posts[page], function (data) {
@@ -40,12 +40,14 @@ window.onload = function(ev) {
 	function addclicklistener(i, thing)
 	{
 		$(thing).click(function(){
-			console.log(i+" called");
+			append = false;
 			$.get(""+posts[i], function(data) {
+
 				$("#posts article").fadeOut();
 				var selectPost = document.createElement("article");
 				$(selectPost).hide();
-				$("#posts").replaceWith(selectPost);
+				$("#posts").empty();
+				$("#posts").append(selectPost);
 				$(selectPost).fadeIn();
 			});
 		});

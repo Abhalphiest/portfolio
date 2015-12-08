@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="../css/gallery.css" />
 	<link rel="stylesheet" type="text/css" href="../css/project.css" />
 	<script> window.onload = function(){document.getElementsByName("gamenav")[0].setAttribute("id","current")}  </script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <!-- include jQuery -->
+	<script src="../javascript/gallery.js"> </script> <!-- our gallery javascript -->
 </head>
 <body>
 <?php include '../include/header.html'; ?>
