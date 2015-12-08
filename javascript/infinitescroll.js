@@ -40,9 +40,10 @@ window.onload = function(ev) {
 		$(thing).click(function(){
 			console.log(i+" called");
 			$.get(""+posts[i], function(data) {
-				$("#posts").fadeOut();
-				$("#posts").replaceWith(data);
-				$("#posts").fadeIn();
+				console.log(data);
+				$("#posts article").fadeOut();
+				$("#posts article").replaceWith(data);
+				$("#posts article").fadeIn();
 			});
 		});
 	}
