@@ -31,18 +31,21 @@ $(document).ready(function(){
 		nextButton.src = "../media/next.svg";
 		nextButton.style.backgroundColor = "white";
 		nextButton.alt="next";
+		
 		nextButton.addEventListener("click", function(e){
-		index++;
-		if(index < imgArray.size())
-			myImg.src = imgArray[index].src;
-		else 
-		{
-			index = 0;
-			myImg.src = imgArray[index].src;
-		}
+			index++;
+			if(index < imgArray.size())
+				myImg.src = imgArray[index].src;
+			else 
+			{
+				index = 0;
+				myImg.src = imgArray[index].src;
+			}
 			
-		console.log(index);
-		});
+			console.log(index);
+			});
+		
+		
 		frame.appendChild(nextButton);
 
 		var backButton = document.createElement("img");
@@ -53,55 +56,41 @@ $(document).ready(function(){
 		backButton.src = "../media/back.svg";
 		backButton.style.backgroundColor = "white";
 		backButton.alt ="back";
+		
 		backButton.addEventListener("click", function(e){
-		index--;
-		if(index >= 0)
-			myImg.src = imgArray[index].src;
-		else 
-		{
-			index = imgArray.length -1;
-			myImg.src = imgArray[index].src;
-		}	
-		console.log(index);
-		});
+			index--;
+			if(index >= 0)
+				myImg.src = imgArray[index].src;
+			else 
+			{
+				index = imgArray.length -1;
+				myImg.src = imgArray[index].src;
+			}	
+			console.log(index);
+			});
 		frame.appendChild(backButton);
+		
+		
 		var myImg = document.createElement("img");
 		myImg.src = e.target.src;
-		
+		myImg.style.border = "thick double #FFFFFF";
+		frame.appendChild(myImg);
 		myImg.onload = function()
 		{
-		myImg.style.position = "relative";
-		if(myImg.width > $(window).innerWidth)
-		{
-			myImg.style.width = ()$(window).innerWidth - 120)+"px";
+			myImg.style.position = "relative";
+			var framediffWidth = $(window).width()/2 - (myImg.width/2+60);
+			var framediffHeight = $(window).height()/2 - (myImg.height/2+60);
+			frame.style.left = framediffWidth + "px";
+			frame.style.top = framediffHeight + "px";
 		}
-		if(myImg.height > $(window).innerHeight)
-		{
-			myImg.style.height = ()$(window).innerHeight - 120)+"px";
-		}
-		var diffWidth = $(window).width()/2 - myImg.width/2;
-		var diffHeight = $(window).height()/2 - myImg.height/2;
-		myImg.style.left = diffWidth + "px";
-		myImg.style.top = diffHeight + "px";
-		myImg.style.border = "thick solid #FFFFFF";
-		frame.appendChild(myImg);
 		
-		
-		var framediffWidth = $(window).width()/2 - (myImg.width/2+60);
-		var framediffHeight = $(window).height()/2 - (myImg.height/2+60);
-		frame.style.left = framediffWidth + "px";
-		frame.style.top = framediffHeight + "px";
-		document.body.appendChild(lightbox);
-		
-		
-		$(lightbox).hide().fadeIn(200);
-		}
-				
+		document.body.appendChild(lightbox);		
+		$(lightbox).hide().fadeIn(700);
 		lightbox.addEventListener("contextmenu",function(e){
-		e.preventDefault();
-		$(lightbox).fadeOut(200,function(){
-			lightbox.remove();
-			});
+			e.preventDefault();
+			$(lightbox).fadeOut(200,function(){
+				lightbox.remove();
+				});
 		});
 		
 		
@@ -109,3 +98,5 @@ $(document).ready(function(){
 			
 	})
 });
+
+
