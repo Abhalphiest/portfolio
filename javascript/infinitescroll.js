@@ -26,9 +26,8 @@ window.onload = function(ev) {
         $(function () {
 				console.log("onscroll called");
                 $.get(posts[page], function (data) {
-					$(data).hide();
                     $("#posts").append(data);
-					$(data).fadeIn();
+					
                 });
             }); 
         page++;
@@ -43,6 +42,7 @@ window.onload = function(ev) {
 				console.log(data);
 				$("#posts").empty();
 				$("#posts").append(data);
+				$(data).hide().fadeIn();
 			});
 		});
 	}
