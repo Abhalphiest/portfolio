@@ -19,16 +19,17 @@ $(document).ready(function(){
 		frame.style.position = "relative";
 		frame.style.display="inline-block";
 		frame.style.backgroundColor = "#B20100";
-		frame.style.padding = "40px";
+		frame.style.padding = "60px";
 		frame.style.textAlign = "center";
 		lightbox.appendChild(frame);
 		
 		var nextButton = document.createElement("img");
 		nextButton.style.borderRadius = "20px";
 		nextButton.style.position = "absolute";
-		nextButton.style.right = "0";
+		nextButton.style.right = "10px";
 		nextButton.style.top = "50%";
-		nextButton.src = "";
+		nextButton.src = "../media/next.svg";
+		nextButton.style.backgroundColor = "white";
 		nextButton.alt="next";
 		nextButton.addEventListener("click", function(e){
 		index++;
@@ -47,9 +48,10 @@ $(document).ready(function(){
 		var backButton = document.createElement("img");
 		backButton.style.borderRadius = "20px";
 		backButton.style.position = "absolute";
-		backButton.style.left = "0";
+		backButton.style.left = "10px";
 		backButton.style.top = "50%";
-		backButton.src = "";
+		backButton.src = "../media/back.svg";
+		backButton.style.backgroundColor = "white";
 		backButton.alt ="back";
 		backButton.addEventListener("click", function(e){
 		index--;
@@ -71,8 +73,8 @@ $(document).ready(function(){
 		myImg.style.position = "relative";
 		myImg.style.border = "thick double #FFFFFF";
 		frame.appendChild(myImg);
-		var framediffWidth = $(window).width()/2 - (myImg.width/2+40);
-		var framediffHeight = $(window).height()/2 - (myImg.height/2+40);
+		var framediffWidth = $(window).width()/2 - (myImg.width/2+60);
+		var framediffHeight = $(window).height()/2 - (myImg.height/2+60);
 		frame.style.left = framediffWidth + "px";
 		frame.style.top = framediffHeight + "px";
 		document.body.appendChild(lightbox);
