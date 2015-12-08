@@ -1,7 +1,7 @@
 "use strict;"
 var posts =["renaissance.html", "brave.html","waterhose.html","markov.html"];
 var page=0;
-boolean append = true;
+var append = true;
 window.onload = function(ev) {
    
 	jQuery.ajaxSetup({async:false});
