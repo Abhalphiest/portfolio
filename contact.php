@@ -125,7 +125,7 @@ $mail->msgHTML($_POST['mesg'], dirname(__FILE__));
 $mail->AltBody = $_POST['mesg'];
 //send the message, check for errors
 if (!$mail->send()) {
-    echo "Mailer Error: " . $mail->ErrorInfo;
+    //echo "Mailer Error: " . $mail->ErrorInfo; //let's not do this.. it spits out a ton of garbage.
 } else {
     echo "Message sent!";
 }
