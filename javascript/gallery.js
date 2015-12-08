@@ -16,12 +16,11 @@ $(document).ready(function(){
 		lightbox.style.display = "none";
 		
 		var frame = document.createElement("div");
-		frame.style.position = "fixed";
+		frame.style.position = "relative";
 		frame.style.display="inline-block";
-		
-		frame.style.overflow ="hidden";
-		frame.style.backgroundColor = "#B20100"; 
+		frame.style.backgroundColor = "#B20100";
 		frame.style.padding = "40px";
+		frame.style.textAlign = "center";
 		lightbox.appendChild(frame);
 		
 		var nextButton = document.createElement("img");
@@ -50,7 +49,6 @@ $(document).ready(function(){
 		backButton.style.position = "absolute";
 		backButton.style.left = "0";
 		backButton.style.top = "50%";
-		backButton.style.display="inline-block";
 		backButton.src = "";
 		backButton.alt ="back";
 		backButton.addEventListener("click", function(e){
@@ -61,23 +59,22 @@ $(document).ready(function(){
 		{
 			index = imgArray.length -1;
 			myImg.src = imgArray[index].src;
-		}
-		frame.appendChild(backButton);
-			
+		}	
 		console.log(index);
 		});
+		frame.appendChild(backButton);
 		var myImg = document.createElement("img");
 		myImg.src = e.target.src;
 		
 		myImg.onload = function()
 		{
 		myImg.style.position = "relative";
-		var diffWidth = $(window).width()/2 - myImg.width/2;
-		var diffHeight = $(window).height()/2 - myImg.height/2;
-		myImg.style.left = diffWidth + "px";
-		myImg.style.top = diffHeight + "px";
-		myImg.style.border = "thick solid #FFFFFF";
+		myImg.style.border = "thick double #FFFFFF";
 		frame.appendChild(myImg);
+		var framediffWidth = $(window).width()/2 - (myImg.width/2+40);
+		var framediffHeight = $(window).height()/2 - (myImg.height/2+40);
+		frame.style.left = framediffWidth + "px";
+		frame.style.top = framediffHeight + "px";
 		document.body.appendChild(lightbox);
 		$(lightbox).fadeIn(200);
 		}
@@ -89,10 +86,7 @@ $(document).ready(function(){
 			});
 		});
 		
-		var diffWidth = $(window).width()/2 - frame.width/2;
-		var diffHeight = $(window).height()/2 - frame.height/2;
-		frame.style.left = diffWidth+"px";
-		frame.style.top = diffHeight+"px";
+		
 		
 			
 	})
