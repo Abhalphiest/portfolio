@@ -41,10 +41,8 @@ window.onload = function(ev) {
 			console.log(i+" called");
 			$.get(""+posts[i], function(data) {
 				console.log(data);
-				$(data).hide();
 				$("#posts").empty();
 				$("#posts").append(data);
-				$(data).fadeIn();
 			});
 		});
 	}
