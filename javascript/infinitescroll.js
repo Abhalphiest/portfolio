@@ -41,9 +41,9 @@ window.onload = function(ev) {
 			console.log(i+" called");
 			$.get(""+posts[i], function(data) {
 				console.log(data);
-				$("#posts article").fadeOut();
-				$("#posts article").replaceWith(data);
-				$("#posts article").fadeIn();
+				$("article").fadeOut();
+				$("article").replaceWith(data);
+				$("article").fadeIn();
 			});
 		});
 	}
