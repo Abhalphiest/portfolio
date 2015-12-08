@@ -1,7 +1,7 @@
 "use strict;"
 var posts =["renaissance.html", "brave.html","waterhose.html","markov.html"];
 var page=0;
-
+boolean append = true;
 window.onload = function(ev) {
    
 	jQuery.ajaxSetup({async:false});
@@ -22,7 +22,7 @@ window.onload = function(ev) {
 	});
 	
 	$(window).scroll(function(ev) {
-    if ((window.innerHeight + window.scrollY+100) >= document.body.offsetHeight && page < posts.length) {
+    if ((window.innerHeight + window.scrollY+100) >= document.body.offsetHeight && page < posts.length && append) {
         $(function () {
 				console.log("onscroll called");
                 $.get(posts[page], function (data) {
@@ -38,7 +38,7 @@ window.onload = function(ev) {
 	function addclicklistener(i, thing)
 	{
 		$(thing).click(function(){
-			console.log(i+" called");
+			append = false;
 			$.get(""+posts[i], function(data) {
 				console.log(data);
 				$("#posts").empty();
