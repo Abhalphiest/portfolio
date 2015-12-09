@@ -96,7 +96,7 @@ table {
 
 }
 body{
-	padding-bottom: 150px; /* gives the page some breathing room */
+	margin-bottom: 150px; /* gives the page some breathing room */
 }
 
 /*header css*/
