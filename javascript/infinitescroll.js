@@ -8,11 +8,15 @@ window.onload = function(ev) {
    //first two pages come free..
 	console.log("onload called");
     $.get(posts[page], function (data) {
-    $("#posts").append(data);
+		var newPost = document.createElement("article");
+		$(newPost).append(data);
+		$("#posts").append(newPost);
 	}); 
     page++;
     $.get(posts[page], function (data) {
-    $("#posts").append(data);
+		var newPost = document.createElement("article");
+		$(newPost).append(data);
+		$("#posts").append(newPost);
 	}); 
     page++;
     
