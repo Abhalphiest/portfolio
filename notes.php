@@ -11,7 +11,7 @@
 
 <article>
 <h1> Notes</h1>
-<p> All images were made by me, all CSS, scripts (except for JQuery), php (except for FormMail) etc are mine.
+<p> All images were made by me, all CSS, scripts (except for JQuery), php (except for phpMailer) etc are mine.
 Fonts are Across the Road, Caviar Dreams and Rounded Elegance.
 <p>
 <h2> Fixes </h2>
@@ -20,7 +20,7 @@ single page application. I went through and cleaned up the CSS. </p>
 <h2> Requirements </h2>
 <table>
 <tr><td>Dynamic Page </td> <td>The blog is now an endlessly scrolling page. It pulls in and appends blog posts dynamically as you reach the end of the page.</td></tr>
-<tr><td>jQuery </td> <td>All image galleries are now jQuery image galleries,simply click on an image to start a lightbox gallery of those images. Transitions are used
+<tr><td>jQuery </td> <td>All image galleries (all 3 pages under gamedesign) are now jQuery image galleries,simply click on an image to start a lightbox gallery of those images. Transitions are used
 (slide down and slide up) on the navigation bar.</td></tr>
 <tr><td>Email Form </td> <td>There's a mail form on the contact page - it uses phpMailer and smtp through gmail, not formmail.</td></tr>
 <tr><td>Server Side Includes</td> <td> I used php instead of direct SSIs, but the header and footer are included on the server side, and so is the date in the footer, among other things,

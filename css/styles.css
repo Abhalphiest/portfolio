@@ -466,7 +466,10 @@ form table input[type=submit]
 		background:none;
 	}
 }
-
+@media screen and (max-width:579px)
+{
+	form{display:none;}
+}
 @media screen and (max-width:335px)
 {
 	#logo{
