@@ -20,7 +20,7 @@ single page application. I went through and cleaned up the CSS. </p>
 <h2> Requirements </h2>
 <table>
 <tr><td>Dynamic Page </td> <td>The blog is now an endlessly scrolling page. It pulls in and appends blog posts dynamically as you reach the end of the page.</td></tr>
-<tr><td>jQuery </td> <td>All image galleries (all 3 pages under gamedesign) are now jQuery image galleries,simply click on an image to start a lightbox gallery of those images. Transitions are used
+<tr><td>jQuery </td> <td>All image galleries (all 3 pages under gamedesign) are now jQuery image galleries,simply click on an image to start a lightbox gallery of those images, and right click to close. Transitions are used
 (slide down and slide up) on the navigation bar.</td></tr>
 <tr><td>Email Form </td> <td>There's a mail form on the contact page - it uses phpMailer and smtp through gmail, not formmail.</td></tr>
 <tr><td>Server Side Includes</td> <td> I used php instead of direct SSIs, but the header and footer are included on the server side, and so is the date in the footer, among other things,
@@ -30,6 +30,9 @@ single page application. I went through and cleaned up the CSS. </p>
 <h2> Above and Beyond </h2>
 <p> I added the linking system in the blog to pull up specific posts using jQuery, and learned a crap ton of php to be able to write the php for the mail form. I wrote the endlessly
 scrolling page and gallery scripts by hand instead of using an existing code base. </p>
+<h2> What could have been better </h2>
+<p> Some of the alignment on certain pages is still a little weird... and I really, really wanted to have some smooth transitions in the size change on the frames as you
+flip through the galleries, but.. didn't happen.</p>
 </article>
 <?php include 'include/footer.php'; ?>
 
