@@ -35,29 +35,29 @@ if(isset($_GET['action'])) //special link
 {
 	if($_GET['action'] == 'computing')
 	{
-		echo "setSubNav('computing')";
-		include '/education/computingeducation.html';
+		echo "<script>setSubNav('computing');</script>";
+		include 'computingeducation.html';
 	}
 	if($_GET['action'] == 'mathematics')
 	{
-		echo "setSubNav('mathematics')";
-		include '/education/matheducation.html';
+		echo "<script>setSubNav('mathematics');</script>";
+		include 'matheducation.html';
 	}
 	if($_GET['action'] == 'gamedesign')
 	{
-		echo "setSubNav('gamedesign')";
-		include '/education/gamedesigneducation.html';
+		echo "<script>setSubNav('gamedesign');</script>";
+		include 'gamedesigneducation.html';
 	}
 	if($_GET['action'] == 'coursework')
 	{
-		echo "setSubNav('coursework')";
-		include '/education/coursework.html';
+		echo "<script>setSubNav('coursework');</script>";
+		include 'coursework.html';
 	}
 }
 else
 {
-	echo "setSubNav('computing')";
-	include '/education/computingeducation.html';
+	echo "<script>setSubNav('computing');</script>";
+	include 'computingeducation.html';
 }
 ?>
 </article>
