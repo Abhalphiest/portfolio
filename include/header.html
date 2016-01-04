@@ -4,40 +4,35 @@
 },function(e){$(this).children('.dropdown').slideUp(200);})}); </script>
 
 <header> 
-	<div id="logo"> <span>Margaret E. Dorsey</span></div>
-	<a id="japanese" href="../japanese/index.html" lang="ja" hreflang="ja">日本語 </a>
-	
+	<div id="logo"> <a href="/index.php">Margaret Dorsey</a></div>
 	<nav> 
 		<!-- main navigation (always visible) -->
 		<ul id="mainnav">
-			<li><a href="/index.php" name="indexnav"> Front Page </a></li>
-			<li class ="topnav" id="1">
-				<a href="/math/index.php" name="mathnav" >Mathematics</a>
-				<!-- sub navigation for math (invisible until hover)-->
-				<ul class="dropdown">
-					<li class="topnav"><a href="/math/education.php"> Education </a> </li>
-					<li class="topnav"><a href="/math/research.php"> Research </a> </li>
-				</ul>
-			</li>
 			<li class="topnav" id="2">
-				<a href="/computing/index.php" name="computingnav" >Computing </a>
+				<a href="/projects/projects.php" name="projectnav" >Projects </a>
 				<!-- sub navigation for computing (invisible until hover) -->
 				<ul class="dropdown">
-					<li class="topnav"><a href="/computing/education.php"> Education </a> </li>
-					<li class="topnav"><a href="/computing/completedprojects.php"> Completed Projects </a> </li>
-					<li class="topnav"><a href="/computing/currentprojects.php"> Current Projects </a> </li>
+					<li class="topnav"><a href="/projects/projects.php?action=Wyvern"> Wyvern Engine </a> </li>
+					<li class="topnav"><a href="/projects/projects.php?action=Research"> Math Undergraduate Research</a> </li>
+					<li class="topnav"><a href="/projects/projects.php?action=Apotheoun"> Apotheoun </a> </li>
+					<li class="topnav"><a href="/projects/projects.php?action=UI"> Application Design </a> </li>
+					<li class="topnav"><a href="/projects/projects.php?action=3D"> 3D Modelling </a> </li>
 				</ul>
 			</li >
-			<li class="topnav" id="3">
-				<a href="/gamedesign/index.php" name="gamenav">Game Design</a>
-					<!-- sub navigation for game design (invisible until hover) -->
-					<ul class="dropdown">
-						<li class="topnav"><a href="/gamedesign/design.php"> Design</a> </li>
-						<li class="topnav"><a href="/gamedesign/artworkandassets.php"> Artwork and Assets </a> </li>
-						<li class="topnav"><a href="/gamedesign/games.php"> Games </a> </li>
-					</ul>
+			<li class ="topnav" id="1">
+				<a href="/math/index.php" name="edunav" >Education</a>
+				<!-- sub navigation for math (invisible until hover)-->
+				<ul class="dropdown">
+					<li class="topnav"><a href="/education/education.php?action=Computing"> Computing </a> </li>
+					<li class="topnav"><a href="/education/education.php?action=Mathematics"> Mathematics </a> </li>
+					<li class="topnav"><a href="/education/education.php?action=GameDesign"> Game Design </a> </li>
+					<li class="topnav"><a href="/education/education.php?action=Coursework"> Coursework </a> </li>
+				</ul>
 			</li>
-			<li><a href="/blog/index.php" name="blognav">Blog</a></li>
+			
+			<li>
+				<a href="/aboutme.php" name="aboutnav">About Me</a>
+			</li>
 			<li><a href="/contact.php" name="contactnav" > Contact </a> </li>
 			<li><a href="/Resume.pdf">Resume</a></li>
 		</ul>		
