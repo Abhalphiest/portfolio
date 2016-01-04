@@ -12,7 +12,8 @@ $(document).ready(function(){
 		lightbox.style.width = "100%";
 		lightbox.style.left = "0";
 		lightbox.style.top = "0";
-		lightbox.style.backgroundImage="url('../media/papertexture.png')";
+		lightbox.style.backgroundColor = "black";
+		lightbox.style.opacity ="0.5";
 		lightbox.style.display = "none";
 		
 		var frame = document.createElement("div");
