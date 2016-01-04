@@ -36,28 +36,28 @@ if(isset($_GET['action']) //special link
 	if($_GET['action'] == 'computing')
 	{
 		echo "setSubNav('computing')";
-		include 'computingeducation.html';
+		include '/education/computingeducation.html';
 	}
 	if($_GET['action'] == 'mathematics')
 	{
 		echo "setSubNav('mathematics')";
-		include 'matheducation.html';
+		include '/education/matheducation.html';
 	}
 	if($_GET['action'] == 'gamedesign')
 	{
 		echo "setSubNav('gamedesign')";
-		include 'gamedesigneducation.html';
+		include '/education/gamedesigneducation.html';
 	}
 	if($_GET['action'] == 'coursework')
 	{
 		echo "setSubNav('coursework')";
-		include 'coursework.html';
+		include '/education/coursework.html';
 	}
 }
 else
 {
 	echo "setSubNav('computing')";
-	include 'computingeducation.html';
+	include '/education/computingeducation.html';
 }
 ?>
 </article>
