@@ -8,16 +8,25 @@
 	<link rel="stylesheet" type="text/css" href="../css/education.css" />
 	
 	
-	<script> window.onload = function(){document.getElementsByName("edunav")[0].setAttribute("id","current")}  </script>
+	<script>
+	var name;
+	function setSubNav(var n)
+	{
+		name=n;
+	}
+	window.onload = function(){document.getElementsByName("edunav")[0].setAttribute("id","current"); 
+								document.getElementByID("subcurr").removeAttribute("id");
+								document.getElementsByName(name)[0].setAttribute("id","subcurr")}  
+	</script>
 	<script src="../javascript/education.js"> </script>
 </head>
 <body>
 <?php include '../include/header.html'; ?>
 <ul id="edusubnav">
-<li class="subcurr">Computing</li>
-<li>Mathematics</li>
-<li>Game Design</li>
-<li>Coursework</li>
+<li id="subcurr" name="computing">Computing</li>
+<li name="mathematics">Mathematics</li>
+<li name="gamedesign">Game Design</li>
+<li name="coursework">Coursework</li>
 </ul>
 <article id="main"> <!-- for the entire body of content -->
 
