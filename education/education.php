@@ -30,6 +30,7 @@
 </ul>
 <article id="main"> <!-- for the entire body of content -->
 <?php
+ini_set('display_errors',1);
 if(isset($_GET['action']) //special link
 {
 	if($_GET['action'] == 'computing')
