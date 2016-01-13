@@ -19,4 +19,5 @@ function setSubNav(n)
 			$(".subcurr").slideUp(800);
 			$(".subcurr").removeClass("subcurr");
 		}
+		 $("html, body").animate({ scrollTop: 0 }, "slow");
 	}
