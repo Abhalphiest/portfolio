@@ -126,7 +126,7 @@ if(isset($_GET['action'])) //special link
 	</section>
 </div>
 
- <h1 id="computingtitle" onclick="sectionSwitch('#compedu','#comptitle')"> Computing </h1>
+ <h1 id="computingtitle" onclick="sectionSwitch('#compedu','#computingtitle')"> Computing </h1>
  <div id="compedu">
 	<section>
 		<h2>Basic Data Structures and Algorithms</h2>
