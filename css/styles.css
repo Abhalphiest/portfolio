@@ -122,11 +122,11 @@ header{
 /*navigation css*/
 
 nav{
-	display:inline-block; 
+	 
 	position:relative; 
 	top:60px; 
 	width:80%;
-	margin:auto;
+	margin-left:10%;
 	}
 
 nav ul{
@@ -142,6 +142,7 @@ nav ul li{
 	text-align: center;
 	position:relative;
 	padding-top:5px;
+	display:inline-block;
 	
 }
 
@@ -227,8 +228,8 @@ p{
 }
 article{
 	width:70%;
-	padding-top:150px; /*start off below the header*/
-	margin:auto;
+	padding-top:200px; /*start off below the header*/
+	margin-left:10%;
 }
 
 a{text-decoration:none; color:  #B20100; }
