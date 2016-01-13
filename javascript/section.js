@@ -12,7 +12,7 @@ function setSubNav(n)
 			$(".subcurr").removeClass("subcurr");
 			$(id).addClass("subcurr");
 			$(id).slideDown(800);
-			$("#main").prepend($(id)).prepend($(e); //move it to the top
+			$("#main").prepend($(id)).prepend($(e)); //move it to the top
 		}
 		else
 		{
