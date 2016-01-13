@@ -6,7 +6,7 @@ function setSubNav(n)
 	{
 		$(".subcurr").slideUp(400);
 		$(".subcurr").removeClass("subcurr");
-		if("#"+$(".subcurr").id != id)
+		if("#"+$(".subcurr").attr("id") != id)
 		{
 			$(id).addClass("subcurr");
 			$(id).slideDown(400);
