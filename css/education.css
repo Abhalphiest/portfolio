@@ -4,13 +4,13 @@ article#main{
 	margin-bottom: 150px;
 }
 
-article#main section{
+section{
 	font-family:"roundedElegance";
 	margin-top: 50px;
 	
 }
 
-article#main section h2{
+section h2{
 	font-family:"nobilityCasual";
 	font-size: 1.3em;
 	font-weight:bold;
@@ -21,7 +21,7 @@ article#main section h2{
 }
 #subcurr{color:red;}
 
-article#main section h4{
+section h4{
 	font-family:"nobilityCasual";
 	font-size: 1em;
 	font-weight:bold;
@@ -29,18 +29,22 @@ article#main section h4{
 	margin-left:3%;
 }
 
-article#main section ul{
+section ul{
 	list-style-type:square;
 	margin-left:5%;
 }
 
-article#main section ul li{
+section ul li{
 	list-style-position:inside;
 	padding:5px;
 	font-size: .9em;
 		
 }
 
+#mathedu, #compedu, #gameedu, #coursework
+{
+	display:none;
+}
 @media screen and (max-width: 1024px)
 {
 	
