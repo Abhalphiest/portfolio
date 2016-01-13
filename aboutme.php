@@ -6,7 +6,7 @@
 	<title> The Portfolio of Margaret Dorsey </title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<link rel="stylesheet" type="text/css" href="css/indexstyle.css" />
-	<script> window.onload = function(){document.getElementsByName("indexnav")[0].setAttribute("id","current")}  </script>
+	<script> window.onload = function(){document.getElementsByName("aboutnav")[0].setAttribute("id","current")}  </script>
 </head>
 <body>
 

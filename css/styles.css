@@ -125,13 +125,13 @@ nav{
 	display:inline-block; 
 	position:relative; 
 	top:60px; 
-	width:80%;
 	margin-left:10%;
+	width:80%;
+	margin-right:10%;
 	}
 
 nav ul{
 	white-space: nowrap;
-	width:100%;
 }
 
 nav ul li{
@@ -139,15 +139,15 @@ nav ul li{
 	list-style-type: none;
 	list-style-position:inside;
 	font-size:1em;
+	width:175px;
 	text-align: center;
 	position:relative;
-	padding-top:5px;
-	display:inline-block;
 	
 }
 
 nav ul li a{ 
 	padding: 5px 20px; 
+	display:block;
 	text-decoration:none;
 	font-family:roundedElegance;
 	color: #FFF;
@@ -188,6 +188,9 @@ ul.dropdown li{
 ul.dropdown li a{
 	
 }
+
+
+
 
 
 
