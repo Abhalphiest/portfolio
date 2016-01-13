@@ -125,9 +125,8 @@ nav{
 	display:inline-block; 
 	position:relative; 
 	top:60px; 
-	margin-left:10%;
 	width:80%;
-	margin-right:10%;
+	margin:auto;
 	}
 
 nav ul{
@@ -139,9 +138,10 @@ nav ul li{
 	list-style-type: none;
 	list-style-position:inside;
 	font-size:1em;
-	width:175px;
+	width:250px;
 	text-align: center;
 	position:relative;
+	padding-top:5px;
 	
 }
 
@@ -227,8 +227,8 @@ p{
 }
 article{
 	width:70%;
-	padding-top:300px; /*start off below the header*/
-	margin-left:10%;
+	padding-top:150px; /*start off below the header*/
+	margin:auto;
 }
 
 a{text-decoration:none; color:  #B20100; }
