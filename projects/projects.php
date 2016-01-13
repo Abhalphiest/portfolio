@@ -8,17 +8,19 @@
 	<link rel="stylesheet" type="text/css" href="../css/projects.css" />
 	
 	
+	<script src="../javascript/section.js"></script>
 	<script>
 	var setid;
-	function setSubNav(var n)
-	{
-		setid=n;
-	}
-	window.onload = function(){document.getElementsByName("edunav")[0].setAttribute("id","current"); 
-								document.getElementByID("subcurr").removeAttribute("id");
-								document.getElementByID(setid).setAttribute("id","subcurr")}  
+	window.onload = function()
+					{
+						document.getElementsByName("projectnav")[0].setAttribute("id","current"); 
+						if(setid)
+						{
+							document.getElementByID(setid).setAttribute("class","subcurr");
+							document.getElementByID(setid).style.display ="block";
+						}
+					}  ;
 	</script>
-	<script src="../javascript/education.js"> </script>
 </head>
 <body>
 <?php include '../include/header.html'; ?>

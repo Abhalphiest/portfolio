@@ -7,20 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="../css/styles.css" />
 	<link rel="stylesheet" type="text/css" href="../css/education.css" />
 	
-	
+	<script src="../javascript/section.js"></script>
 	<script>
 	var setid;
-	function setSubNav(n)
-	{
-		setid=n;
-	}
-	function sectionSwitch(id)
-	{
-		$(".subcurr").slideUp(400);
-		$(".subcurr").removeClass("subcurr");
-		$(id).addClass("subcurr");
-		$(id).slideDown(400);
-	}
 	window.onload = function()
 					{
 						document.getElementsByName("edunav")[0].setAttribute("id","current"); 
@@ -31,7 +20,6 @@
 						}
 					}  ;
 	</script>
-	<script src="../javascript/education.js"> </script>
 </head>
 <body>
 <?php include '../include/header.html'; ?>
