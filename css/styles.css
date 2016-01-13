@@ -131,6 +131,7 @@ nav{
 
 nav ul{
 	white-space: nowrap;
+	width:100%;
 }
 
 nav ul li{
@@ -147,7 +148,6 @@ nav ul li{
 
 nav ul li a{ 
 	padding: 5px 20px; 
-	display:block;
 	text-decoration:none;
 	font-family:roundedElegance;
 	color: #FFF;
