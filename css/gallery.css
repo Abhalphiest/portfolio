@@ -25,7 +25,7 @@
 }
 .description{
 	width:60%;
-	font-family:roundedElegance;
+	font-family:robotocondensed;
 }
 .imgbox{
 	width: 60%;
@@ -51,7 +51,7 @@
 }
 
 .gallerylink{
-	font-family: roundedElegance;	
+	font-family: robotocondensed;	
 	margin: 20px 0px;
 	padding:10px 40px;
 	background-color: #B20100;

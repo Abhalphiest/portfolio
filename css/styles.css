@@ -61,19 +61,19 @@ table {
     font-style: normal;
 
 }
+
 @font-face {
-    font-family: 'roundedElegance';
-    src: url('../media/fonts/roundedelegance-webfont.eot');
-    src: url('../media/fonts/roundedelegance-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../media/fonts/roundedelegance-webfont.woff2') format('woff2'),
-         url('../media/fonts/roundedelegance-webfont.woff') format('woff'),
-         url('../media/fonts/roundedelegance-webfont.ttf') format('truetype'),
-         url('../media/fonts/roundedelegance-webfont.svg#rounded_eleganceregular') format('svg');
+    font-family: 'robotocondensed';
+    src: url('../media/fonts/roboto-condensed-webfont.eot');
+    src: url('../media/fonts/roboto-condensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../media/fonts/roboto-condensed-webfont.woff2') format('woff2'),
+         url('../media/fonts/roboto-condensed-webfont.woff') format('woff'),
+         url('../media/fonts/roboto-condensed-webfont.ttf') format('truetype'),
+         url('../media/fonts/roboto-condensed-webfont.svg#robotocondensed') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
-
 
 @font-face {
     font-family: 'nobilityCasual';
@@ -139,7 +139,7 @@ nav ul li{
 	list-style-type: none;
 	list-style-position:inside;
 	font-size:1em;
-	width:175px;
+	width:250px;
 	text-align: center;
 	position:relative;
 	
@@ -149,7 +149,7 @@ nav ul li a{
 	padding: 5px 20px; 
 	display:block;
 	text-decoration:none;
-	font-family:roundedElegance;
+	font-family:robotocondensed;
 	color: #FFF;
 	padding-left: 3px;
 }
@@ -206,7 +206,7 @@ footer{
 	right:0px;
 	padding:.2em;
 	text-align:center;
-	font-family:'roundedElegance';
+	font-family:'robotocondensed';
 	color: #444444;
 	font-size:.7em;
 	background-color:white;
@@ -223,7 +223,7 @@ h1,h2,h3
 
 p{
 	width:90%;
-	font-family:'roundedElegance';
+	font-family:'robotocondensed';
 	color:black;
 	padding: 20px 0px;
 	margin-left:10px;
@@ -237,7 +237,7 @@ article{
 a{text-decoration:none; color:  #B20100; }
 
 table{
-	font-family: roundedElegance;
+	font-family: robotocondensed;
 	font-size: 1em;
 	display:block;
 }
@@ -314,7 +314,7 @@ form table input[type=submit]
 #formoutput
 {
 	width:60%;
-	font-family:roundedElegance;
+	font-family:robotocondensed;
 	color:black;
 	padding: 20px 0px;
 	margin-left:10px;
