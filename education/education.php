@@ -47,7 +47,7 @@ if(isset($_GET['action'])) //special link
 }
 ?>
 
-<h1 id="mathtitle" onclick="sectionSwitch('#mathedu')"> Mathematics </h1>
+<h1 id="mathtitle" onclick="sectionSwitch('#mathedu',this)"> Mathematics </h1>
 <div id="mathedu">
 	<section>
 		<h2>Linear Algebra</h2>
@@ -126,7 +126,7 @@ if(isset($_GET['action'])) //special link
 	</section>
 </div>
 
- <h1 id="computingtitle" onclick="sectionSwitch('#compedu')"> Computing </h1>
+ <h1 id="computingtitle" onclick="sectionSwitch('#compedu',this)"> Computing </h1>
  <div id="compedu">
 	<section>
 		<h2>Basic Data Structures and Algorithms</h2>
@@ -214,7 +214,7 @@ if(isset($_GET['action'])) //special link
 	</section>
 </div>
 
-<h1 id="gametitle" onclick="sectionSwitch('#gameedu')"> Game Design </h1>
+<h1 id="gametitle" onclick="sectionSwitch('#gameedu',this)"> Game Design </h1>
 <div id="gameedu">
 	<section>
 		<h2>User Interface Design</h2>
@@ -250,7 +250,7 @@ if(isset($_GET['action'])) //special link
 			</ul>
 	</section>
 </div>
-<h1 id="coursetitle" onclick="sectionSwitch('#coursework')"> Coursework </h1>
+<h1 id="coursetitle" onclick="sectionSwitch('#coursework',this)"> Coursework </h1>
 <div id="coursework">
 	<section>
 		<h2>Fall 2015</h2>
