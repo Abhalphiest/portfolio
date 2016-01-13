@@ -5,13 +5,13 @@ article#main{
 }
 
 section{
-	font-family:"robotocondensed";
+	font-family:"robotolight";
 	margin-top: 50px;
 	
 }
 
 section h2{
-	font-family:"nobilityCasual";
+	font-family:"averia";
 	font-size: 1.3em;
 	font-weight:bold;
 	padding:10px;
@@ -22,7 +22,7 @@ section h2{
 
 
 section h4{
-	font-family:"nobilityCasual";
+	font-family:"averia";
 	font-size: 1em;
 	font-weight:bold;
 	padding:10px;

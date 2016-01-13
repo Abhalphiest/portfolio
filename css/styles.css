@@ -74,15 +74,27 @@ table {
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'averia';
+    src: url('../media/fonts/averiaserif-bold-webfont.eot');
+    src: url('../media/fonts/averiaserif-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../media/fonts/averiaserif-bold-webfont.woff2') format('woff2'),
+         url('../media/fonts/averiaserif-bold-webfont.woff') format('woff'),
+         url('../media/fonts/averiaserif-bold-webfont.ttf') format('truetype'),
+         url('../media/fonts/averiaserif-bold-webfont.svg#averia_serifbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @font-face {
-    font-family: 'nobilityCasual';
-    src: url('../media/fonts/nobility-webfont.eot');
-    src: url('../media/fonts/nobility-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../media/fonts/nobility-webfont.woff2') format('woff2'),
-         url('../media/fonts/nobility-webfont.woff') format('woff'),
-         url('../media/fonts/nobility-webfont.ttf') format('truetype'),
-         url('../media/fonts/nobility-webfont.svg#nobility_casualregular') format('svg');
+    font-family: 'robotolight';
+    src: url('../media/fonts/roboto-light-webfont.eot');
+    src: url('../media/fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../media/fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('../media/fonts/roboto-light-webfont.woff') format('woff'),
+         url('../media/fonts/roboto-light-webfont.ttf') format('truetype'),
+         url('../media/fonts/roboto-light-webfont.svg#robotolight') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -216,14 +228,14 @@ footer{
 /*general css*/
 h1,h2,h3
 {
-	font-family:'nobilityCasual';
+	font-family:'averia';
 	color: #1F1A21; 
 	padding:5px;
 }
 
 p{
 	width:90%;
-	font-family:'robotocondensed';
+	font-family:'robotolight';
 	color:black;
 	padding: 20px 0px;
 	margin-left:10px;
@@ -237,7 +249,7 @@ article{
 a{text-decoration:none; color:  #B20100; }
 
 table{
-	font-family: robotocondensed;
+	font-family: robotolight;
 	font-size: 1em;
 	display:block;
 }
@@ -245,7 +257,7 @@ table td{
 	padding: 10px;
 }
 table td.label{
-	font-family: nobilityCasual;
+	font-family: averia;
 	vertical-align:top;
 }
 
@@ -305,7 +317,7 @@ form table input[type=submit]
 {
 	background-color: #B20100;
 	border-width:0px;
-	font-family: nobilityCasual;
+	font-family: averia;
 	color:white;
 	padding: 10px;
 	font-size:1.1em;
@@ -332,10 +344,15 @@ form table input[type=submit]
 	height:300px;
 }
 #error p span{
-	font-family:nobilityCasual;
+	font-family:averia;
 }
 #error p a:hover{
 	text-decoration:underline;
+}
+div#graphic img{
+	
+	width:100%;
+	margin-top:200px;
 }
 
 /*responsive design*/
@@ -405,6 +422,9 @@ form table input[type=submit]
 @media screen and (max-width:579px)
 {
 	form{display:none;}
+	div#graphic img{
+		display:none;
+	}
 }
 @media screen and (max-width:335px)
 {
