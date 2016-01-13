@@ -126,16 +126,6 @@ header{
 	padding-top:1em;
 }
 
-#japanese, #japanese:visited, #japanese:link{
-	font-family:epmarugo;
-	position:absolute;
-	right: 4em;
-	font-size:1.5em;
-	color:#444444;
-	text-decoration:none;
-	display:none; /*hidden for now, currently out of scope */
-	
-}
 /*navigation css*/
 
 nav{
@@ -265,40 +255,6 @@ table td.label{
 
 /*extra stuff*/
 
-
-#computingtitle{
-	color:black;
-	background: url(../media/code.svg) no-repeat;
-	width: 100%;
-	font-size: 2em;
-	padding-left: 85px;
-	height: 100px;
-	padding-top: 30px;
-	margin-left:10px;
-	
-}
-
-#mathtitle{
-	color:black;
-	background: url(../media/math.svg) no-repeat;
-	width: 100%;
-	font-size: 2em;
-	padding-left: 55px;
-	height: 100px;
-	padding-top: 30px;
-	margin-left:-25px;
-}
-
-#gametitle{
-	color:black;
-	background: url(../media/game.svg) no-repeat;
-	width: 100%;
-	font-size: 2em;
-	padding-left: 150px;
-	height: 100px;
-	padding-top: 50px;
-	margin-left:10px;
-}
 
 article#contact{
 	width:50%;
@@ -445,23 +401,7 @@ form table input[type=submit]
 	padding-bottom: 3px;
 	}
 	
-	#gametitle{
-		background:none;
-		margin-left:10%;
-		padding-left:0px;
-	}
 	
-	#computingtitle{
-		background:none;
-		margin-left:10%;
-		padding-left:0px;
-	}
-	
-	#mathtitle{
-		background:none;
-		margin-left:10%;
-		padding-left:0px;
-	}
 	article#contact{
 		background:none;
 	}

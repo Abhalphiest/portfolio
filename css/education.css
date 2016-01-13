@@ -55,10 +55,10 @@ section ul li{
 	{
 		margin-left:3%;
 	}
-	article#main section h2{
+	section h2{
 		margin-left:9%;
 	}
-	article#main section ul, article#main section h4{
+	section ul, section h4{
 		margin-left:10%;
 	}
 }
