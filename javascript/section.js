@@ -6,6 +6,9 @@ function setSubNav(n)
 	{
 		$(".subcurr").slideUp(400);
 		$(".subcurr").removeClass("subcurr");
-		$(id).addClass("subcurr");
-		$(id).slideDown(400);
+		if("#"+$(".subcurr").id != id)
+		{
+			$(id).addClass("subcurr");
+			$(id).slideDown(400);
+		}
 	}
