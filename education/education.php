@@ -229,12 +229,12 @@ if(isset($_GET['action'])) //special link
 			</ul>
 		<h4> Knowledge </h4>
 			<ul>
-				<li></li>
-				<li>  </li>
-				<li> </li>
-				<li> </li>
-				<li> </li>
-				<li> </li>
+				<li> Visual and Functional Design Principles</li>
+				<li> Usability Testing </li>
+				<li> Context Analysis </li>
+				<li> UI Types and Design Patterns</li>
+				<li> Design Documentation</li>
+				<li> Interface Design Cycle</li>
 			</ul>
 	</section>
 	<section>
@@ -247,42 +247,96 @@ if(isset($_GET['action'])) //special link
 		<h4> Knowledge </h4>
 			<ul>
 				<li> Principles of Animation</li>
-				<li>  </li>
-				<li> </li>
-				<li> </li>
-				<li> </li>
-				<li> </li>
+				<li> 3D Modelling in Autodesk Maya  </li>
+				<li> Texturing and Materials </li>
+				<li> Rigging, Joint Weighting, and Animation </li>
+				<li> Sculpting in Autodesk Mudbox</li>
+				<li> Unity 3d </li>
+				<li> The Asset Production Cycle </li>
 			</ul>
 	</section>
 </div>
 <h1 id="coursetitle" onclick="sectionSwitch('#coursework','#coursetitle')"> Coursework </h1>
 <div id="coursework">
 	<section>
+		<h2>Spring 2016</h2>
+		<h4>Courses</h4>
+			<ul>
+				<li>CSCI 250 Concepts of Computer Systems</li>
+				<li> CSCI 251 Concepts of Parallel and Distributed Systems </li>
+				<li> IGME 220 Game Design and Development I </li>
+				<li>IGME 790 Graduate Seminar in IGM - Geometric Algebra for Graphical Simulation </li>
+				<li> MATH 371 Number Theory </li>
+				<li> MLJP 302 Intermediate Japanese II </li>
+				<li> WDAN 1 Ballet </li>
+				<li> WINT 39 Indoor Rock Climbing </li>
+			</ul>
+	</section>
+	<section>
 		<h2>Fall 2015</h2>
 		<h4>Courses</h4>
 			<ul>
-				<li> </li>
+				<li>IGME 202 Interactive Media Development</li>
+				<li>IGME 230 Web Design and Implementation </li>
+				<li>IGME 236 Interaction, Immersion, and the Media Interface </li>
+				<li> IGME 599 Independent Study/ IGME 219 3D Animation and Asset Production </li>
+				<li> MATH 431 Real Variables I </li>
+				<li> Math 495 Math Undergraduate Research </li>
+				<li>MLJP 301 Intermediate Japanese I </li>
+				<li> WFIT 76 Intro to Weight Training </li>
+				<li> IGME 209 Data Structures and Algorithms I (Audit)</li>
+				<li> IGME 309 Data Structures and Algorithms II (Audit)</li>
+			</ul>
+	</section>
+	<section>
+		<h2>Summer 2015</h2>
+		<h4>Courses</h4>
+			<ul>
+				<li>CSCI 243 The Mechanics of Programming </li>
 			</ul>
 	</section>
 	<section>
 		<h2>Spring 2015</h2>
 		<h4>Courses</h4>
 			<ul>
-				<li> </li>
+				<li>IGME 106 Game Development and Algorithmic Problem Solving II </li>
+				<li> IGME 119 2D Animation and Asset Production </li>
+				<li> MATH 200 Discrete Math and Introduction to Proofs </li>
+				<li> PHYS 211 University Physics I </li>
+				<li> MLJP 202 Beginning Japanese II </li>
+				<li> WFIT 55 Kickboxing </li>
 			</ul>
 	</section>
 	<section>
 		<h2>Fall 2014</h2>
 		<h4>Courses</h4>
 			<ul>
-				<li></li>
+				<li>IGME 105 Game Development and Algorithmic Problem Solving</li>
+				<li>IGME 110 Intro to Interactive Media </li>
+				<li> MATH 341 Advanced Linear Algebra </li>
+				<li> MLJP 201 Beginnning Japanese I </li>
+				<li> PHIL 103 Critical Thinking (Logic) </li>
 			</ul>
 	</section>
 	<section>
 		<h2>Erie Community College / AP Credit</h2>
 		<h4>Courses</h4>
 			<ul>
-				<li> </li>
+				<li>Calculus and Analytic Geometry 1</li>
+				<li>Art Drawing I</li>
+				<li> Art Painting I </li>
+				<li> Intro to Computer Science </li>
+				<li> Statistics </li>
+				<li> Ordinary Differential Equations </li>
+				<li> Mythology </li>
+				<li> Contemporary Cinema </li>
+				<li> Introduction to Modelling </li>
+				<li> Elementary Linear Algebra </li>
+				<li> Wines, Beers, and Spirits </li>
+				<li> AP Biology </li>
+				<li> AP World History </li>
+				<li> AP US History </li>
+				<li> AP English Language and Composition </li>
 			</ul>
 	</section>
 </div>

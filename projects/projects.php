@@ -54,6 +54,7 @@ if(isset($_GET['action'])) //special link
 <h1 id="wyvern" onclick="sectionSwitch('#wyvernproject','#wyvern')"> Wyvern Engine </h1>
 <div id="wyvernproject" class="project">
 	<p class="description" > A rendering and physics engine with a from scratch math library, implemented in C/C++ using openGL, GLEW, and GLFW.
+	Still in progress, see github readme for more information.
 	</p>
 	<a href="https://github.com/Abhalphiest/engine" class="github">Project Repository on GitHub</a>
 </div>
@@ -70,7 +71,7 @@ arising from the physical sciences.</p>
 <h1 id="apotheoun" onclick="sectionSwitch('#apotheounproject','#apotheoun')"> Apotheoun </h1>
 <div id="apotheounproject" class="project">
 	<span class="gallerytitle"> Apotheoun</span>
-	<p class="description"> A 2D top-down space-themed shooter, implemented in Unity 2d.
+	<p class="description"> A 2D top-down space-themed shooter, implemented in Unity 2d. 
 	<a class="gallerylink" href="https://github.com/Abhalphiest/apotheoun">Project on Github</a></p>
 	<div class="imgbox">
 		<img src="../media/projects/apotheoun/playerconcept.jpg" alt="player concept sketch" title="Player" />
