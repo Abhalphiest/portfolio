@@ -26,27 +26,27 @@ if(isset($_GET['action'])) //special link
 	if($_GET['action'] == 'wyvern')
 	{
 		echo "<script>$(document).ready(function()
-					{sectionSwitch('#wyvernproject','#wyvern'););</script>";
+					{sectionSwitch('#wyvernproject','#wyvern');});</script>";
 	}
 	if($_GET['action'] == 'research')
 	{
 		echo "<script>$(document).ready(function()
-					{sectionSwitch('#researchproject','#research'););</script>";
+					{sectionSwitch('#researchproject','#research');});</script>";
 	}
 	if($_GET['action'] == 'apotheoun')
 	{
 		echo "<script>$(document).ready(function()
-					{sectionSwitch('#apotheounproject','#apotheoun'););</script>";
+					{sectionSwitch('#apotheounproject','#apotheoun');});</script>";
 	}
 	if($_GET['action'] == 'ui')
 	{
 	echo "<script>$(document).ready(function()
-					{sectionSwitch('#uiproject','#ui'););</script>";
+					{sectionSwitch('#uiproject','#ui');});</script>";
 	}
 	if($_GET['action'] == '3d')
 	{
 		echo "<script>$(document).ready(function()
-					{sectionSwitch('#3dproject','#3d'););</script>";
+					{sectionSwitch('#3dproject','#3d');});</script>";
 	}
 }
 ?>
