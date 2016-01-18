@@ -1,4 +1,4 @@
-
+"use strict"
 	function sectionSwitch(id,e)
 	{
 		console.log("#"+$(".subcurr").attr("id")+"\n");

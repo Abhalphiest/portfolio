@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/styles.css" />
 	<link rel="stylesheet" type="text/css" href="../css/projects.css" />
 	<link rel="stylesheet" type="text/css" href="../css/gallery.css" />
-	<script src="../javascript/section.js"></script>
+	
 	<script>
 	window.onload = function()
 					{
@@ -18,6 +18,7 @@
 <body>
 <?php include '../include/header.html'; ?>
 <article id="main"> <!-- for the entire body of content -->
+<script src="../javascript/section.js"></script>
 <?php
 ini_set('display_errors',1);
 if(isset($_GET['action'])) //special link
