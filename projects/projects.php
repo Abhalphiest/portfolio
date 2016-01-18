@@ -25,28 +25,28 @@ if(isset($_GET['action'])) //special link
 {
 	if($_GET['action'] == 'wyvern')
 	{
-		echo "<script>document.onload = function()
-					{sectionSwitch('#wyvernproject','#wyvern');};</script>";
+		echo "<script>$(document).ready(function()
+					{sectionSwitch('#wyvernproject','#wyvern'););</script>";
 	}
 	if($_GET['action'] == 'research')
 	{
-		echo "<script>document.onload = function()
-					{sectionSwitch('#researchproject','#research');};</script>";
+		echo "<script>$(document).ready(function()
+					{sectionSwitch('#researchproject','#research'););</script>";
 	}
 	if($_GET['action'] == 'apotheoun')
 	{
-		echo "<script>document.onload = function()
-					{sectionSwitch('#apotheounproject','#apotheoun');};</script>";
+		echo "<script>$(document).ready(function()
+					{sectionSwitch('#apotheounproject','#apotheoun'););</script>";
 	}
 	if($_GET['action'] == 'ui')
 	{
-	echo "<script>document.onload = function()
-					{sectionSwitch('#uiproject','#ui');};</script>";
+	echo "<script>$(document).ready(function()
+					{sectionSwitch('#uiproject','#ui'););</script>";
 	}
 	if($_GET['action'] == '3d')
 	{
-		echo "<script>document.onload = function()
-					{sectionSwitch('#3dproject','#3d');};</script>";
+		echo "<script>$(document).ready(function()
+					{sectionSwitch('#3dproject','#3d'););</script>";
 	}
 }
 ?>
