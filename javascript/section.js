@@ -5,7 +5,7 @@
 		{
 			$(".subcurr").slideUp(800);
 			$(".subcurr").removeClass("subcurr");
-			console.log($(id));
+			console.log($(id).attr("id"));
 			$(id).addClass("subcurr");
 			$("#main").prepend($(id)).prepend($(e)); //move it to the top
 			$(id).slideDown(800);
