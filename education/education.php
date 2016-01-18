@@ -30,19 +30,19 @@ if(isset($_GET['action'])) //special link
 {
 	if($_GET['action'] == 'computing')
 	{
-		echo "<script>setSubNav('compedu');</script>";
+		echo "<script>sectionSwitch('#compedu','#computingtitle');</script>";
 	}
 	if($_GET['action'] == 'mathedu')
 	{
-		echo "<script>setSubNav('mathematics');</script>";
+		echo "<script>sectionSwitch('#mathedu','#mathtitle');</script>";
 	}
 	if($_GET['action'] == 'gamedesign')
 	{
-		echo "<script>setSubNav('gameedu');</script>";
+		echo "<script>sectionSwitch('#gameedu','#gametitle');</script>";
 	}
 	if($_GET['action'] == 'coursework')
 	{
-		echo "<script>setSubNav('coursework');</script>";
+		echo "<script>sectionSwitch('#coursework','#coursetitle');</script>";
 	}
 }
 ?>

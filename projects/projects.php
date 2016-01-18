@@ -25,23 +25,23 @@ if(isset($_GET['action'])) //special link
 {
 	if($_GET['action'] == 'wyvern')
 	{
-		echo "<script>sectionSwitch('#wyvernproject','#wyvern');</script>";
+		echo "<script>document.onload = sectionSwitch('#wyvernproject','#wyvern');</script>";
 	}
 	if($_GET['action'] == 'research')
 	{
-		echo "<script>sectionSwitch('#researchproject','#research');</script>";
+		echo "<script>document.onload = sectionSwitch('#researchproject','#research');</script>";
 	}
 	if($_GET['action'] == 'apotheoun')
 	{
-		echo "<script>sectionSwitch('#apotheounproject','#apotheoun');</script>";
+		echo "<script>document.onload = sectionSwitch('#apotheounproject','#apotheoun');</script>";
 	}
 	if($_GET['action'] == 'ui')
 	{
-		echo "<script>sectionSwitch('#uiproject','#ui');</script>";
+		echo "<script>document.onload = sectionSwitch('#uiproject','#ui');</script>";
 	}
 	if($_GET['action'] == '3d')
 	{
-		echo "<script>sectionSwitch('#3dproject','#3d');</script>";
+		echo "<script>document.onload = sectionSwitch('#3dproject','#3d');</script>";
 	}
 }
 ?>
