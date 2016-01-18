@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/styles.css" />
 	<link rel="stylesheet" type="text/css" href="../css/education.css" />
 	
-	<script src="../javascript/section.js"></script>
+	
 	<script>
 	var setid;
 	window.onload = function()
@@ -24,25 +24,30 @@
 <body>
 <?php include '../include/header.html'; ?>
 <article id="main"> <!-- for the entire body of content -->
+<script src="../javascript/section.js"></script>
 <?php
 ini_set('display_errors',1);
 if(isset($_GET['action'])) //special link
 {
 	if($_GET['action'] == 'computing')
 	{
-		echo "<script>sectionSwitch('#compedu','#computingtitle');</script>";
+		echo "<script>$(document).ready(function()
+					{sectionSwitch('#compedu','#computingtitle');});</script>";
 	}
 	if($_GET['action'] == 'mathedu')
 	{
-		echo "<script>sectionSwitch('#mathedu','#mathtitle');</script>";
+		echo "<script>$(document).ready(function()
+					{sectionSwitch('#mathedu','#mathtitle');});</script>";
 	}
 	if($_GET['action'] == 'gamedesign')
 	{
-		echo "<script>sectionSwitch('#gameedu','#gametitle');</script>";
+		echo "<script>$(document).ready(function()
+					{sectionSwitch('#gameedu','#gametitle');});</script>";
 	}
 	if($_GET['action'] == 'coursework')
 	{
-		echo "<script>sectionSwitch('#coursework','#coursetitle');</script>";
+		echo "<script>$(document).ready(function()
+					{sectionSwitch('#coursework','#coursetitle');});</script>";
 	}
 }
 ?>
