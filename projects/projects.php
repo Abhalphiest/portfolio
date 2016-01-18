@@ -7,8 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/styles.css" />
 	<link rel="stylesheet" type="text/css" href="../css/projects.css" />
 	<link rel="stylesheet" type="text/css" href="../css/gallery.css" />
-	<script src="../javascript/gallery.js"> </script> <!-- our gallery javascript -->
-	<script src="../javascript/section.js"></script>
+	
 	<script>
 	window.onload = function()
 					{
@@ -117,4 +116,6 @@ arising from the physical sciences.</p>
 </article>
 <?php include '../include/footer.php'; ?>
 </body>
+<script src="../javascript/gallery.js"> </script> <!-- our gallery javascript -->
+<script src="../javascript/section.js"></script>
 </html>
