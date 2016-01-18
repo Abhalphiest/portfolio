@@ -10,15 +10,9 @@
 	<script src="../javascript/gallery.js"> </script> <!-- our gallery javascript -->
 	<script src="../javascript/section.js"></script>
 	<script>
-	var setid;
 	window.onload = function()
 					{
 						document.getElementsByName("projectnav")[0].setAttribute("id","current"); 
-						if(setid)
-						{
-							document.getElementByID(setid).setAttribute("class","subcurr");
-							document.getElementByID(setid).style.display ="block";
-						}
 					}  ;
 	</script>
 </head>
@@ -31,35 +25,35 @@ if(isset($_GET['action'])) //special link
 {
 	if($_GET['action'] == 'wyvern')
 	{
-		echo "<script>setSubNav('wyvernproject');</script>";
+		echo "<script>sectionSwitch('#wyvernproject','#wyvern');</script>";
 	}
 	if($_GET['action'] == 'research')
 	{
-		echo "<script>setSubNav('researchproject');</script>";
+		echo "<script>sectionSwitch('#researchproject','#research');</script>";
 	}
 	if($_GET['action'] == 'apotheoun')
 	{
-		echo "<script>setSubNav('apotheounproject');</script>";
+		echo "<script>sectionSwitch('#apotheounproject','#apotheoun');</script>";
 	}
 	if($_GET['action'] == 'ui')
 	{
-		echo "<script>setSubNav('uiproject');</script>";
+		echo "<script>sectionSwitch('#uiproject','#ui');</script>";
 	}
 	if($_GET['action'] == '3d')
 	{
-		echo "<script>setSubNav('3dproject');</script>";
+		echo "<script>sectionSwitch('#3dproject','#3d');</script>";
 	}
 }
 ?>
 
-<h1 id="wyvern"> Wyvern Engine </h1>
+<h1 id="wyvern" onclick="sectionSwitch('#wyvernproject','#wyvern')"> Wyvern Engine </h1>
 <div id="wyvernproject" class="project">
 	<p class="description" > A rendering and physics engine with a from scratch math library, implemented in C/C++ using openGL, GLEW, and GLFW.
 	</p>
 	<a href="https://github.com/Abhalphiest/engine" class="github">Project Repository on GitHub</a>
 </div>
 
- <h1 id="research"> Math Undergraduate Research </h1>
+ <h1 id="research" onclick="sectionSwitch('#researchproject','#research')"> Math Undergraduate Research </h1>
  <div id="researchproject" class="project">
 	<h2> Lie Symmetries and Differential Equations </h2>
 <p> Research into the theoretical foundations of symmetry methods for differential equations, including Lie Symmetry Groups of ODEs, PDEs, and systems, infinitesimal generators and their prolongations, and discrete symmetries.
@@ -68,7 +62,7 @@ arising from the physical sciences.</p>
 <p> Research Mentor: Dr. Tamas Wiandt </p>
 </div>
 
-<h1 id="apotheoun"> Apotheoun </h1>
+<h1 id="apotheoun" onclick="sectionSwitch('#apotheounproject','#apotheoun')"> Apotheoun </h1>
 <div id="apotheounproject" class="project">
 	<span class="gallerytitle"> Apotheoun</span>
 	<p class="description"> A 2D top-down space-themed shooter, implemented in Unity 2d.
@@ -80,7 +74,7 @@ arising from the physical sciences.</p>
 		<p class="notes"> Concept sketches of player ship, enemy ship, and background environment. </p>
 	</div>
 </div>
-<h1 id="ui"> Application Design </h1>
+<h1 id="ui" onclick="sectionSwitch('#uiproject','#ui')"> Application Design </h1>
 <div id="uiproject" class="project">
 	<span class="gallerytitle"> Architecture Sim User Interface</span>
 	<p class="description"> The visual design process for a portion of the UI necessary for a hypothetical
@@ -108,7 +102,7 @@ arising from the physical sciences.</p>
 	</div>
 </div>
 </article>
-<h1 id="3d" > 3D Modelling </h1>
+<h1 id="3d" onclick="sectionSwitch('#3dproject','#3d')"> 3D Modelling </h1>
 <div id="3dproject" class="project">
 	<span class="gallerytitle"> 3d Asset Gallery</span>
 	<p class="description"> A collection of the 3d assets that I have made, for class projects and games.</p>

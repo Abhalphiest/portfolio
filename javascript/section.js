@@ -1,7 +1,4 @@
-function setSubNav(n)
-	{
-		setid=n;
-	}
+
 	function sectionSwitch(id,e)
 	{
 		console.log("#"+$(".subcurr").attr("id")+"\n");
