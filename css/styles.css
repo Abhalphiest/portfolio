@@ -190,6 +190,8 @@ ul.dropdown{
 	position:absolute;
 	left:0px;
 	background-color: #B20100;
+	float:none;
+	clear:both;
 
 }
 ul.dropdown li{
