@@ -43,6 +43,7 @@ section ul li{
 #mathtitle, #computingtitle, #gametitle, #coursetitle
 {
 	font-size:2em;
+	cursor:pointer;
 }
 #mathedu, #compedu, #gameedu, #coursework
 {
