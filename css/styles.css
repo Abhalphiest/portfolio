@@ -139,6 +139,7 @@ nav{
 	top:60px; 
 	margin-left:10%;
 	margin-right:10%;
+	background-color: #B20100;
 	}
 
 nav ul{
@@ -169,7 +170,7 @@ nav ul li a{
 }
 nav a:link, nav a:visited
 {
-	background-color: #B20100;	
+		
 }
 a#current , a#current:hover, a#current:link, a#current:visited{
 	background-color:white;
