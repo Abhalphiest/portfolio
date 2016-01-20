@@ -26,6 +26,10 @@
 	color:white;
 	display:inline-block;
 }
+#mathtitle, #computingtitle, #gametitle, #coursetitle
+{
+	font-size:2em;
+}
 #wyvernproject,#researchproject,#apotheounproject,#uiproject,#3dproject
 {
 	display:none;
