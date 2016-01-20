@@ -154,7 +154,7 @@ nav ul li{
 	text-align: center;
 	position:relative;
 	display:inline-block;
-	padding: 5px 20px; 
+	
 	
 }
 
@@ -163,6 +163,8 @@ nav ul li a{
 	text-decoration:none;
 	font-family:robotocondensed;
 	color: #FFF;
+	padding: 5px 20px;
+	font-size:1.2em;
 }
 #current a{
 	background-color:white;
@@ -195,7 +197,7 @@ ul.dropdown{
 ul.dropdown li{
 	float:none;
 	clear:both;
-	font-size:.8em;
+	font-size: 1em;
 	display:block;
 	
 }
