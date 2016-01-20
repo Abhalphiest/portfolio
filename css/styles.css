@@ -150,7 +150,6 @@ nav ul li{
 	float:left;
 	list-style-type: none;
 	list-style-position:inside;
-	font-size:1em;
 	text-align: center;
 	position:relative;
 	display:inline-block;
@@ -201,7 +200,7 @@ ul.dropdown li{
 	
 }
 ul.dropdown li a{
-	
+	display:inline;
 }
 
 
