@@ -190,14 +190,13 @@ ul.dropdown{
 	position:absolute;
 	left:0px;
 	background-color: #B20100;
-	float:none;
-	clear:both;
 
 }
 ul.dropdown li{
 	float:none;
 	clear:both;
 	font-size:.8em;
+	display:block;
 	
 }
 ul.dropdown li a{
