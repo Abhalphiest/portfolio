@@ -154,15 +154,15 @@ nav ul li{
 	text-align: center;
 	position:relative;
 	display:inline-block;
+	padding: 5px 20px; 
 	
 }
 
 nav ul li a{ 
-	padding: 5px 20px; 
+	
 	text-decoration:none;
 	font-family:robotocondensed;
 	color: #FFF;
-	padding-left: 3px;
 }
 #current a{
 	background-color:white;
@@ -176,7 +176,7 @@ a#current , a#current:hover, a#current:link, a#current:visited{
 	background-color:white;
 	color: black;
 }
-nav a:hover
+nav li:hover
 {
 	background-color: #1F1A21;
 }
