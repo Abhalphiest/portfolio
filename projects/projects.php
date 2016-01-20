@@ -70,7 +70,6 @@ arising from the physical sciences.</p>
 
 <h1 id="apotheoun" onclick="sectionSwitch('#apotheounproject','#apotheoun')"> Apotheoun </h1>
 <div id="apotheounproject" class="project">
-	<span class="gallerytitle"> Apotheoun</span>
 	<p class="description"> A 2D top-down space-themed shooter, implemented in Unity 2d. 
 	<a class="gallerylink" href="https://github.com/Abhalphiest/apotheoun">Project on Github</a></p>
 	<div class="imgbox">
@@ -82,7 +81,7 @@ arising from the physical sciences.</p>
 </div>
 <h1 id="ui" onclick="sectionSwitch('#uiproject','#ui')"> Application Design </h1>
 <div id="uiproject" class="project">
-	<span class="gallerytitle"> Architecture Sim User Interface</span>
+	<h2> Architecture Sim User Interface</h2>
 	<p class="description"> The visual design process for a portion of the UI necessary for a hypothetical
 							game/application, for a group project assigned in an Interaction Design course. Our hypothetical application
 							was a building simulator, similar to a combination of Maya 3D and SimCity.
@@ -109,7 +108,7 @@ arising from the physical sciences.</p>
 </div>
 <h1 id="3d" onclick="sectionSwitch('#3dproject','#3d')"> 3D Modelling </h1>
 <div id="3dproject" class="project">
-	<span class="gallerytitle"> 3d Asset Gallery</span>
+	<h2> 3d Asset Gallery</h2>
 	<p class="description"> A collection of the 3d assets that I have made, for class projects and games.</p>
 	<div class="imgbox">
 		<img src="../media/projects/art/keybladewireframe.png" alt="wireframe of keyblade model" title="Wireframe" />
