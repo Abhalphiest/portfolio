@@ -150,7 +150,6 @@ nav ul li{
 	list-style-type: none;
 	list-style-position:inside;
 	font-size:1em;
-	width:400px;
 	text-align: center;
 	position:relative;
 	display:inline-block;
@@ -181,6 +180,7 @@ nav a:hover
 	background-color: #1F1A21;
 }
 ul.dropdown{
+	
 	display:none;
 	list-style-type:none;
 	z-index:999;
@@ -192,6 +192,7 @@ ul.dropdown{
 }
 ul.dropdown li{
 	float:none;
+	clear:both;
 	font-size:.8em;
 	
 }
