@@ -89,6 +89,7 @@ $(document).ready(function(){
 		myImg.style.border = "thick double #FFFFFF";
 		frame.appendChild(myImg);
 		myImg.style.position = "relative";
+		lightbox.style.opacity ="1.0";
 		myImg.onload = function()
 		{
 			console.log("onload called");
