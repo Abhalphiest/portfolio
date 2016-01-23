@@ -181,7 +181,7 @@ nav li:hover
 	background-color: #1F1A21;
 }
 ul.dropdown{
-	
+	margin-top:5px;
 	display:none;
 	list-style-type:none;
 	z-index:999;
@@ -190,12 +190,12 @@ ul.dropdown{
 	position:absolute;
 	left:0px;
 	background-color: #B20100;
-
+	white-space:normal;
 }
 ul.dropdown li{
 	float:none;
 	clear:both;
-	font-size: 1em;
+	font-size: .9em;
 	display:block;
 	
 }
