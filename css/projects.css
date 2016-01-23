@@ -26,12 +26,12 @@
 	color:white;
 	display:inline-block;
 }
-#wyvern, #research, #apotheoun, #ui, #3d
+#wyvern, #research, #apotheoun, #ui, #model
 {
 	font-size:2em;
 	cursor:pointer;
 }
-#wyvernproject,#researchproject,#apotheounproject,#uiproject,#3dproject
+#wyvernproject,#researchproject,#apotheounproject,#uiproject,#modelproject
 {
 	display:none;
 }

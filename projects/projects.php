@@ -106,8 +106,8 @@ arising from the physical sciences.</p>
 		<p class="notes">Mockups, made by me, except for the vector art used as a stand in for the gameplay view, which was made by my teammate Jeanette Forbes.</p>
 	</div>
 </div>
-<h1 id="3d" onclick="sectionSwitch('#3dproject','#3d')"> 3D Modelling </h1>
-<div id="3dproject" class="project">
+<h1 id="model" onclick="sectionSwitch('#modelproject','#model')"> 3D Modelling </h1>
+<div id="modelproject" class="project">
 	<h2> 3d Asset Gallery</h2>
 	<p class="description"> A collection of the 3d assets that I have made, for class projects and games.</p>
 	<div class="imgbox">
