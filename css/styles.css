@@ -184,11 +184,9 @@ nav ul li a{
 }
 #current{
 	background-color:white;
-	color: black;
 }
 #current a{
-	
-	color: black;
+ color: black;
 }
 nav a:link, nav a:visited
 {
