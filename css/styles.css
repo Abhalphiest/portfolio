@@ -102,6 +102,9 @@ table {
 
 body{
 	margin-bottom: 150px; /* gives the page some breathing room */
+	margin-left:0px;
+	padding:0px;
+	padding-bottom:3em;
 }
 
 /*header css*/
@@ -110,10 +113,24 @@ header{
 	width:100%;
 	position: fixed;
 	background-color:white;
-	padding: 15px;
 	height:130px;
 	
 }
+/*footer*/
+footer{
+	position: fixed;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	padding:.2em;
+	text-align:center;
+	font-family:'robotocondensed';
+	color: #444444;
+	font-size:.7em;
+	background-color:white;
+	
+}
+/*logo stuff*/
 #logo a{
 	
 	font-family:wcManoNegra;
@@ -137,9 +154,10 @@ nav{
 	display:inline-block; 
 	position:relative; 
 	top:60px; 
-	margin-left:10%;
-	margin-right:10%;
+	padding-left: 3.5em;
 	background-color: #B20100;
+	width:100%;
+	margin-left:0;
 	}
 
 nav ul{
@@ -209,23 +227,7 @@ ul.dropdown li a{
 
 
 
-/*footer*/
-body{
-	padding-bottom:3em;
-}
-footer{
-	position: fixed;
-	bottom:0px;
-	left:0px;
-	right:0px;
-	padding:.2em;
-	text-align:center;
-	font-family:'robotocondensed';
-	color: #444444;
-	font-size:.7em;
-	background-color:white;
-	
-}
+
 
 /*general css*/
 h1,h2,h3
@@ -368,9 +370,6 @@ div#graphic img{
 @media screen and (max-width:1066px)
 {
 	nav{
-		margin-left:5%;
-		width:90%;
-		margin-right:5%;
 	}
 	article{
 		margin-left:5%;
