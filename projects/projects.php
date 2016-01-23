@@ -120,7 +120,8 @@ arising from the physical sciences.</p>
 </div>
 </article>
 <?php include '../include/footer.php'; ?>
-</body>
 <script src="../javascript/gallery.js"> </script> <!-- our gallery javascript -->
+</body>
+
 
 </html>
