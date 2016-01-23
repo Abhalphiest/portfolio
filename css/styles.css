@@ -182,8 +182,12 @@ nav ul li a{
 	color: #FFF;
 	font-size:1.1em;
 }
-#current a{
+#current{
 	background-color:white;
+	color: black;
+}
+#current a{
+	
 	color: black;
 }
 nav a:link, nav a:visited
