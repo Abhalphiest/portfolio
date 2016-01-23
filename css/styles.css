@@ -188,6 +188,9 @@ nav ul li a{
 #current a{
  color: black;
 }
+#current .dropdown li a{
+	color:white;
+}
 nav a:link, nav a:visited
 {
 		
