@@ -2,18 +2,21 @@ PORTFOLIO DOCUMENTATION
 
 Created by Margaret Dorsey
 Repo Created 10/18/2015	
-Last Updated 01/04/2016
+Last Updated 01/23/2016
 
-All html, css, javascript, php, etc by me with the exception of phpMailer.
+All html, css, javascript, php, etc by me with the exception of phpMailer and jQuery.
 This site is now hosted on heroku to support php, but still running through
 gh-pages.
 
 Fonts used:
-Across The Road by Jonathan S. Harris
-Nobility Casual by Digital Graphic Labs
-Rounded Elegance by Douglas Charles Cunha
+WC Mano Negra by WC Fonts
+Averua Serif by Dan Sayers
+Roboto by Google Android Design
 
- 
+All fonts used are 100% free for use and can be found by name in a web browser of your choice.
+
+The font used in the front page graphic is a mixture of several fonts, but primarily it is
+Across the Road by Jonathan S. Harris
 
 Logo was created by me. Any images, video, or other media on the page are solely my own.
 
@@ -21,4 +24,4 @@ Version 1.0 of this site was created for IGME 230, Web Design and Implementation
 
 Versions after 12/2015 are designed explicitly to present my portfolio with no outside constraints.
 
-Currently Refactoring.
+Currently being refactored to better present my portfolio.
