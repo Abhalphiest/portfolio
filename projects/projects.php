@@ -123,7 +123,7 @@ arising from the physical sciences.</p>
 							reference for 3D Animation and Asset production. Modeled, unwrapped, textured, and rigged by me.</p>
 	</div>
 </div>
-<h1 id="ggj" onclick="sectionSwitch('#ggjproject','#ggj')"> 3D Modelling </h1>
+<h1 id="ggj" onclick="sectionSwitch('#ggjproject','#ggj')"> Global Game Jam 2016 </h1>
 <div id="ggjproject" class="project">
 	<h2> Global Game Jam 2016</h2>
 	<p class="description"> Made Smash The Stack, an infinite runner/memory game hybrid on a team of 6 people. Primarily handled back end code,
