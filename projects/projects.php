@@ -48,6 +48,11 @@ if(isset($_GET['action'])) //special link
 		echo "<script>$(document).ready(function()
 					{sectionSwitch('#3dproject','#3d');});</script>";
 	}
+	if($_GET['action'] == 'ggj')
+	{
+		echo "<script>$(document).ready(function()
+					{sectionSwitch('#ggjproject','#ggj');});</script>";
+	}
 }
 ?>
 
@@ -117,6 +122,16 @@ arising from the physical sciences.</p>
 		<p class="notes"> A 'gritty reboot' Kingdom Key ( <a href="http://www.khwiki.com/Kingdom_Key"> from Kingdom Hearts </a>) made from
 							reference for 3D Animation and Asset production. Modeled, unwrapped, textured, and rigged by me.</p>
 	</div>
+</div>
+<h1 id="ggj" onclick="sectionSwitch('#ggjproject','#ggj')"> 3D Modelling </h1>
+<div id="ggjproject" class="project">
+	<h2> Global Game Jam 2016</h2>
+	<p class="description"> Made Smash The Stack, an infinite runner/memory game hybrid on a team of 6 people. Primarily handled back end code,
+	source control, and software design/architecture. <a href="http://abhalphiest.github.io/smashthestack/"> Link to project site </a></p>
+	<div class="imgbox">
+		<img src="../media/projects/sts/keyimg.png" alt="key image of game" title="Wireframe" />
+	</div>
+	<a href="https://github.com/Abhalphiest/smashthestack" class="github">Project Repository on GitHub</a>
 </div>
 </article>
 <?php include '../include/footer.php'; ?>
