@@ -1,7 +1,31 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <!-- include jQuery -->
-<script>$(document).ready(function(){$(".topnav").hover(function(e){
+<script>
+
+$(document).ready(function(){$(".topnav").hover(function(e){
     $(this).children('.dropdown').slideDown(200);
-},function(e){$(this).children('.dropdown').slideUp(200);})}); </script>
+},function(e){$(this).children('.dropdown').slideUp(200);})});
+
+//does the browser support local storage?
+//if not, switch to static site.
+function supportsLocalStorage()
+{
+  try {
+    return 'localStorage' in window && window['localStorage'] !== null;
+  } catch (e) {
+    return false;
+  }
+}
+
+function setGlobal(page, value)
+{
+  if(!supportsLocalStorage())
+	{
+		//switch to static site
+	}
+   localStorage[page] = value;
+}
+ </script>
+
 
 <header> 
 	<div id="logo"> <a href="/index.php">Margaret Dorsey</a></div>
@@ -12,30 +36,46 @@
 				<a href="/projects/projects.php"  >Projects </a>
 				<!-- sub navigation for computing (invisible until hover) -->
 				<ul class="dropdown">
-					<li class="topnav"><a href="/projects/projects.php?action=wyvern"> Wyvern Engine </a> </li>
-					<li class="topnav"><a href="/projects/projects.php?action=research"> Math Undergraduate Research</a> </li>
-					<li class="topnav"><a href="/projects/projects.php?action=apotheoun"> Apotheoun </a> </li>
-					<li class="topnav"><a href="/projects/projects.php?action=ui"> Application Design </a> </li>
-					<li class="topnav"><a href="/projects/projects.php?action=3d"> 3D Modelling </a> </li>
-					<li class="topnav"><a href="/projects/projects.php?action=ggj"> Global Game Jam 2016 </a> </li>
+					<li class="topnav"><a href="/projects/projects.html" 
+						onclick="setGlobal(project, wyvern)"> Wyvern Engine </a> </li>
+					<li class="topnav"><a href="/projects/projects.html"
+						onclick="setGlobal(project, research)"> Math Undergraduate Research</a> </li>
+					<li class="topnav"><a href="/projects/projects.html"
+						onclick="setGlobal(project, apotheoun)"> Apotheoun </a> </li>
+					<li class="topnav"><a href="/projects/projects.html"
+						onclick="setGlobal(project, design)"> Application Design </a> </li>
+					<li class="topnav"><a href="/projects/projects.html"
+						onclick="setGlobal(project, modelling)"> 3D Modelling </a> </li>
+					<li class="topnav"><a href="/projects/projects.html"
+						onclick="setGlobal(project, ggj)"> Global Game Jam 2016 </a> </li>
+					<li class="topnav"><a href="/projects/projects.html"
+						onclick="setGlobal(project, androids)"> Androids, Assemble! </a> </li>
+					<li class="topnav"><a href="/projects/projects.html"
+						onclick="setGlobal(project, primality)"> Primality Testing </a> </li>
+					<li class="topnav"><a href="/projects/projects.html"
+						onclick="setGlobal(project, geomAlg)"> Geometric Algebra </a> </li>
 				</ul>
 			</li >
 			<li class ="topnav" id="1" name="edunav" >
 				<a href="/education/education.php" >Education</a>
 				<!-- sub navigation for math (invisible until hover)-->
 				<ul class="dropdown">
-					<li class="topnav"><a href="/education/education.php?action=computing"> Computing </a> </li>
-					<li class="topnav"><a href="/education/education.php?action=mathematics"> Mathematics </a> </li>
-					<li class="topnav"><a href="/education/education.php?action=gamedesign"> Game Design </a> </li>
-					<li class="topnav"><a href="/education/education.php?action=coursework"> Coursework </a> </li>
+					<li class="topnav"><a href="/education/education.html"
+						<li class="topnav"><a href="/projects/projects.html"
+						onclick="setGlobal(education, computing)"> Computing </a> </li>
+					<li class="topnav"><a href="/education/education.html"
+						onclick="setGlobal(education, math)"> Mathematics </a> </li>
+					<li class="topnav"><a href="/education/education.html"
+						onclick="setGlobal(education, gamedesign)"> Game Design </a> </li>
+					<li class="topnav"><a href="/education/education.html"
+						onclick="setGlobal(education, coursework)"> Coursework </a> </li>
 				</ul>
 			</li>
 			
 			<li name="aboutnav">
-				<a href="/aboutme.php" >About Me</a>
+				<a href="/aboutme.html" >About Me</a>
 			</li>
-			<li name="contactnav" ><a href="/contact.php" > Contact </a> </li>
-			<li><a href="/Resume.pdf">Resume</a></li>
+			<li><a href="/resume.html">Resume</a></li>
 		</ul>		
 	</nav>
 </header>
