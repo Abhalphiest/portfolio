@@ -17,135 +17,107 @@
 </head>
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <!-- include jQuery -->
+<script src="../javascript/globals.js"></script>
+<script src="../javascript/section.js"></script>
 <script>
+$(document).ready(function(){
 
-$(document).ready(function(){$(".topnav").hover(function(e){
+$(".topnav").hover(function(e){
     $(this).children('.dropdown').slideDown(200);
-},function(e){$(this).children('.dropdown').slideUp(200);})});
+},function(e){$(this).children('.dropdown').slideUp(200);});
 
-//does the browser support local storage?
-//if not, switch to static site.
-function supportsLocalStorage()
+var section = getGlobal("project");
+console.log(section);
+if(section != null)
 {
-  try {
-    return 'localStorage' in window && window['localStorage'] !== null;
-  } catch (e) {
-    return false;
-  }
+console.log("#"+section);
+sectionSwitch("#"+section);
+console.log($("#"+section).attr("class"));
 }
-
-function setGlobal(page, value)
-{
-  if(!supportsLocalStorage())
-	{
-		//switch to static site
-	}
-   localStorage[page] = value;
-}
- </script>
+});
+</script>
 
 
 <header> 
-	<div id="logo"> <a href="/index.php">Margaret Dorsey</a></div>
+	<div id="logo"> <a href="../index.html">Margaret Dorsey</a></div>
 	<nav> 
 		<!-- main navigation (always visible) -->
 		<ul id="mainnav">
 			<li class="topnav" id="2" name="projectnav">
-				<a href="/projects/projects.php"  >Projects </a>
+				<a href="projects.html"  >Projects </a>
 				<!-- sub navigation for computing (invisible until hover) -->
 				<ul class="dropdown">
-					<li class="topnav"><a href="/projects/projects.html" 
-						onclick="setGlobal(project, wyvern)"> Wyvern Engine </a> </li>
-					<li class="topnav"><a href="/projects/projects.html"
-						onclick="setGlobal(project, research)"> Math Undergraduate Research</a> </li>
-					<li class="topnav"><a href="/projects/projects.html"
-						onclick="setGlobal(project, apotheoun)"> Apotheoun </a> </li>
-					<li class="topnav"><a href="/projects/projects.html"
-						onclick="setGlobal(project, design)"> Application Design </a> </li>
-					<li class="topnav"><a href="/projects/projects.html"
-						onclick="setGlobal(project, modelling)"> 3D Modelling </a> </li>
-					<li class="topnav"><a href="/projects/projects.html"
-						onclick="setGlobal(project, ggj)"> Global Game Jam 2016 </a> </li>
-					<li class="topnav"><a href="/projects/projects.html"
-						onclick="setGlobal(project, androids)"> Androids, Assemble! </a> </li>
-					<li class="topnav"><a href="/projects/projects.html"
-						onclick="setGlobal(project, primality)"> Primality Testing </a> </li>
-					<li class="topnav"><a href="/projects/projects.html"
-						onclick="setGlobal(project, geomAlg)"> Geometric Algebra </a> </li>
+					<li class="topnav"><a href="projects.html" 
+						onclick="setGlobal('project', 'wyvern')"> Wyvern Engine </a> </li>
+					<li class="topnav"><a href="projects.html"
+						onclick="setGlobal('project', 'research')"> Math Undergraduate Research</a> </li>
+					<li class="topnav"><a href="projects.html"
+						onclick="setGlobal('project', 'apotheoun')"> Apotheoun </a> </li>
+					<li class="topnav"><a href="projects.html"
+						onclick="setGlobal('project', 'ui')"> Application Design </a> </li>
+					<li class="topnav"><a href="projects.html"
+						onclick="setGlobal('project', 'model')"> 3D Modelling </a> </li>
+					<li class="topnav"><a href="projects.html"
+						onclick="setGlobal('project', 'ggj')"> Global Game Jam 2016 </a> </li>
+					<li class="topnav"><a href="projects.html"
+						onclick="setGlobal('project', 'androids')"> Androids, Assemble! </a> </li>
+					<li class="topnav"><a href="projects.html"
+						onclick="setGlobal('project', 'primality')"> Primality Testing </a> </li>
+					<li class="topnav"><a href="projects.html"
+						onclick="setGlobal('project', 'geomAlg')"> Geometric Algebra </a> </li>
 				</ul>
 			</li >
 			<li class ="topnav" id="1" name="edunav" >
 				<a href="/education/education.php" >Education</a>
 				<!-- sub navigation for math (invisible until hover)-->
 				<ul class="dropdown">
-					<li class="topnav"><a href="/education/education.html"
-						<li class="topnav"><a href="/projects/projects.html"
+					<li class="topnav"><a href="../education/education.html"
 						onclick="setGlobal(education, computing)"> Computing </a> </li>
-					<li class="topnav"><a href="/education/education.html"
+					<li class="topnav"><a href="../education/education.html"
 						onclick="setGlobal(education, math)"> Mathematics </a> </li>
-					<li class="topnav"><a href="/education/education.html"
+					<li class="topnav"><a href="../education/education.html"
 						onclick="setGlobal(education, gamedesign)"> Game Design </a> </li>
-					<li class="topnav"><a href="/education/education.html"
+					<li class="topnav"><a href="../education/education.html"
 						onclick="setGlobal(education, coursework)"> Coursework </a> </li>
 				</ul>
 			</li>
 			
 			<li name="aboutnav">
-				<a href="/aboutme.html" >About Me</a>
+				<a href="aboutme.html" >About Me</a>
 			</li>
-			<li><a href="/resume.html">Resume</a></li>
+			<li><a href="resume.html">Resume</a></li>
 		</ul>		
 	</nav>
 </header>
-<article id="main"> <!-- for the entire body of content -->
-<script src="../javascript/section.js"></script>
-<?php
-ini_set('display_errors',1);
-if(isset($_GET['action'])) //special link
-{
-	if($_GET['action'] == 'wyvern')
-	{
-		echo "<script>$(document).ready(function()
-					{sectionSwitch('#wyvernproject','#wyvern');});</script>";
-	}
-	if($_GET['action'] == 'research')
-	{
-		echo "<script>$(document).ready(function()
-					{sectionSwitch('#researchproject','#research');});</script>";
-	}
-	if($_GET['action'] == 'apotheoun')
-	{
-		echo "<script>$(document).ready(function()
-					{sectionSwitch('#apotheounproject','#apotheoun');});</script>";
-	}
-	if($_GET['action'] == 'ui')
-	{
-	echo "<script>$(document).ready(function()
-					{sectionSwitch('#uiproject','#ui');});</script>";
-	}
-	if($_GET['action'] == '3d')
-	{
-		echo "<script>$(document).ready(function()
-					{sectionSwitch('#3dproject','#3d');});</script>";
-	}
-	if($_GET['action'] == 'ggj')
-	{
-		echo "<script>$(document).ready(function()
-					{sectionSwitch('#ggjproject','#ggj');});</script>";
-	}
-}
-?>
 
-<h1 id="wyvern" onclick="sectionSwitch('#wyvernproject','#wyvern')"> Wyvern Engine </h1>
-<div id="wyvernproject" class="project">
+
+
+<article id="main"> <!-- for the entire body of content -->
+<nav id="projectSubnav">
+<ul>
+<li onclick="sectionSwitch('#wyvern')"> Wyvern Engine</li>
+<li onclick="sectionSwitch('#research')"> Math Undergraduate Research </li>
+<li onclick="sectionSwitch('#apotheoun')"> Apotheoun </li>
+<li onclick="sectionSwitch('#ui')"> Application Design </li>
+<li onclick="sectionSwitch('#model')"> 3D Modelling </li>
+<li onclick="sectionSwitch('#ggj')"> Global Game Jam 2016 </li>
+<li onclick="sectionSwitch('#androids')"> Androids, Assemble!</li>
+<li onclick="sectionSwitch('#primality')"> Primality Testing </li>
+<li onclick="sectionSwitch('#geomAlg')"> Geometric Algebra </a> </li>
+</ul>
+</nav>
+
+<div id="wyvern" class="project">
+	<h1> Wyvern Engine </h1>
 	<p class="description" > A rendering and physics engine with a from scratch math library, implemented in C/C++ using openGL, GLEW, and GLFW.
 	Still in progress, see github readme for more information.
 	</p>
 	<a href="https://github.com/Abhalphiest/engine" class="github">Project Repository on GitHub</a>
 </div>
 
- <h1 id="research" onclick="sectionSwitch('#researchproject','#research')"> Math Undergraduate Research </h1>
- <div id="researchproject" class="project">
+ 
+ <div id="research" class="project">
+ <h1 > Math Undergraduate Research </h1>
 	<h2> Lie Symmetries and Differential Equations </h2>
 <p> Research into the theoretical foundations of symmetry methods for differential equations, including Lie Symmetry Groups of ODEs, PDEs, and systems, infinitesimal generators and their prolongations, and discrete symmetries.
 Also investigated more advanced symmetry methods, such as variational symmetries, general (non-geometric) symmetries, and conservation laws. Currently investigating the application of these methods to various physical problems
@@ -153,8 +125,9 @@ arising from the physical sciences.</p>
 <p> Research Mentor: Dr. Tamas Wiandt </p>
 </div>
 
-<h1 id="apotheoun" onclick="sectionSwitch('#apotheounproject','#apotheoun')"> Apotheoun </h1>
-<div id="apotheounproject" class="project">
+
+<div id="apotheoun" class="project">
+	<h1> Apotheoun </h1>
 	<p class="description"> A 2D top-down space-themed shooter, implemented in Unity 2d. 
 	<a class="gallerylink" href="https://github.com/Abhalphiest/apotheoun">Project on Github</a></p>
 	<div class="imgbox">
@@ -164,8 +137,9 @@ arising from the physical sciences.</p>
 		<p class="notes"> Concept sketches of player ship, enemy ship, and background environment. </p>
 	</div>
 </div>
-<h1 id="ui" onclick="sectionSwitch('#uiproject','#ui')"> Application Design </h1>
-<div id="uiproject" class="project">
+
+<div id="ui" class="project">
+	<h1 onclick="sectionSwitch('#ui')"> Application Design </h1>
 	<h2> Architecture Sim User Interface</h2>
 	<p class="description"> The visual design process for a portion of the UI necessary for a hypothetical
 							game/application, for a group project assigned in an Interaction Design course. Our hypothetical application
@@ -191,8 +165,9 @@ arising from the physical sciences.</p>
 		<p class="notes">Mockups, made by me, except for the vector art used as a stand in for the gameplay view, which was made by my teammate Jeanette Forbes.</p>
 	</div>
 </div>
-<h1 id="model" onclick="sectionSwitch('#modelproject','#model')"> 3D Modelling </h1>
-<div id="modelproject" class="project">
+
+<div id="model" class="project">
+<h1 > 3D Modelling </h1>
 	<h2> 3d Asset Gallery</h2>
 	<p class="description"> A collection of the 3d assets that I have made, for class projects and games.</p>
 	<div class="imgbox">
@@ -203,15 +178,34 @@ arising from the physical sciences.</p>
 							reference for 3D Animation and Asset production. Modeled, unwrapped, textured, and rigged by me.</p>
 	</div>
 </div>
-<h1 id="ggj" onclick="sectionSwitch('#ggjproject','#ggj')"> Global Game Jam 2016 </h1>
-<div id="ggjproject" class="project">
-	<h2> Global Game Jam 2016</h2>
+
+
+<div id="ggj" class="project">
+<h1> Global Game Jam 2016 </h1>
 	<p class="description"> Made Smash The Stack, an infinite runner/memory game hybrid on a team of 6 people. Primarily handled back end code,
 	source control, and software design/architecture. <a href="http://abhalphiest.github.io/smashthestack/"> Link to project site </a></p>
 	<div class="imgbox">
 		<img src="../media/projects/sts/keyimg.png" alt="key image of game" title="Wireframe" />
 	</div>
 	<a href="https://github.com/Abhalphiest/smashthestack" class="github">Project Repository on GitHub</a>
+</div>
+
+<div id="androids" class="project">
+	<h1> Androids, Assemble! </h1>
+	<p class="description" > 
+	</p>
+</div>
+<div id="primality" class="project">
+	<h1> Primality Testing </h1>
+	<p class="description" > 
+	</p>
+	<a href="#" class="github">Project Repository on GitHub</a>
+</div>
+<div id="geomAlg" class="project">
+	<h1> Geometric Algebra </h1>
+	<p class="description" > 
+	</p>
+	<a href="#" class="github">Project Repository on GitHub</a>
 </div>
 </article>
 <?php include '../include/footer.php'; ?>

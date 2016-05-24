@@ -26,12 +26,13 @@
 	color:white;
 	display:inline-block;
 }
-#wyvern, #research, #apotheoun, #ui, #model, #ggj
-{
-	font-size:2em;
-	cursor:pointer;
-}
-#wyvernproject,#researchproject,#apotheounproject,#uiproject,#modelproject, #ggjproject
+#wyvern, #research, #apotheoun, #ui, #model, #ggj, #primality, #geomAlg, #androids
 {
 	display:none;
 }
+
+#projectSubnav li
+{
+	cursor:pointer;
+}
+

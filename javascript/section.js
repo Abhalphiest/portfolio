@@ -1,19 +1,17 @@
 "use strict"
-	function sectionSwitch(id,e)
+	function sectionSwitch(id)
 	{
-		if("#"+$(".subcurr").attr("id") != id)
+		if($(".subcurr").size() == 0)
 		{
-			$(".subcurr").slideUp(800);
-			$(".subcurr").removeClass("subcurr");
-			console.log($(id).attr("id"));
 			$(id).addClass("subcurr");
-			$("#main").prepend($(id)).prepend($(e)); //move it to the top
-			$(id).slideDown(800);
+			$(id).toggle();
 		}
-		else
+		else if("#"+$(".subcurr").attr("id") != id)
 		{
-			$(".subcurr").slideUp(800);
+			$(".subcurr").fadeOut(800);
 			$(".subcurr").removeClass("subcurr");
+			$(id).addClass("subcurr");
+			$(id).fadeIn(800);
 		}
-		 $("html, body").animate({ scrollTop: 0 }, "slow");
+		
 	}
