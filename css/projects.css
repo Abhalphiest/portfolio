@@ -35,4 +35,11 @@
 {
 	cursor:pointer;
 }
+#projectSubnav
+{
+	width:20%;
+	float:left;
+	background-color:blue;
+}
+
 
