@@ -31,7 +31,7 @@ $("#"+section).addClass("subcurr");
 		<!-- main navigation (always visible) -->
 		<ul id="mainnav">
 			<li class="topnav" id="2" name="projectnav">
-				<a href="/projects/projects.php"  >Projects </a>
+				<a href="projects/projects.html"  >Projects </a>
 				<!-- sub navigation for computing (invisible until hover) -->
 				<ul class="dropdown">
 					<li class="topnav"><a href="projects/projects.html" 
@@ -55,18 +55,17 @@ $("#"+section).addClass("subcurr");
 				</ul>
 			</li >
 			<li class ="topnav" id="1" name="edunav" >
-				<a href="/education/education.php" >Education</a>
+				<a href="education/education.html" >Education</a>
 				<!-- sub navigation for math (invisible until hover)-->
 				<ul class="dropdown">
 					<li class="topnav"><a href="education/education.html"
-						<li class="topnav"><a href="projects/projects.html"
-						onclick="setGlobal(education, computing)"> Computing </a> </li>
+						onclick="setGlobal('education', 'compedu')"> Computing </a> </li>
 					<li class="topnav"><a href="education/education.html"
-						onclick="setGlobal(education, math)"> Mathematics </a> </li>
+						onclick="setGlobal('education', 'mathedu')"> Mathematics </a> </li>
 					<li class="topnav"><a href="education/education.html"
-						onclick="setGlobal(education, gamedesign)"> Game Design </a> </li>
+						onclick="setGlobal('education', 'gameedu')"> Game Design </a> </li>
 					<li class="topnav"><a href="education/education.html"
-						onclick="setGlobal(education, coursework)"> Coursework </a> </li>
+						onclick="setGlobal('education', 'coursework')"> Coursework </a> </li>
 				</ul>
 			</li>
 			

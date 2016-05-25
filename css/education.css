@@ -40,15 +40,25 @@ section ul li{
 	font-size: .9em;
 		
 }
-#mathtitle, #computingtitle, #gametitle, #coursetitle
-{
-	font-size:2em;
-	cursor:pointer;
-}
 #mathedu, #compedu, #gameedu, #coursework
 {
 	display:none;
+	position:relative;
+	left:15%;
 	
+}
+
+#educationSubnav li
+{
+	cursor:pointer;
+	padding:10px;
+}
+#educationSubnav
+{
+	width:15%;
+	float:left;
+	position:fixed;
+	top:200px; /*start off below the header*/
 }
 @media screen and (max-width: 1024px)
 {

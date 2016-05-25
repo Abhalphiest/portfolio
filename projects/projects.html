@@ -66,31 +66,29 @@ console.log($("#"+section).attr("class"));
 				</ul>
 			</li >
 			<li class ="topnav" id="1" name="edunav" >
-				<a href="/education/education.php" >Education</a>
-				<!-- sub navigation for math (invisible until hover)-->
+				<a href="education/education.html" >Education</a>
+				<!-- sub navigation for education (invisible until hover)-->
 				<ul class="dropdown">
 					<li class="topnav"><a href="../education/education.html"
-						onclick="setGlobal(education, computing)"> Computing </a> </li>
+						onclick="setGlobal('education', 'compedu')"> Computing </a> </li>
 					<li class="topnav"><a href="../education/education.html"
-						onclick="setGlobal(education, math)"> Mathematics </a> </li>
+						onclick="setGlobal('education', 'mathedu')"> Mathematics </a> </li>
 					<li class="topnav"><a href="../education/education.html"
-						onclick="setGlobal(education, gamedesign)"> Game Design </a> </li>
+						onclick="setGlobal('education', 'gameedu')"> Game Design </a> </li>
 					<li class="topnav"><a href="../education/education.html"
-						onclick="setGlobal(education, coursework)"> Coursework </a> </li>
+						onclick="setGlobal('education', 'coursework')"> Coursework </a> </li>
 				</ul>
 			</li>
 			
 			<li name="aboutnav">
-				<a href="aboutme.html" >About Me</a>
+				<a href="../aboutme.html" >About Me</a>
 			</li>
-			<li><a href="resume.html">Resume</a></li>
+			<li><a href="../resume.html">Resume</a></li>
 		</ul>		
 	</nav>
 </header>
 
 
-
-<article id="main"> <!-- for the entire body of content -->
 <ul id="projectSubnav">
 <li onclick="sectionSwitch('#wyvern')"> Wyvern Engine</li>
 <li onclick="sectionSwitch('#research')"> Math Undergraduate Research </li>
@@ -101,6 +99,8 @@ console.log($("#"+section).attr("class"));
 <li onclick="sectionSwitch('#primality')"> Primality Testing </li>
 <li onclick="sectionSwitch('#geomAlg')"> Geometric Algebra </li>
 </ul>
+<article id="main"> <!-- for the entire body of content -->
+
 
 <div id="wyvern" class="project">
 	<h1> Wyvern Engine </h1>
