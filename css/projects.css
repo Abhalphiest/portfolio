@@ -31,6 +31,7 @@
 	display:none;
 	position:relative;
 	left:20%;
+	z-index: -9999;
 }
 
 #projectSubnav li
