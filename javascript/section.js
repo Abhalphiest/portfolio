@@ -8,10 +8,10 @@
 		}
 		else if("#"+$(".subcurr").attr("id") != id)
 		{
-			$(".subcurr").fadeOut(800);
+			$(".subcurr").fadeOut(800,function(){
 			$(".subcurr").removeClass("subcurr");
 			$(id).addClass("subcurr");
-			$(id).fadeIn(800);
+			$(id).hide().fadeIn(600);});
 		}
 		
 	}

@@ -113,7 +113,8 @@ header{
 	width:100%;
 	position: fixed;
 	background-color:white;
-	height:130px
+	height:130px;
+	z-index:999;
 	
 }
 /*footer*/
@@ -162,6 +163,7 @@ nav{
 
 nav ul{
 	white-space: nowrap;
+	z-index:2;
 }
 
 nav ul li{
@@ -207,7 +209,6 @@ ul.dropdown{
 	margin-top:5px;
 	display:none;
 	list-style-type:none;
-	z-index:999;
 	list-style-position:inside;
 	padding-left:0px;
 	position:absolute;

@@ -6,8 +6,10 @@
 	border-width: 2px; 
 	border-radius:3px;
 	margin-left:10px;
-	width:80%;
+	width:90%;
 	display:none;
+	position:relative;
+	left:30%;
 }
 
 .project h2{
@@ -26,12 +28,10 @@
 	color:white;
 	display:inline-block;
 }
-#wyvern, #research, #apotheoun, #ui, #model, #ggj, #primality, #geomAlg, #androids
+#wyvern, #research, #ui, #model, #ggj, #primality, #geomAlg, #androids
 {
 	display:none;
-	position:relative;
-	left:20%;
-	z-index: -9999;
+	
 }
 
 #projectSubnav li
