@@ -1,20 +1,24 @@
 @font-face{
 	font-family:robotoCondensed;
-	src: url(Roboto-Condensed.ttf);
+	src: url(../media/fonts/Roboto-Condensed.ttf);
 }
 @font-face{
 	font-family:cnr;
-	src: url(CodeNewRomanb.otf);
+	src: url(../media/fonts/CodeNewRomanb.otf);
 }
 @font-face{
 	font-family:robotoBlack;
-	src: url(Roboto-Black.ttf);
+	src: url(../media/fonts/Roboto-Black.ttf);
 }
 @font-face{
 	font-family:wcm;
-	src: url(WCManoNegraBoldBta.ttf);
+	src: url(../media/fonts/wcmanonegraboldbta-webfont.ttf);
 }
-@font-face{font-family:averia; src:url(AveriaSerif-Light.ttf);}
+@font-face{font-family:averia; src:url(../media/fonts/AveriaSerif-Light.ttf);}
+
+.toplink{display:none;}
+
+#logo
 body
 {
 	padding-top:0px;

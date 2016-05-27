@@ -2,82 +2,19 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<link rel="stylesheet" type="text/css" href="resume.css">
-<link rel="stylesheet" type="text/css" media="print" href="resumePrint.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/resume.css">
+<link rel="stylesheet" type="text/css" media="print" href="css/resumePrint.css">
+	<title> Resume </title>
 </head>
 <body>
+		
 	
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <!-- include jQuery -->
-<script src="javascript/globals.js"></script>
-<script src="javascript/section.js"></script>
-<script>
-$(document).ready(function(){
-
-$(".topnav").hover(function(e){
-    $(this).children('.dropdown').slideDown(200);
-},function(e){$(this).children('.dropdown').slideUp(200);});
-
-var section = getGlobal("project");
-$("#"+section).addClass("subcurr");
-
-});
-</script>
-
-
-<header> 
-	<div id="logo"> <a href="index.html">Margaret Dorsey</a></div>
-	<nav> 
-		<!-- main navigation (always visible) -->
-		<ul id="mainnav">
-			<li class="topnav" id="2" name="projectnav">
-				<a href="projects/projects.html"  >Projects </a>
-				<!-- sub navigation for computing (invisible until hover) -->
-				<ul class="dropdown">
-					<li class="topnav"><a href="projects/projects.html" 
-						onclick="setGlobal('project', 'wyvern')"> Wyvern Engine </a> </li>
-					<li class="topnav"><a href="projects/projects.html"
-						onclick="setGlobal('project', 'research')"> Math Undergraduate Research</a> </li>
-					<li class="topnav"><a href="projects/projects.html"
-						onclick="setGlobal('project', 'apotheoun')"> Apotheoun </a> </li>
-					<li class="topnav"><a href="projects/projects.html"
-						onclick="setGlobal('project', 'ui')"> Application Design </a> </li>
-					<li class="topnav"><a href="projects/projects.html"
-						onclick="setGlobal('project', 'model')"> 3D Modelling </a> </li>
-					<li class="topnav"><a href="projects/projects.html"
-						onclick="setGlobal('project', 'ggj')"> Global Game Jam 2016 </a> </li>
-					<li class="topnav"><a href="projects/projects.html"
-						onclick="setGlobal('project', 'androids')"> Androids, Assemble! </a> </li>
-					<li class="topnav"><a href="projects/projects.html"
-						onclick="setGlobal('project', 'primality')"> Primality Testing </a> </li>
-					<li class="topnav"><a href="projects/projects.html"
-						onclick="setGlobal('project', 'geomAlg')"> Geometric Algebra </a> </li>
-				</ul>
-			</li >
-			<li class ="topnav" id="1" name="edunav" >
-				<a href="education/education.html" >Education</a>
-				<!-- sub navigation for math (invisible until hover)-->
-				<ul class="dropdown">
-					<li class="topnav"><a href="education/education.html"
-						onclick="setGlobal('education', 'compedu')"> Computing </a> </li>
-					<li class="topnav"><a href="education/education.html"
-						onclick="setGlobal('education', 'mathedu')"> Mathematics </a> </li>
-					<li class="topnav"><a href="education/education.html"
-						onclick="setGlobal('education', 'gameedu')"> Game Design </a> </li>
-					<li class="topnav"><a href="education/education.html"
-						onclick="setGlobal('education', 'coursework')"> Coursework </a> </li>
-				</ul>
-			</li>
-			
-			<li name="aboutnav">
-				<a href="aboutme.html" >About Me</a>
-			</li>
-			<li><a href="resume.html">Resume</a></li>
-		</ul>		
-	</nav>
-</header>	
-
-	<a href="#" id="resumepdf"> PDF Version </a>
 	
+
+<a href="DorseyMargaret_resume.pdf" target="_blank" class="toplink"> PDF Version </a>	
+<a href="index.html" class="toplink"> Back to Portfolio</a>
+
+
 <span id="name"> Margaret Dorsey </span>
 <div id="heading"> 
 <ul id="contact">
@@ -89,10 +26,9 @@ $("#"+section).addClass("subcurr");
 </ul>
 </div>
 <hr>
-<div>
 <div id="education">
 <h1>Education</h1>
-<h2> Rochester Institute of Technology</h3>
+<h2> Rochester Institute of Technology</h2>
 <ul id="majors" class="two">
 <li> Game Design and Development, BS </li>
 <li> Computational Mathematics, BS </li>
@@ -103,10 +39,10 @@ $("#"+section).addClass("subcurr");
 <li> <em>GPA </em> 4.0 </li>
 <li><em> Expected Graduation </em> May 2018 </li>
 </ul>
-<h2> Erie Community College</h3>
+<h2> Erie Community College</h2>
 <ul>
 <li> Associates of Science in Mathematics, 2014 </li>
-</li>
+</ul>
 </div>
 <div id="projects">
 <h1>Projects</h1>
@@ -202,10 +138,6 @@ and the majority of back end code.</p>
 </li>
 </ul>
 </div>
-
-	
-<footer>
-<p>All images, html, css, javascript, and jQuery code by me. This site uses jQuery. &copy; 2016 Margaret Dorsey</p>
-</footer>	
+		
 </body>
 </html>
