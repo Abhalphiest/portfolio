@@ -60,7 +60,7 @@ console.log($("#"+section).attr("class"));
 					<li class="topnav"><a href="projects.html"
 						onclick="setGlobal('project', 'androids')"> Androids, Assemble! </a> </li>
 					<li class="topnav"><a href="projects.html"
-						onclick="setGlobal('project', 'primality')"> Primality Testing </a> </li>
+						onclick="setGlobal('project', 'mips')"> MIPS </a> </li>
 					<li class="topnav"><a href="projects.html"
 						onclick="setGlobal('project', 'geomAlg')"> Geometric Algebra </a> </li>
 				</ul>
@@ -96,7 +96,7 @@ console.log($("#"+section).attr("class"));
 <li onclick="sectionSwitch('#model')"> 3D Modelling </li>
 <li onclick="sectionSwitch('#ggj')"> Global Game Jam 2016 </li>
 <li onclick="sectionSwitch('#androids')"> Androids, Assemble!</li>
-<li onclick="sectionSwitch('#primality')"> Primality Testing </li>
+<li onclick="sectionSwitch('#mips')"> MIPS </li>
 <li onclick="sectionSwitch('#geomAlg')"> Geometric Algebra </li>
 </ul>
 <article id="main"> <!-- for the entire body of content -->
@@ -118,6 +118,17 @@ console.log($("#"+section).attr("class"));
 Also investigated more advanced symmetry methods, such as variational symmetries, general (non-geometric) symmetries, and conservation laws. Currently investigating the application of these methods to various physical problems
 arising from the physical sciences.</p>
 <p> Research Mentor: Dr. Tamas Wiandt </p>
+	 
+	 <h2> Primality Testing and Factorization Methods </h2>
+<p> A survey paper of the various methods used in testing the primality of large numbers and obtaining the prime factorization of large composites. Partnered
+	 with Jodie Miu, who unfortunately could not complete her portion of the paper - I am the sole author of the Primality testing sections, as well as other 
+	 parts of the paper listed under the Author information at the end.</p>
+<p> There are also a limited number of C implementations of the early primality methods - I plan to add implementations of more sophisticated methods, as well as 
+	possibly complete the factorization portion myself in the future. </p>
+<p> Assigned By: Dr. Anurag Agarwal </p>
+	 
+<a href="https://github.com/Abhalphiest/nt" class="github">Project Repository on GitHub</a>
+
 </div>
 
 
@@ -176,20 +187,44 @@ arising from the physical sciences.</p>
 
 <div id="androids" class="project">
 	<h1> Androids, Assemble! </h1>
-	<p class="description" > 
+	<p class="description" >
+		Created an analog party game with a team of 3 other students. Rules sheet, design doc, and card layouts (in the form of powerpoint slides) 
+		are linked below, and it is entirely possible to print and cut your own card layouts and use the rules to play the game yourself - if you do, please send
+		back some criticism! The game itself is still in the testing stage, and may see further development in the future.
 	</p>
+	<ul>
+		<li><a href="../media/projects/aa/AARules.pdf">Androids, Assemble! Rules </a> </li>
+		<li><a href="../media/projects/aa/AAReference.pdf">Androids, Assemble! Reference Sheet </a> </li>
+		<li><a href="../media/projects/aa/AADesignDoc.pdf">Androids, Assemble! Design Document </a> </li>
+		<li><a href="../media/projects/aa/cardslides_print.pptx"> Androids, Assemble! Card Sheets </a> </li>
+	</ul>
+	<div class="imgbox">
+		<img src="../media/projects/aa/art1.png" alt="a mood board" title="Mood Board" />
+		<img src="../media/projects/aa/art2.png" alt="our card art" title="Card Art" />
+		<img src="../media/projects/aa/prototype1.jpeg" alt="a picture of our prototype" title="Prototype 1" />
+		<img src="../media/projects/aa/prototype2.jpeg" alt="a picture of our prototype" title="Prototype 2" />
+		<img src="../media/projects/aa/prototype3.jpeg" alt="a picture of our prototype" title="Prototype 3" />
+	</div>
 </div>
-<div id="primality" class="project">
-	<h1> Primality Testing </h1>
+<div id="mips" class="project">
+	<h1> MIPS </h1>
 	<p class="description" > 
+		Wrote a 3-in-a-row puzzle solver in MIPS assembly language, using a simple stepback algorithm, and laid out a simple multicycle MIPS CPU in
+		the logisim circuitry program. A description of the 3-in-a-row assignment can be found <a href="#"> here </a>, and a download link for the logisim
+		circuit simulator can be found <a href="#"> here</a>.
 	</p>
-	<a href="#" class="github">Project Repository on GitHub</a>
+	<a href="#" class="github">Project Repository not yet posted on GitHub</a>
 </div>
 <div id="geomAlg" class="project">
 	<h1> Geometric Algebra </h1>
 	<p class="description" > 
+		Laid out in circuitry the bare bones implementation of a hardware supported geometric product, based on an assembly implementation also 
+		included, and presented it to the other participants in a Seminar on Geometric Algebra, to suggest a way to make Geometric Algebra more competitive
+		with traditional Linear Algebra methods in computing. I plan to add an introductory paper on Geometric Algebra, and perhaps a GA math library, to this
+		project in the future.
+		<br/> A download link for the logisim circuit simulator can be found <a href="#"> here</a>.
 	</p>
-	<a href="#" class="github">Project Repository on GitHub</a>
+	<a href="https://github.com/Abhalphiest/GeomAlgebra" class="github">Project Repository on GitHub</a>
 </div>
 </article>
 <?php include '../include/footer.php'; ?>
