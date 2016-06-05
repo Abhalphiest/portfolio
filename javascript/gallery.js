@@ -15,7 +15,7 @@ $(document).ready(function(){
 		lightbox.style.backgroundColor = "black";
 		lightbox.style.opacity ="0.5";
 		lightbox.style.display = "none";
-		
+		lightbox.style.zIndex = "999";
 		var frame = document.createElement("div");
 		frame.style.position = "relative";
 		frame.style.display="inline-block";
